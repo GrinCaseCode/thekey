@@ -1,0 +1,385 @@
+*::-webkit-input-placeholder {
+  color: #666;
+  opacity: 1; }
+
+*:-moz-placeholder {
+  color: #666;
+  opacity: 1; }
+
+*::-moz-placeholder {
+  color: #666;
+  opacity: 1; }
+
+*:-ms-input-placeholder {
+  color: #666;
+  opacity: 1; }
+
+body {
+  font-family: 'GT Walsheim Pro';
+  font-weight: 400;
+  font-size: 16px;
+  overflow-x: hidden;
+  color: #28292D;
+  margin: 0; }
+
+button {
+  cursor: pointer; }
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+  font-weight: normal; }
+
+.wrapper {
+  overflow: hidden; }
+
+a {
+  text-decoration: none;
+  outline: none; }
+
+* {
+  outline: none !important; }
+
+ul {
+  padding: 0;
+  margin: 0; }
+
+ul li {
+  list-style-type: none;
+  outline: none; }
+
+img {
+  outline: none;
+  display: block; }
+
+p {
+  padding: 0;
+  margin: 0; }
+
+.products {
+  padding: 90px 0; }
+
+.item-card {
+  max-width: 360px;
+  background: #fff;
+  min-height: 100%;
+  margin: 0 auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  position: relative; }
+  .item-card .name-card {
+    padding-bottom: 3px; }
+  .item-card .descr-card {
+    padding-bottom: 15px; }
+  .item-card .size-card {
+    padding-top: 15px; }
+
+.item-card__image {
+  height: 185px;
+  position: relative; }
+  .item-card__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    font-family: 'object-fit: cover;'; }
+
+.item-card__content {
+  padding: 20px;
+  padding-top: 25px; }
+
+.name-card {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700; }
+
+.descr-card {
+  font-size: 15px;
+  line-height: 18px;
+  color: #AEAFB7; }
+
+.text-card {
+  font-size: 18px;
+  line-height: 24px;
+  color: #000; }
+
+.size-card {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #AEAFB7; }
+
+.tag-card {
+  font-size: 12px;
+  line-height: 15px;
+  padding: 7px 10px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  background: #3E3EBA;
+  border-radius: 3px;
+  z-index: 2;
+  display: inline-block; }
+
+.fancybox-navigation .fancybox-button {
+  top: 50%;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #F2F2F2;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 0 !important; }
+  .fancybox-navigation .fancybox-button svg {
+    display: none; }
+  .fancybox-navigation .fancybox-button:before {
+    position: absolute;
+    display: block;
+    content: " ";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
+.fancybox-navigation .fancybox-button--arrow_left {
+  left: -65px; }
+  .fancybox-navigation .fancybox-button--arrow_left:before {
+    background-image: url(../img/prev.svg); }
+.fancybox-navigation .fancybox-button--arrow_right {
+  right: -65px; }
+  .fancybox-navigation .fancybox-button--arrow_right:before {
+    background-image: url(../img/next.svg); }
+
+.fancybox-button[disabled]::before {
+  opacity: 0.4; }
+
+.btn-view {
+  width: 30px;
+  height: 30px;
+  right: 15px;
+  bottom: 15px;
+  position: absolute;
+  background-color: #28292D;
+  display: inline-block;
+  border-radius: 50%;
+  background-image: url(../img/ic_view.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
+  .btn-view:hover {
+    background-color: rgba(40, 41, 45, 0.8); }
+
+.fancybox-thumbs__list a:before {
+  display: none; }
+
+.fancybox-thumbs__list a,
+.slick-dots li button {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  background-color: #28292D !important;
+  border-radius: 50%;
+  cursor: pointer;
+  background-image: none !important;
+  opacity: 0.4;
+  border: none !important;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
+
+.fancybox-thumbs__list a {
+  margin: 15px 5px;
+  background-color: #fff !important; }
+
+.fancybox-button--thumbs {
+  display: none; }
+
+.fancybox-thumbs__list a.fancybox-thumbs-active,
+.slick-dots li button:hover,
+.slick-dots li button:focus {
+  opacity: 1; }
+
+.fancybox-thumbs__list a.fancybox-thumbs-active,
+.slick-dots li.slick-active button {
+  opacity: 1;
+  transform: scale(1.5); }
+
+.fancybox-bg {
+  background: #28292D;
+  opacity: 0.4; }
+
+.fancybox-button--play,
+.fancybox-button--zoom {
+  display: none !important; }
+
+.fancybox-button {
+  background-color: transparent;
+  color: #fff; }
+
+.fancybox-inner,
+.fancybox-content {
+  max-width: 1140px !important;
+  margin: 0 auto; }
+
+.fancybox-button--close {
+  position: fixed;
+  top: 5px;
+  right: 5px; }
+
+.fancybox-infobar {
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+  top: auto;
+  bottom: -10px;
+  right: 0;
+  left: auto;
+  font-family: 'GT Walsheim Pro'; }
+
+.fancybox-infobar span[data-fancybox-index] {
+  font-weight: 700; }
+
+.fancybox-show-thumbs .fancybox-inner {
+  right: 0; }
+
+.fancybox-thumbs {
+  max-width: 1140px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+  width: 100%;
+  bottom: 0;
+  top: auto; }
+
+.fancybox-content {
+  top: 50px !important;
+  bottom: 50px !important;
+  width: 100% !important;
+  height: auto !important;
+  transform: none !important;
+  cursor: inherit !important; }
+
+.fancybox-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  font-family: 'object-fit: cover;'; }
+
+.group-images {
+  display: none; }
+
+.row_cards > div {
+  margin-bottom: 30px; }
+
+.item-card__bottom {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .item-card__bottom .item-card__price, .item-card__bottom .item-card__size {
+    padding-top: 10px; }
+  .item-card__bottom > div:nth-child(2) {
+    text-align: right; }
+
+.item-card__date {
+  font-size: 15px;
+  line-height: 18px; }
+
+.item-card__size {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 700; }
+
+.item-card__oldprice {
+  font-size: 15px;
+  line-height: 18px;
+  text-decoration-line: line-through;
+  color: #AEAFB7; }
+
+.item-card__price {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 700; }
+
+.btn-main {
+  font-size: 15px;
+  line-height: 18px;
+  padding: 0 24px;
+  height: 50px;
+  background-color: #28292D;
+  border: 1px #28292D solid;
+  display: -webkit-inline-flex;
+  display: -moz-inline-flex;
+  display: -ms-inline-flex;
+  display: -o-inline-flex;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  font-weight: 700; }
+  .btn-main:hover {
+    background-color: #fff;
+    color: #28292D; }
+
+.more-cards {
+  text-align: center; }
+
+.slider-cards {
+  margin: 0 -15px; }
+  .slider-cards .item-card {
+    margin: 10px auto; }
+  .slider-cards .slick-arrow.slick-prev {
+    left: -45px; }
+  .slider-cards .slick-arrow.slick-next {
+    right: -45px; }
+
+.slick-arrow {
+  top: 50%;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #F2F2F2;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); }
+  .slick-arrow::before {
+    position: absolute;
+    display: block;
+    content: " ";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
+  .slick-arrow.slick-prev {
+    left: 0; }
+    .slick-arrow.slick-prev:before {
+      background-image: url(../img/prev.svg); }
+  .slick-arrow.slick-next {
+    right: 0; }
+    .slick-arrow.slick-next:before {
+      background-image: url(../img/next.svg); }
+
+/*# sourceMappingURL=main.css.map */
