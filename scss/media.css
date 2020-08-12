@@ -56,7 +56,7 @@
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
   .admin-area {
-    padding: 25px 15px; }
+    padding: 40px 15px; }
 
   .widget-item {
     margin-right: 6px; }
@@ -65,7 +65,10 @@
     font-size: 14px;
     margin-right: 5px; }
     .item-dropdown_widget .item-dropdown__input {
-      padding-right: 15px; } }
+      padding-right: 15px; }
+
+  .item-dropdown__filter ul {
+    max-height: 145px; } }
 /* Custom, iPhone Retina */
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */
