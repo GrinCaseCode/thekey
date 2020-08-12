@@ -2,49 +2,93 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
- .fancybox-navigation {
- 	.fancybox-button {
- 		opacity: 0 !important;
- 		width: 40%;
- 		height: 100%;
- 		top: 0;
- 		left: 0;
- 		bottom: 0;
- 		margin: auto;
- 		max-height: calc(100vh - 100px);
- 	}
- 	.fancybox-button--arrow_right {
- 		right: 0;
- 		left: auto;
- 	}
- }
- .hidden_tablet {
- 	display: none !important;
- }
+	.fancybox-navigation {
+		.fancybox-button {
+			opacity: 0 !important;
+			width: 40%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			margin: auto;
+			max-height: calc(100vh - 100px);
+		}
+		.fancybox-button--arrow_right {
+			right: 0;
+			left: auto;
+		}
+	}
+	.hidden_tablet {
+		display: none !important;
+	}
 }
 
 /* Medium Devices, Desktops */ 
 @media only screen and (max-width : 992px) {
-.slider-cards {
-	.slick-slide {
-		padding: 0 15px;
+	.slider-cards {
+		.slick-slide {
+			padding: 0 15px;
+		}
 	}
-}
+	.admin-area {
+		padding: 55px 30px;
+	}
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-.item-card__content {
-	padding: 15px;
-	padding-bottom: 20px;
-}
-.hidden_mob {
-	display: none !important;
-}
+	.item-card__content {
+		padding: 15px;
+		padding-bottom: 20px;
+	}
+	.hidden_mob {
+		display: none !important;
+	}
+	.head-block {
+		padding-bottom: 15px;
+		display: block;
+		text-align: center;
+		.btn-main {
+			margin-top: 20px;
+		}
+		.title-block {
+			margin-bottom: 8px;
+		}
+	}
+	.item-dropdown__filter {
+		padding: 20px 10px;
+		padding-top: 5px;
+		ul {
+			max-height: 200px;
+			overflow: auto;
+			padding-right: 10px;
+			li {
+				margin-bottom: 7px;
+			}
+		}
+	}
+	.item-dropdown__bottom {
+		.btn-main {
+			font-size: 14px;
+		}
+	}
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+	.admin-area {
+		padding: 25px 15px;
+	}
+	.widget-item {
+		margin-right: 6px;
+	}
+	.item-dropdown_widget {
+		font-size: 14px;
+		margin-right: 5px;
+		.item-dropdown__input {
+			padding-right: 15px;
+		}
+	}
 
 }
 
@@ -76,7 +120,7 @@
 
 }
 
- /* Large Devices, Wide Screens */
+/* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
 
 }
