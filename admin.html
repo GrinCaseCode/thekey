@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Заголовок</title>
+	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="favicon.png" />
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.css" />
+	<link rel="stylesheet" href="libs/fancybox-master/dist/jquery.fancybox.min.css" />
+	<link rel="stylesheet" href="libs/slick-1.8.0/slick/slick.css" />
+	<link rel="stylesheet" href="libs/slick-1.8.0/slick/slick-theme.css" />
+	<link rel="stylesheet" href="css/fonts.css" />
+	<link rel="stylesheet" href="scss/main.css?ver=1.2" />
+	<link rel="stylesheet" href="scss/media.css?ver=1.2" />
+</head>
+<body>
+
+	<div class="wrapper"> 
+
+		<div class="container">
+			<div class="widget-wrap">
+				<div class="settings-widget">
+					<div class="widget-item">
+						<ul class="types-widget">
+							<li>
+								<a href="#">
+									<img src="img/type_widget1.svg" alt="alt">
+								</a>
+							</li>
+							<li class="active">
+								<a href="#">
+									<img src="img/type_widget2.svg" alt="alt">
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="widget-item">
+						<div class="widget-item__title">Отступ:</div>
+						<div class="item-dropdown item-dropdown_widget item-dropdown_size">
+							<div class="item-dropdown__input">0px</div>
+							<div class="item-dropdown__content">
+								<ul class="item-dropdown__list">
+									<li class="active" data-size="0px">0px</li>
+									<li data-size="15px">15px</li>
+									<li data-size="30px">30px</li>
+									<li data-size="60px">60px</li>
+									<li data-size="90px">90px</li>
+									<li data-size="120px">120px</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="widget-item">
+						<div class="widget-item__title">Цвет:</div>
+						<div class="item-dropdown item-dropdown_widget item-dropdown_color">
+							<div class="item-dropdown__input">Белый</div>
+							<div class="item-dropdown__content">
+								<ul class="item-dropdown__list">
+									<li class="active" data-color="color-widget-white">Белый</li>
+									<li data-color="color-widget-black">Чёрный</li>
+									<li data-color="color-widget-blue">Синий</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="admin-area">
+				<form>
+					<div class="row">
+						<div class="col-lg-2 offset-lg-1">
+							<div class="item-form">
+								<div class="item-form__title">Тип галереи карточек</div>
+								<div class="item-dropdown">
+									<div class="item-dropdown__input">Маркетплейс</div>
+									<div class="item-dropdown__content">
+										<ul class="item-dropdown__list">
+											<li class="active">Маркетплейс</li>
+											<li>Локации</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="item-form">
+								<div class="item-form__title">Заголовок блока</div>
+								<input type="text" placeholder="Заголовок ..">
+							</div>
+							<div class="item-form">
+								<div class="item-form__title">Описание блока</div>
+								<textarea placeholder="Описание .."></textarea>
+							</div>
+						</div>
+						<div class="col-lg-5 col-md-6">
+							<div class="item-form">
+								<div class="item-form__title">Локация</div>
+								<div class="item-dropdown">
+									<div class="item-dropdown__input">Все</div>
+									<div class="item-dropdown__content">
+										<div class="item-dropdown__filter">
+											<ul>
+												<li>
+													<div class="checkbox">
+														<label>
+															<input type="checkbox" checked="checked" />
+															<span>Арма | м. Курская </span>
+														</label>
+													</div>
+												</li>
+												<li>
+													<div class="checkbox">
+														<label>
+															<input type="checkbox" checked="checked" />
+															<span>Даниловская | м. Тульская</span>
+														</label>
+													</div>
+												</li>
+												<li>
+													<div class="checkbox">
+														<label>
+															<input type="checkbox" checked="checked" />
+															<span>Гостиный двор | м. Охотный ряд</span>
+														</label>
+													</div>
+												</li>
+												<li>
+													<div class="checkbox">
+														<label>
+															<input type="checkbox" checked="checked" />
+															<span>Кузнецкий Мост | м. Кузнецкий мост</span>
+														</label>
+													</div>
+												</li>
+												<li>
+													<div class="checkbox">
+														<label>
+															<input type="checkbox" checked="checked" />
+															<span>Отстоженка | м. Парк Культуры</span>
+														</label>
+													</div>
+												</li>
+												<li>
+													<div class="checkbox">
+														<label>
+															<input type="checkbox" checked="checked" />
+															<span>Сириус Парк | м. Нагатинская</span>
+														</label>
+													</div>
+												</li>
+												<li>
+													<div class="checkbox">
+														<label>
+															<input type="checkbox" checked="checked" />
+															<span>Шёлк | м. Киевская</span>
+														</label>
+													</div>
+												</li>
+												<li>
+													<div class="checkbox">
+														<label>
+															<input type="checkbox" checked="checked" />
+															<span>Таганка | м. Таганская</span>
+														</label>
+													</div>
+												</li>
+												<li>
+													<div class="checkbox">
+														<label>
+															<input type="checkbox" checked="checked" />
+															<span>Сретенка | м. Сретенский бульвар</span>
+														</label>
+													</div>
+												</li>
+											</ul>
+											<div class="item-dropdown__bottom">
+												<button class="btn-main btn-main_transparent">сбросить</button>
+												<button class="btn-main">применить</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="item-form">
+								<div class="item-form__title">Название кнопки</div>
+								<input type="text" placeholder="Название ..">
+							</div>
+							<div class="item-form">
+								<div class="item-form__title">Переходит по клику на кнопку</div>
+								<input type="text" placeholder="Вставить ссылку ..">
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		
+	</div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+<![endif]-->
+<script src="libs/jquery/jquery-1.11.1.min.js"></script>
+<script src="libs/fancybox-master/dist/jquery.fancybox.min.js"></script>
+<script src="libs/slick-1.8.0/slick/slick.min.js"></script>
+<script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
+<script src="js/common.js?ver=1.2"></script>
+<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>
