@@ -819,7 +819,7 @@ p {
   opacity: 1; }
 
 .slick-dots-container {
-  width: 88px;
+  width: 89px;
   overflow: hidden;
   display: block;
   padding: 0;
@@ -846,5 +846,8 @@ p {
 .n-small-1 button,
 .p-small-1 button {
   transform: scale(0.8); }
+
+.fancybox-slide--image {
+  padding: 44px 0; }
 
 /*# sourceMappingURL=main.css.map */
