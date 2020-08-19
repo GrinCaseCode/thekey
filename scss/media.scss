@@ -27,6 +27,19 @@
 	.admin-area {
 		padding: 55px 30px;
 	}
+	.slider-modal {
+		.slick-arrow {
+			display: none !important;
+		}
+	}
+	.slider-modal__item {
+		padding: 0;
+	}
+	.modal-wrap {
+		.container {
+			padding: 0;
+		}
+	}
 }
 
 /* Medium Devices, Desktops */ 
