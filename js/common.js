@@ -110,7 +110,7 @@ $(document).ready(function() {
 						}
 					},
 					beforeShow: function(){
-						setInterval(function () {
+						setTimeout(function () {
 							$('.fancy-preloader').fadeOut();
 						}, 500); 
 
@@ -119,6 +119,11 @@ $(document).ready(function() {
 					afterShow: function(){
 						$slider.slick('setPosition');
 					},
+					afterClose: function () {
+						setTimeout(function () {
+							$('.fancy-preloader').fadeIn();
+						}, 500); 
+					}
 				});
 
 
