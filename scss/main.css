@@ -912,9 +912,8 @@ p {
 .slider-counter__numbers span {
   font-weight: 700; }
 
-.slick-dots-container {
+.modal-block .slick-dots-container {
   position: absolute;
-  left: 45px;
   top: 100%; }
 
 .slider-counter {
