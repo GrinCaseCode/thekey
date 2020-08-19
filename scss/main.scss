@@ -810,13 +810,13 @@ p {
 }
 .color-widget-black {
 	background-color: $main_color;
-	.slick-arrow {
+	.slick-slider:not(.slider-modal) .slick-arrow {
 		background-color: $main_color;
 	}
 }
 .color-widget-blue {
 	background-color: $blue;
-	.slick-arrow {
+	.slick-slider:not(.slider-modal) .slick-arrow {
 		background-color: $blue;
 	}
 }
@@ -868,12 +868,12 @@ p {
 	.item-dropdown__input::after {
 		background-image: url(../img/triangle_white.svg);
 	}
-	.slick-prev {
+	.slick-slider:not(.slider-modal) .slick-prev {
 		&::before {
 			background-image: url(../img/prev2.svg);
 		}
 	}
-	.slick-next {
+	.slick-slider:not(.slider-modal) .slick-next {
 		&::before {
 			background-image: url(../img/next2.svg);
 		}
@@ -964,7 +964,7 @@ p {
 	display: none !important;
 }
 .slider-modal__item {
-	height: 80vh;
+	height: calc(100vh - 100px);
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;

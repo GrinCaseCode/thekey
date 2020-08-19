@@ -717,12 +717,12 @@ p {
 
 .color-widget-black {
   background-color: #28292D; }
-  .color-widget-black .slick-arrow {
+  .color-widget-black .slick-slider:not(.slider-modal) .slick-arrow {
     background-color: #28292D; }
 
 .color-widget-blue {
   background-color: #3E3EBA; }
-  .color-widget-blue .slick-arrow {
+  .color-widget-blue .slick-slider:not(.slider-modal) .slick-arrow {
     background-color: #3E3EBA; }
 
 .color-widget-black *,
@@ -766,11 +766,11 @@ p {
 .color-widget-black .item-dropdown__input::after,
 .color-widget-blue .item-dropdown__input::after {
   background-image: url(../img/triangle_white.svg); }
-.color-widget-black .slick-prev::before,
-.color-widget-blue .slick-prev::before {
+.color-widget-black .slick-slider:not(.slider-modal) .slick-prev::before,
+.color-widget-blue .slick-slider:not(.slider-modal) .slick-prev::before {
   background-image: url(../img/prev2.svg); }
-.color-widget-black .slick-next::before,
-.color-widget-blue .slick-next::before {
+.color-widget-black .slick-slider:not(.slider-modal) .slick-next::before,
+.color-widget-blue .slick-slider:not(.slider-modal) .slick-next::before {
   background-image: url(../img/next2.svg); }
 .color-widget-black .slick-dots li button,
 .color-widget-blue .slick-dots li button {
@@ -855,7 +855,7 @@ p {
   display: none !important; }
 
 .slider-modal__item {
-  height: 80vh;
+  height: calc(100vh - 100px);
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;

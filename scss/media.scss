@@ -139,6 +139,9 @@
 			max-height: 145px;
 		}
 	}
+	.slider-modal__item {
+		height: calc(100vh - 80px);
+	}
 }
 
 /* Custom, iPhone Retina */

@@ -107,7 +107,10 @@
       padding-right: 15px; }
 
   .item-dropdown__filter ul {
-    max-height: 145px; } }
+    max-height: 145px; }
+
+  .slider-modal__item {
+    height: calc(100vh - 80px); } }
 /* Custom, iPhone Retina */
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */
