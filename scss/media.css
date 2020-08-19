@@ -91,7 +91,10 @@
     height: 143px; }
 
   .item-card .name-card {
-    padding-bottom: 2px; } }
+    padding-bottom: 2px; }
+
+  .slider-modal__item {
+    height: 80vh; } }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
   .admin-area {
@@ -107,10 +110,7 @@
       padding-right: 15px; }
 
   .item-dropdown__filter ul {
-    max-height: 145px; }
-
-  .slider-modal__item {
-    height: calc(100vh - 80px); } }
+    max-height: 145px; } }
 /* Custom, iPhone Retina */
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */
