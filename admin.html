@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
-<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
-<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if lt IE 7]><html lang="ru" class="ns_lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="ns_lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="ns_lt-ie9"><![endif]-->
 <!--[if gt IE 8]><!-->
 <html lang="ru">
 <!--<![endif]-->
@@ -12,42 +12,42 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="shortcut icon" href="favicon.png" />
-	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.css" />
+	<link rel="stylesheet" href="scss/bootstrap.css" />
 	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
 	<link rel="stylesheet" href="libs/slick-1.8.0/slick/slick.css" />
 	<link rel="stylesheet" href="libs/slick-1.8.0/slick/slick-theme.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="scss/main.css?ver=1.20" />
-	<link rel="stylesheet" href="scss/media.css?ver=1.20" />
+	<link rel="stylesheet" href="scss/main.css?ver=1.24" />
+	<link rel="stylesheet" href="scss/media.css?ver=1.24" />
 </head>
 <body>
 
-	<div class="wrapper"> 
+	<div class="ns_wrapper"> 
 
 		<div class="container">
-			<div class="widget-wrap">
-				<div class="settings-widget">
-					<div class="widget-item">
-						<ul class="types-widget">
+			<div class="ns_widget-wrap">
+				<div class="ns_settings-widget">
+					<div class="ns_widget-item">
+						<ul class="ns_types-widget">
 							<li>
 								<a href="#">
 									<img src="img/type_widget1.svg" alt="alt">
 								</a>
 							</li>
-							<li class="active">
+							<li class="ns_active">
 								<a href="#">
 									<img src="img/type_widget2.svg" alt="alt">
 								</a>
 							</li>
 						</ul>
 					</div>
-					<div class="widget-item">
-						<div class="widget-item__title">Отступ:</div>
-						<div class="item-dropdown item-dropdown_widget item-dropdown_size">
-							<div class="item-dropdown__input">0px</div>
-							<div class="item-dropdown__content">
-								<ul class="item-dropdown__list">
-									<li class="active" data-size="0px">0px</li>
+					<div class="ns_widget-item">
+						<div class="ns_widget-item__title">Отступ:</div>
+						<div class="ns_item-dropdown ns_item-dropdown_widget ns_item-dropdown_size">
+							<div class="ns_item-dropdown__input">0px</div>
+							<div class="ns_item-dropdown__content">
+								<ul class="ns_item-dropdown__list">
+									<li class="ns_active" data-size="0px">0px</li>
 									<li data-size="15px">15px</li>
 									<li data-size="30px">30px</li>
 									<li data-size="60px">60px</li>
@@ -57,32 +57,32 @@
 							</div>
 						</div>
 					</div>
-					<div class="widget-item">
-						<div class="widget-item__title">Цвет:</div>
-						<div class="item-dropdown item-dropdown_widget item-dropdown_color">
-							<div class="item-dropdown__input">Белый</div>
-							<div class="item-dropdown__content">
-								<ul class="item-dropdown__list">
-									<li class="active" data-color="color-widget-white">Белый</li>
-									<li data-color="color-widget-black">Чёрный</li>
-									<li data-color="color-widget-blue">Синий</li>
+					<div class="ns_widget-item">
+						<div class="ns_widget-item__title">Цвет:</div>
+						<div class="ns_item-dropdown ns_item-dropdown_widget ns_item-dropdown_color">
+							<div class="ns_item-dropdown__input">Белый</div>
+							<div class="ns_item-dropdown__content">
+								<ul class="ns_item-dropdown__list">
+									<li class="ns_active" data-color="ns_color-widget-white">Белый</li>
+									<li data-color="ns_color-widget-black">Чёрный</li>
+									<li data-color="ns_color-widget-blue">Синий</li>
 								</ul>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="admin-area">
+			<div class="ns_admin-area">
 				<form>
 					<div class="row">
 						<div class="col-xl-2 offset-xl-1 col-lg-4">
-							<div class="item-form">
-								<div class="item-form__title">Тип галереи карточек</div>
-								<div class="item-dropdown">
-									<div class="item-dropdown__input">Маркетплейс</div>
-									<div class="item-dropdown__content">
-										<ul class="item-dropdown__list">
-											<li class="active">Маркетплейс</li>
+							<div class="ns_item-form">
+								<div class="ns_item-form__title">Тип галереи карточек</div>
+								<div class="ns_item-dropdown">
+									<div class="ns_item-dropdown__input">Маркетплейс</div>
+									<div class="ns_item-dropdown__content">
+										<ul class="ns_item-dropdown__list">
+											<li class="ns_active">Маркетплейс</li>
 											<li>Локации</li>
 										</ul>
 									</div>
@@ -90,25 +90,25 @@
 							</div>
 						</div>
 						<div class="col-lg-3 col-md-6">
-							<div class="item-form">
-								<div class="item-form__title">Заголовок блока</div>
+							<div class="ns_item-form">
+								<div class="ns_item-form__title">Заголовок блока</div>
 								<input type="text" placeholder="Заголовок ..">
 							</div>
-							<div class="item-form">
-								<div class="item-form__title">Описание блока</div>
+							<div class="ns_item-form">
+								<div class="ns_item-form__title">Описание блока</div>
 								<textarea placeholder="Описание .."></textarea>
 							</div>
 						</div>
 						<div class="col-lg-5 col-md-6">
-							<div class="item-form">
-								<div class="item-form__title">Локация</div>
-								<div class="item-dropdown">
-									<div class="item-dropdown__input">Все</div>
-									<div class="item-dropdown__content">
-										<div class="item-dropdown__filter">
+							<div class="ns_item-form">
+								<div class="ns_item-form__title">Локация</div>
+								<div class="ns_item-dropdown">
+									<div class="ns_item-dropdown__input">Все</div>
+									<div class="ns_item-dropdown__content">
+										<div class="ns_item-dropdown__filter">
 											<ul>
 												<li>
-													<div class="checkbox">
+													<div class="ns_checkbox">
 														<label>
 															<input type="checkbox" checked="checked" />
 															<span>Арма | м. Курская </span>
@@ -116,7 +116,7 @@
 													</div>
 												</li>
 												<li>
-													<div class="checkbox">
+													<div class="ns_checkbox">
 														<label>
 															<input type="checkbox" checked="checked" />
 															<span>Даниловская | м. Тульская</span>
@@ -124,7 +124,7 @@
 													</div>
 												</li>
 												<li>
-													<div class="checkbox">
+													<div class="ns_checkbox">
 														<label>
 															<input type="checkbox" checked="checked" />
 															<span>Гостиный двор | м. Охотный ряд</span>
@@ -132,7 +132,7 @@
 													</div>
 												</li>
 												<li>
-													<div class="checkbox">
+													<div class="ns_checkbox">
 														<label>
 															<input type="checkbox" checked="checked" />
 															<span>Кузнецкий Мост | м. Кузнецкий мост</span>
@@ -140,7 +140,7 @@
 													</div>
 												</li>
 												<li>
-													<div class="checkbox">
+													<div class="ns_checkbox">
 														<label>
 															<input type="checkbox" checked="checked" />
 															<span>Отстоженка | м. Парк Культуры</span>
@@ -148,7 +148,7 @@
 													</div>
 												</li>
 												<li>
-													<div class="checkbox">
+													<div class="ns_checkbox">
 														<label>
 															<input type="checkbox" checked="checked" />
 															<span>Сириус Парк | м. Нагатинская</span>
@@ -156,7 +156,7 @@
 													</div>
 												</li>
 												<li>
-													<div class="checkbox">
+													<div class="ns_checkbox">
 														<label>
 															<input type="checkbox" checked="checked" />
 															<span>Шёлк | м. Киевская</span>
@@ -164,7 +164,7 @@
 													</div>
 												</li>
 												<li>
-													<div class="checkbox">
+													<div class="ns_checkbox">
 														<label>
 															<input type="checkbox" checked="checked" />
 															<span>Таганка | м. Таганская</span>
@@ -172,7 +172,7 @@
 													</div>
 												</li>
 												<li>
-													<div class="checkbox">
+													<div class="ns_checkbox">
 														<label>
 															<input type="checkbox" checked="checked" />
 															<span>Сретенка | м. Сретенский бульвар</span>
@@ -180,20 +180,20 @@
 													</div>
 												</li>
 											</ul>
-											<div class="item-dropdown__bottom">
-												<button class="btn-main btn-main_transparent">сбросить</button>
-												<button class="btn-main">применить</button>
+											<div class="ns_item-dropdown__bottom">
+												<button class="ns_btn-main ns_btn-main_transparent">сбросить</button>
+												<button class="ns_btn-main">применить</button>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-							<div class="item-form">
-								<div class="item-form__title">Название кнопки</div>
+							<div class="ns_item-form">
+								<div class="ns_item-form__title">Название кнопки</div>
 								<input type="text" placeholder="Название ..">
 							</div>
-							<div class="item-form">
-								<div class="item-form__title">Переходит по клику на кнопку</div>
+							<div class="ns_item-form">
+								<div class="ns_item-form__title">Переходит по клику на кнопку</div>
 								<input type="text" placeholder="Вставить ссылку ..">
 							</div>
 						</div>
@@ -214,7 +214,7 @@
 <script src="libs/fancybox/jquery.fancybox.pack.js"></script>
 <script src="libs/slick-1.8.0/slick/slick.min.js"></script>
 <script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
-<script src="js/common.js?ver=1.20"></script>
+<script src="js/common.js?ver=1.24"></script>
 <!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 <!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </body>
