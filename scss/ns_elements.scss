@@ -1,0 +1,70 @@
+
+.ns_btn-main {
+	font-size: 15px;
+	line-height: 18px;
+	padding: 0 24px;
+	height: 50px;
+	background-color: $ns_main_color;
+	border: 1px $ns_main_color solid;
+	display: -webkit-inline-flex;
+	display: -moz-inline-flex;
+	display: -ms-inline-flex;
+	display: -o-inline-flex;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	text-transform: uppercase;
+	color: $ns_white;
+	-webkit-transition: $ns_smooth;
+	-o-transition: $ns_smooth;
+	transition: $ns_smooth;
+	font-weight: 700;
+	&:hover {
+		background-color: rgba(40, 41, 45, 0.8);
+	}
+	&.ns_btn-main_page {
+		background-color: transparent;
+		color: $ns_main_color;
+		border: none;
+		width: 262px;
+		max-width: 100%;
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+		border-radius: 100px;
+		&:hover {
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+		}
+	}
+	&.ns_btn-main_transparent {
+		color: $ns_main_color;
+		background-color: $ns_white;
+		&:hover {
+			background-color: $ns_main_color;
+			color: $ns_white;
+		}
+	}
+}
+
+.ns_btn-main.ns_btn-main_black {
+	background-color: $ns_main_color;
+	color: $ns_white;
+	box-shadow: none !important;
+	&:hover {
+		background-color: rgba(40, 41, 45, 0.8);
+	}
+}
+
+.ns_link-opacity {
+	font-size: 18px;
+	line-height: 24px;
+	opacity: 0.4;
+	color: $ns_main_color;
+	border-bottom: 1px $ns_main_color solid;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	&:hover {
+		opacity: 1;
+	}
+}
+

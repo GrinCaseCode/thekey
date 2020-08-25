@@ -1,0 +1,55 @@
+.ns_tabs {
+	padding: 3px;
+	background: #EAEAEA;
+	border-radius: 5px;
+	text-align: center;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	li {
+		flex: 1;
+		a {
+			padding: 10px 0;
+			border-radius: 5px;
+			font-size: 18px;
+			line-height: 24px;
+			color: #AEAFB7;
+			display: block;
+			-webkit-transition: all 0.3s;
+			-o-transition: all 0.3s;
+			transition: all 0.3s;
+			&:hover {
+				color: $ns_main_color;
+				background: $ns_white;
+				box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+			}
+		}
+		&.ns_active {
+			a {
+				color: $ns_main_color;
+				background: $ns_white;
+				box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+			}
+		}
+	}
+}
+.ns_tab-pane__image {
+	img {
+		max-width: 100%;
+		height: auto;
+		display: block;
+	}
+}
+.ns_tab-pane__text {
+	font-size: 24px;
+	line-height: 35px;
+}
+.ns_tab-pane {
+	display: none;
+	&:first-child {
+		display: block;
+	}
+}

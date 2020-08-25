@@ -1,0 +1,87 @@
+.ns_layout {
+	padding-top: 60px;
+	padding-bottom: 46px;
+	background-color: #F2F2F2;
+}
+.ns_layout-block {
+	padding: 55px;
+	img {
+		max-width: 100%;
+		height: auto;
+		display: block;
+		margin: 0 auto;
+	}
+}
+.ns_layout-wrap {
+	position: relative;
+}
+.ns_layout-numbers {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	right: 40px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+.ns_layout-size__item,
+.ns_layout-numbers__item {
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	background: $ns_white;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-size: 18px;
+	line-height: 24px;
+	margin-bottom: 10px;
+	cursor: pointer;
+	color: rgba(40, 41, 45, 0.4);
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	&.ns_active {
+		background-color: $ns_main_color;
+		color: $ns_white;
+	}
+	&:hover {
+		color: $ns_white;
+		background-color: $ns_blue;
+	}
+}
+.ns_layout-size {
+	position: absolute;
+	bottom: 0;
+	left: 40px;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.ns_layout-size__item {
+	font-size: 24px;
+	&:hover {
+		background-color: $ns_white;
+		color: $ns_main_color;
+	}
+}

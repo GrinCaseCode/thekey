@@ -1,0 +1,118 @@
+.ns_item-card {
+	max-width: 360px;
+	background: $ns_white;
+	min-height: 100%;
+	margin: 0 auto;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+	position: relative;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	&:hover {
+		box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+	}
+	.ns_name-card {
+		padding-bottom: 4px;
+	}
+	.ns_descr-card {
+		padding-bottom: 15px;
+	}
+	.ns_size-card {
+		padding-top: 15px;
+	}
+}
+.ns_item-card__image {
+	height: 185px;
+	position: relative;
+	img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		font-family: 'object-fit: cover;';
+	}
+}
+.ns_item-card__content {
+	padding: 20px;
+	padding-top: 16px;
+}
+.ns_name-card {
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 700;
+}
+.ns_descr-card {
+	font-size: 15px;
+	line-height: 18px;
+	color: $ns_gray !important;
+	p {
+		color: $ns_gray !important;
+	}
+}
+.ns_text-card {
+	font-size: 18px;
+	line-height: 24px;
+	color: $ns_black;
+}
+.ns_size-card {
+	font-size: 15px;
+	line-height: 18px;
+	font-weight: 700;
+	color: $ns_gray !important;
+}
+.ns_tag-card {
+	font-size: 12px;
+	line-height: 15px;
+	padding: 7px 10px;
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: $ns_white;
+	background: #3E3EBA;
+	border-radius: 3px;
+	z-index: 2;
+	display: inline-block;
+}
+
+.ns_row_cards {
+	> div {
+		margin-bottom: 30px;
+	}
+}
+.ns_item-card__bottom {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	.item-card__price, .item-card__size {
+		padding-top: 10px;
+	}
+	> div:nth-child(2) {
+		text-align: right;
+	}
+}
+.ns_item-card__date {
+	font-size: 15px;
+	line-height: 18px;
+}
+.ns_item-card__size {
+	font-size: 15px;
+	line-height: 18px;
+	font-weight: 700;
+}
+.ns_item-card__oldprice {
+	font-size: 15px;
+	line-height: 18px;
+	text-decoration-line: line-through;
+	color: $ns_gray;
+}
+.ns_item-card__price {
+	font-size: 15px;
+	line-height: 18px;
+	font-weight: 700;
+}
