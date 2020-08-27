@@ -83,6 +83,9 @@ button {
 			transform: rotate(-180deg);
 		}
 	}
+	&.ns_active + .ns_item-dropdown__content {
+		display: block;
+	}
 }
 .ns_item-form {
 	margin-bottom: 13px;
@@ -106,6 +109,7 @@ button {
 	background-color: $ns_white;
 	z-index: 200;
 	display: none;
+	transition: all 0.3s;
 }
 .ns_item-dropdown__list {
 	display: -webkit-flex;
@@ -122,11 +126,11 @@ button {
 		-o-transition: all 0.3s;
 		transition: all 0.3s;
 		&:hover,
-		&.active {
+		&.ns_active {
 			color: $ns_white;
 			background-color: $ns_main_color;
 		}
-		&.active {
+		&.ns_active {
 			-webkit-order: -1;
 			-moz-order: -1;
 			-ms-order: -1;

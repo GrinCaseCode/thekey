@@ -80,6 +80,8 @@ button {
     opacity: 1; }
     .ns_item-dropdown__input.ns_active::after {
       transform: rotate(-180deg); }
+  .ns_item-dropdown__input.ns_active + .ns_item-dropdown__content {
+    display: block; }
 
 .ns_item-form {
   margin-bottom: 13px; }
@@ -101,7 +103,8 @@ button {
   line-height: 18px;
   background-color: #fff;
   z-index: 200;
-  display: none; }
+  display: none;
+  transition: all 0.3s; }
 
 .ns_item-dropdown__list {
   display: -webkit-flex;
@@ -117,10 +120,10 @@ button {
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s; }
-    .ns_item-dropdown__list li:hover, .ns_item-dropdown__list li.active {
+    .ns_item-dropdown__list li:hover, .ns_item-dropdown__list li.ns_active {
       color: #fff;
       background-color: #28292D; }
-    .ns_item-dropdown__list li.active {
+    .ns_item-dropdown__list li.ns_active {
       -webkit-order: -1;
       -moz-order: -1;
       -ms-order: -1;
@@ -842,12 +845,12 @@ button {
 
 .ns_color-widget-black {
   background-color: #28292D; }
-  .ns_color-widget-black .slick-slider:not(.slider-modal) .slick-arrow {
+  .ns_color-widget-black .slick-slider:not(.ns_slider-modal) .slick-arrow {
     background-color: #28292D; }
 
 .ns_color-widget-blue {
   background-color: #3E3EBA; }
-  .ns_color-widget-blue .slick-slider:not(.slider-modal) .slick-arrow {
+  .ns_color-widget-blue .slick-slider:not(.ns_slider-modal) .slick-arrow {
     background-color: #3E3EBA; }
 
 .ns_color-widget-black *,
@@ -1095,18 +1098,6 @@ button {
   font-size: 18px;
   line-height: 24px; }
 
-.ns_head-block {
-  margin-bottom: 5px;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: relative;
-  z-index: 2; }
-
 .ns_location-slider {
   position: relative; }
 
@@ -1310,6 +1301,18 @@ button {
 
 .ns_more-cards {
   text-align: center; }
+
+.ns_head-block {
+  margin-bottom: 5px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2; }
 
 .ns_btn-main {
   font-size: 15px;

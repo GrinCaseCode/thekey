@@ -1,0 +1,65 @@
+/*
+Error: Undefined variable: "$ns_white".
+        on line 9 of B:\repository\TheKey-Location2\TheKey\scss\ns_location-slider.scss
+
+4: }
+5: .ns_location-link {
+6: 	position: absolute;
+7: 	top: 30px;
+8: 	left: 30px;
+9: 	background: $ns_white;
+10: 	border-radius: 3px;
+11: 	color: $ns_main_color;
+12: 	font-size: 18px;
+13: 	line-height: 24px;
+14: 	padding: 3px 10px;
+
+Backtrace:
+B:\repository\TheKey-Location2\TheKey\scss\ns_location-slider.scss:9
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+B:/program/koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+B:/program/koala/bin/sass:22:in `load'
+B:/program/koala/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$ns_white\".\A         on line 9 of B:\repository\TheKey-Location2\TheKey\scss\ns_location-slider.scss\A \A 4: }\A 5: .ns_location-link {\A 6: 	position: absolute;\A 7: 	top: 30px;\A 8: 	left: 30px;\A 9: 	background: $ns_white;\A 10: 	border-radius: 3px;\A 11: 	color: $ns_main_color;\A 12: 	font-size: 18px;\A 13: 	line-height: 24px;\A 14: 	padding: 3px 10px;"; }

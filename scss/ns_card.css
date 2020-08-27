@@ -1,0 +1,62 @@
+/*
+Error: Undefined variable: "$ns_white".
+        on line 3 of B:\repository\TheKey-Location2\TheKey\scss\ns_card.scss
+
+1: .ns_item-card {
+2: 	max-width: 360px;
+3: 	background: $ns_white;
+4: 	min-height: 100%;
+5: 	margin: 0 auto;
+6: 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+7: 	border-radius: 5px;
+8: 	position: relative;
+
+Backtrace:
+B:\repository\TheKey-Location2\TheKey\scss\ns_card.scss:3
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/engine.rb:307:in `render_with_sourcemap'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:391:in `run'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/sass_scss.rb:63:in `process_result'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:52:in `parse'
+B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/exec/base.rb:19:in `parse!'
+B:/program/koala/rubygems/gems/sass-3.5.2/bin/sass:13:in `<top (required)>'
+B:/program/koala/bin/sass:22:in `load'
+B:/program/koala/bin/sass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$ns_white\".\A         on line 3 of B:\repository\TheKey-Location2\TheKey\scss\ns_card.scss\A \A 1: .ns_item-card {\A 2: 	max-width: 360px;\A 3: 	background: $ns_white;\A 4: 	min-height: 100%;\A 5: 	margin: 0 auto;\A 6: 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);\A 7: 	border-radius: 5px;\A 8: 	position: relative;"; }
