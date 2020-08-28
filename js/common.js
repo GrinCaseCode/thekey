@@ -185,6 +185,110 @@ $(document).ready(function() {
 					}
 				}
 
+
+				/*range slider*/
+				$('.ns_range_price').each(function(){
+					var $this = $(this),
+					$range = $(".ns_range__input", $this),
+					$from = $(".ns_control-input__from", $this),
+					$to = $(".ns_control-input__to", $this),
+					min = 0,
+					max = 3000000;
+
+					$range.ionRangeSlider({
+						type: "double",
+						min: min,
+						max: max,
+						from: 70000,
+						to: 3000000,
+						prettify_enabled: true,
+						onChange: function(data) {
+							updateValues()
+						}
+					});
+
+					function number_format(num, format) {
+						num = (num + "").replace(/(\s)+/g, "");
+						return format ? num.replace(/(\d{1,3})(?=(?:\d{3})+$)/g, "$1 ") : num
+					}
+					$range = $range.data("ionRangeSlider");
+					var updateValues = function() {
+						var res = $range.result;
+						$from.val(number_format(res.from, true));
+						$to.val(number_format(res.to,true))
+					};
+					$from.on("focus", function() {
+						this.value = number_format(this.value);
+						this.focus();
+						this.selectionStart = this.value.length
+					}).on("input", function() {
+						$range.update({
+							from: this.value
+						})
+					}).on("blur", updateValues);
+					$to.on("focus", function() {
+						this.value = number_format(this.value);
+						this.focus();
+						this.selectionStart = this.value.length
+					}).on("input", function() {
+						$range.update({
+							to: this.value
+						})
+					}).on("blur", updateValues)
+				});
+
+				$('.ns_range_area').each(function(){
+					var $this2 = $(this),
+					$range2 = $(".ns_range__input", $this2),
+					$from2 = $(".ns_control-input__from", $this2),
+					$to2 = $(".ns_control-input__to", $this2),
+					min2 = 0,
+					max2 = 500;
+
+					$range2.ionRangeSlider({
+						type: "double",
+						min: min2,
+						max: max2,
+						from: 0,
+						to: 190,
+						prettify_enabled: true,
+						onChange: function(data) {
+							updateValues2()
+						}
+					});
+
+					function number_format(num, format) {
+						num = (num + "").replace(/(\s)+/g, "");
+						return format ? num.replace(/(\d{1,3})(?=(?:\d{3})+$)/g, "$1 ") : num
+					}
+					$range2 = $range2.data("ionRangeSlider");
+					var updateValues2 = function() {
+						var res = $range2.result;
+						$from2.val(number_format(res.from, true));
+						$to2.val(number_format(res.to,true))
+					};
+					$from2.on("focus", function() {
+						this.value = number_format(this.value);
+						this.focus();
+						this.selectionStart = this.value.length
+					}).on("input", function() {
+						$range2.update({
+							from: this.value
+						})
+					}).on("blur", updateValues2);
+					$to2.on("focus", function() {
+						this.value = number_format(this.value);
+						this.focus();
+						this.selectionStart = this.value.length
+					}).on("input", function() {
+						$range2.update({
+							to: this.value
+						})
+					}).on("blur", updateValues2)
+				});
+
+
+
 	// Slick Selector.
 	var slickSlider = $('.ns_slider-cards');
 	var maxDots = 5;
@@ -326,6 +430,17 @@ $(document).ready(function() {
  	slidesToScroll: 1,
  });
 
+ $('.mobile-slider-map').slick({
+ 	arrows: false,
+ 	dots: false,
+ 	infinite: false,
+ 	slidesToShow: 1,
+ 	focusOnSelect: true,
+ 	variableWidth: true,
+ 	touchThreshold: 1000,
+ 	slidesToScroll: 1,
+ });
+
   // Slick Selector.
   var slickSlider4 = $('.ns_slider-tabs');
   var maxDots4 = 5;
@@ -388,8 +503,9 @@ $(document).ready(function() {
   	slidesToScroll: 1,
   });
 
+  /*tabs*/
 
-/*tabs*/
+
   $(".ns_tabs li a").click(function(event) {
   	event.preventDefault();
   	$(".ns_tabs li").removeClass('ns_active');
@@ -399,17 +515,19 @@ $(document).ready(function() {
   	$(selectTab).fadeIn(200);
   });
 
-   /*location*/
-
-  $(".ns_layout-numbers__item").click(function(event) {
+  $(".ns_layout-numbers__wrap").click(function(event) {
   	event.preventDefault();
-  	$(".ns_layout-numbers__item").removeClass('ns_active');
+  	$(".ns_layout-numbers__wrap").removeClass('ns_active');
   	$(this).addClass('ns_active');
   	$(".ns_layout-block__pane").fadeOut(0);
-  	var selectTab2 = $(this).attr("href");
+  	var selectTab2 = $(this).find("a").attr("href");
   	$(selectTab2).fadeIn(200);
   });
+  $(".ns_layout-numbers__item").click(function(event) {
+  	event.preventDefault();
+  });
 
+    /*location*/
 
   var $location = $(".ns_location-bottom");
   $(window).scroll(function(){
@@ -420,6 +538,52 @@ $(document).ready(function() {
   	}
   });
 
+  /*more*/
+
+  $(".ns_link-more").click(function (e) {
+  	e.preventDefault();
+  	$(this).toggleClass("ns_active");
+	 if ($(this).hasClass("ns_active")) {
+			$(this).find("span").html("Скрыть");
+		} else {
+
+			$(this).find("span").html("Посмотреть всё");
+		}
+	 });
+
+
+$("#link-more-locations").click(function (e) {
+	 if ($(".list-mobile-checkbox li").is(":hidden")) {
+			$(".list-mobile-checkbox li").slideDown(200);
+		} else {
+
+			$(".list-mobile-checkbox li:nth-child(n+4)").slideUp(200);
+		}
+	 });
+
+/*layout numbers*/
+$('.ns_layout-numbers__btn').click(function() {
+		$('.ns_layout-numbers').addClass("ns_layout-numbers_mob")
+		if ($(".ns_layout-numbers__wrap:not('.ns_active')").is(":hidden")) {
+			$(".ns_layout-numbers__wrap:not('.ns_active')").fadeIn(200);
+		} else {
+			$(".ns_layout-numbers__wrap:not('.ns_active')").fadeOut(200);
+		}
+		$('.ns_layout-numbers__wrap').click(function() {
+			$(".ns_layout-numbers_mob .ns_layout-numbers__wrap:not('.ns_active')").fadeOut(200);
+		});
+	});
+
+/*menu filter map*/
+ $(".ns_btn-menu-filter").click(function (e) {
+  	e.preventDefault();
+  	$(".ns_mobile-mapmenu").fadeIn(200);
+	 });
+
+  $(".ns_btn-round_closemobile").click(function (e) {
+  	e.preventDefault();
+  	$(".ns_mobile-mapmenu").fadeOut(200);
+	 });
 	 // стайлер для select
 	 $('select').styler();
 
