@@ -422,11 +422,14 @@
 		top: auto;
 		.ns_layout-numbers__btn {
 			position: absolute;
-			bottom: 0;
+			bottom: 10px;
 			right: 0;
 			width: 45px;
 			height: 45px;
 		}
+	}
+	.ns_layout-numbers__item {
+		pointer-events: none;
 	}
 	.ns_layout {
 		padding-top: 40px;
