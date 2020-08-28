@@ -85,3 +85,10 @@
 		color: $ns_main_color;
 	}
 }
+
+.ns_layout-block__pane {
+	display: none;
+	&:first-child {
+		display: block;
+	}
+}

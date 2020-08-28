@@ -388,6 +388,8 @@ $(document).ready(function() {
   	slidesToScroll: 1,
   });
 
+
+/*tabs*/
   $(".ns_tabs li a").click(function(event) {
   	event.preventDefault();
   	$(".ns_tabs li").removeClass('ns_active');
@@ -396,6 +398,18 @@ $(document).ready(function() {
   	var selectTab = $(this).attr("href");
   	$(selectTab).fadeIn(200);
   });
+
+   /*location*/
+
+  $(".ns_layout-numbers__item").click(function(event) {
+  	event.preventDefault();
+  	$(".ns_layout-numbers__item").removeClass('ns_active');
+  	$(this).addClass('ns_active');
+  	$(".ns_layout-block__pane").fadeOut(0);
+  	var selectTab2 = $(this).attr("href");
+  	$(selectTab2).fadeIn(200);
+  });
+
 
   var $location = $(".ns_location-bottom");
   $(window).scroll(function(){
