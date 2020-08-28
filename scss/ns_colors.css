@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$ns_white".
-        on line 2 of B:\repository\TheKey-Location2\TheKey\scss\ns_colors.scss
+        on line 2 of B:\repository\TheKey\scss\ns_colors.scss
 
 1: .ns_color-widget-white {
 2: 	background-color: $ns_white;
@@ -11,7 +11,7 @@ Error: Undefined variable: "$ns_white".
 7: 		background-color: $ns_main_color;
 
 Backtrace:
-B:\repository\TheKey-Location2\TheKey\scss\ns_colors.scss:2
+B:\repository\TheKey\scss\ns_colors.scss:2
 B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -58,4 +58,4 @@ B:/program/koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$ns_white\".\A         on line 2 of B:\repository\TheKey-Location2\TheKey\scss\ns_colors.scss\A \A 1: .ns_color-widget-white {\A 2: 	background-color: $ns_white;\A 3: }\A 4: .ns_color-widget-black {\A 5: 	background-color: $ns_main_color;\A 6: 	.slick-slider:not(.ns_slider-modal) .slick-arrow {\A 7: 		background-color: $ns_main_color;"; }
+  content: "Error: Undefined variable: \"$ns_white\".\A         on line 2 of B:\repository\TheKey\scss\ns_colors.scss\A \A 1: .ns_color-widget-white {\A 2: 	background-color: $ns_white;\A 3: }\A 4: .ns_color-widget-black {\A 5: 	background-color: $ns_main_color;\A 6: 	.slick-slider:not(.ns_slider-modal) .slick-arrow {\A 7: 		background-color: $ns_main_color;"; }

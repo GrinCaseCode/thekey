@@ -63,9 +63,17 @@
 		background-color: $ns_blue;
 	}
 }
+.ns_layout-numbers__wrap {
+	&.ns_active {
+		.ns_layout-numbers__item {
+			background-color: $ns_main_color;
+			color: $ns_white;
+		}
+	}
+}
 .ns_layout-size {
 	position: absolute;
-	bottom: 0;
+	bottom: -6px;
 	left: 40px;
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -83,6 +91,9 @@
 	&:hover {
 		background-color: $ns_white;
 		color: $ns_main_color;
+	}
+	&:last-child {
+		margin-bottom: 0;
 	}
 }
 

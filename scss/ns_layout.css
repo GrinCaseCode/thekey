@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$ns_white".
-        on line 39 of B:\repository\TheKey-Location2\TheKey\scss\ns_layout.scss
+        on line 39 of B:\repository\TheKey\scss\ns_layout.scss
 
 34: .ns_layout-size__item,
 35: .ns_layout-numbers__item {
@@ -15,7 +15,7 @@ Error: Undefined variable: "$ns_white".
 44: 	display: -o-flex;
 
 Backtrace:
-B:\repository\TheKey-Location2\TheKey\scss\ns_layout.scss:39
+B:\repository\TheKey\scss\ns_layout.scss:39
 B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -62,4 +62,4 @@ B:/program/koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$ns_white\".\A         on line 39 of B:\repository\TheKey-Location2\TheKey\scss\ns_layout.scss\A \A 34: .ns_layout-size__item,\A 35: .ns_layout-numbers__item {\A 36: 	width: 45px;\A 37: 	height: 45px;\A 38: 	border-radius: 50%;\A 39: 	background: $ns_white;\A 40: 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);\A 41: 	display: -webkit-flex;\A 42: 	display: -moz-flex;\A 43: 	display: -ms-flex;\A 44: 	display: -o-flex;"; }
+  content: "Error: Undefined variable: \"$ns_white\".\A         on line 39 of B:\repository\TheKey\scss\ns_layout.scss\A \A 34: .ns_layout-size__item,\A 35: .ns_layout-numbers__item {\A 36: 	width: 45px;\A 37: 	height: 45px;\A 38: 	border-radius: 50%;\A 39: 	background: $ns_white;\A 40: 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);\A 41: 	display: -webkit-flex;\A 42: 	display: -moz-flex;\A 43: 	display: -ms-flex;\A 44: 	display: -o-flex;"; }

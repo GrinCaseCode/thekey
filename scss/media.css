@@ -61,7 +61,171 @@
     right: 20px; }
 
   .ns_tab-pane__image {
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+
+  .ns_head-map {
+    display: none; }
+
+  .ns_map {
+    height: 100vh; }
+
+  .ns_map__wrap-card {
+    display: none; }
+
+  .ns_btn-type-map {
+    width: 46px;
+    height: 46px;
+    top: 15px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .ns_btn-type-map span {
+      display: none; }
+    .ns_btn-type-map img {
+      margin: 0;
+      opacity: 1; }
+
+  .ns_map .ns_layout-size {
+    display: none; }
+
+  .wrap-map-clear,
+  .ns_btn-callback.ns_btn-callback_page {
+    display: none; }
+
+  .ns_btn-menu-filter {
+    width: 46px;
+    height: 46px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50%;
+    background-color: #fff;
+    top: 15px;
+    right: 15px; }
+    .ns_btn-menu-filter.ns_btn-menu-filter_active:after {
+      position: absolute;
+      display: block;
+      content: " ";
+      top: 0;
+      right: 0;
+      background: #3E3EBA;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); }
+
+  .ns_item-map {
+    top: 148px;
+    left: 34%; }
+
+  .mobile-slider-map {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%; }
+
+  .ns_item-card_mobile {
+    width: 260px;
+    display: flex;
+    margin: 15px 7px;
+    opacity: 1 !important;
+    visibility: visible !important; }
+    .ns_item-card_mobile .ns_item-card__image {
+      height: 101px;
+      width: 80px;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      overflow: hidden; }
+    .ns_item-card_mobile .ns_tag-card {
+      display: none; }
+    .ns_item-card_mobile .ns_item-card__content {
+      flex: 1;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+    .ns_item-card_mobile .ns_name-card {
+      font-size: 15px;
+      line-height: 18px; }
+    .ns_item-card_mobile .ns_size-card {
+      font-size: 12px;
+      line-height: 15px;
+      padding: 0; }
+    .ns_item-card_mobile .ns_descr-card {
+      display: none; }
+    .ns_item-card_mobile .ns_btn-view {
+      display: none; }
+
+  .ns_mobile-mapmenu {
+    padding: 0 15px;
+    position: fixed;
+    background-color: #fff;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    display: none;
+    overflow: auto; }
+    .ns_mobile-mapmenu .ns_checkbox-slide .ns_checkbox-slide__text {
+      padding: 0;
+      padding-left: 60px; }
+      .ns_mobile-mapmenu .ns_checkbox-slide .ns_checkbox-slide__text::before {
+        left: 0; }
+      .ns_mobile-mapmenu .ns_checkbox-slide .ns_checkbox-slide__text::after {
+        left: 2px; }
+    .ns_mobile-mapmenu .ns_checkbox-slide input:checked + .ns_checkbox-slide__text:after {
+      left: 24px; }
+    .ns_mobile-mapmenu .ns_text-bold {
+      padding-bottom: 15px;
+      margin-top: 30px;
+      padding-top: 30px;
+      border-top: 1px solid #EAEAEA; }
+      .ns_mobile-mapmenu .ns_text-bold + .ns_range-title {
+        padding-top: 0; }
+    .ns_mobile-mapmenu .ns_range-title {
+      padding-top: 25px;
+      font-weight: 400; }
+    .ns_mobile-mapmenu .ns_bottom-popup-form {
+      margin: 0 -15px;
+      padding: 10px 15px;
+      margin-top: 30px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); }
+    .ns_mobile-mapmenu .ns_calendar__arrow {
+      top: -2px; }
+
+  .ns_btn-round_closemobile {
+    position: relative; }
+    .ns_btn-round_closemobile img {
+      width: 12px;
+      height: 12px; }
+    .ns_btn-round_closemobile.ns_active::after {
+      position: absolute;
+      display: block;
+      content: " ";
+      top: 0;
+      right: 0;
+      background: #3E3EBA;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); }
+
+  .ns_mobile-mapmenu__head {
+    padding: 15px 0;
+    padding-bottom: 0;
+    margin-bottom: -15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+
+  .list-mobile-checkbox li {
+    margin-bottom: 15px; }
+    .list-mobile-checkbox li:nth-child(n+4) {
+      display: none; } }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 767px) {
   .ns_item-card__content {
@@ -161,24 +325,32 @@
     margin-top: 10px; }
   .ns_location-block .ns_btn-main {
     margin-top: 20px;
-    width: 290px; }
+    width: 100%; }
 
-  .ns_layout-numbers__item:not(.ns_active) {
+  .ns_layout-numbers__wrap:not(.ns_active) {
     display: none; }
+
+  .ns_layout-numbers__wrap.ns_active {
+    order: 100; }
 
   .ns_layout-size {
     display: none; }
 
   .ns_layout-block {
-    padding: 20px; }
-    .ns_layout-block img {
-      max-width: 148px;
-      max-height: 148px; }
+    padding: 15px 85px; }
 
   .ns_layout-numbers {
     right: 15px;
     bottom: 5px;
-    justify-content: flex-end; }
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    top: auto; }
+    .ns_layout-numbers .ns_layout-numbers__btn {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 45px;
+      height: 45px; }
 
   .ns_layout {
     padding-top: 40px;
@@ -186,7 +358,7 @@
 
   .ns_footer {
     padding: 30px 0;
-    padding-bottom: 0; }
+    padding-bottom: 80px; }
     .ns_footer .ns_social-list {
       margin-top: 15px; }
       .ns_footer .ns_social-list li {
@@ -226,13 +398,19 @@
     order: -1; }
 
   .ns_btn-callback {
-    bottom: 40px;
+    bottom: 55px;
     right: 20px; }
 
   .ns_btn-main_footer {
     width: 100%;
     height: 50px;
-    margin-top: 30px; }
+    margin-top: 30px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 700;
+    box-shadow: 0px -1px 10px rgba(0, 0, 0, 0.3); }
 
   .ns_slider-tabs {
     margin: 0 -15px;
@@ -244,6 +422,7 @@
     padding: 0 15px; }
 
   .ns_slider-tabs__image img {
+    width: 100%;
     max-width: 100%;
     height: auto;
     display: block;
@@ -314,6 +493,12 @@
 /*==========  Mobile First Method  ==========*/
 /* Custom, iPhone Retina */
 /* Extra Small Devices, Phones */
+@media only screen and (min-width: 767px) {
+  .ns_location-bottom.ns_fixed + .ns_footer .ns_btn-callback {
+    bottom: 140px; }
+
+  .ns_layout-numbers__wrap {
+    display: block !important; } }
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
   .ns_slider-tabs,
@@ -322,6 +507,11 @@
   .ns_location-block__mobile-address {
     display: none !important; } }
 /* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  .ns_btn-menu-filter,
+  .ns_mobile-mapmenu,
+  .mobile-slider-map {
+    display: none !important; } }
 /* Large Devices, Wide Screens */
 @media (min-width: 1600px) {
   .container {

@@ -130,8 +130,10 @@ button {
       -o-order: -1;
       order: -1; }
 
+.ns_radio,
 .ns_checkbox {
   text-align: left; }
+  .ns_radio label input,
   .ns_checkbox label input {
     position: absolute;
     z-index: -1;
@@ -139,12 +141,16 @@ button {
     width: 1px !important;
     opacity: 0 !important;
     margin: 1px 0 0 7px !important; }
+    .ns_radio label input:checked + span,
     .ns_checkbox label input:checked + span {
       opacity: 1; }
+      .ns_radio label input:checked + span:hover,
       .ns_checkbox label input:checked + span:hover {
         opacity: 0.8; }
+    .ns_radio label input:checked + span::after,
     .ns_checkbox label input:checked + span::after {
       opacity: 1; }
+  .ns_radio label span,
   .ns_checkbox label span {
     position: relative;
     padding: 0px 0 0 23px;
@@ -154,22 +160,25 @@ button {
     -webkit-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s; }
+    .ns_radio label span:hover,
     .ns_checkbox label span:hover {
       opacity: 1; }
+    .ns_radio label span:before,
     .ns_checkbox label span:before {
       content: '';
       position: absolute;
-      top: 3px;
+      top: 2px;
       left: 0;
       width: 12px;
       height: 12px;
       border: solid 1px #28292D;
       border-radius: 50%;
       transition: .2s; }
+    .ns_radio label span:after,
     .ns_checkbox label span:after {
       content: '';
       position: absolute;
-      top: 3px;
+      top: 2px;
       left: 0;
       width: 12px;
       height: 12px;
@@ -180,6 +189,9 @@ button {
       background-position: center;
       transition: .2s;
       opacity: 0; }
+
+.ns_radio label span:after {
+  background-image: url(../img/radio_active.svg); }
 
 .ns_item-dropdown__filter {
   padding: 40px 30px;
@@ -218,6 +230,269 @@ button {
   transition: all 0.3s; }
   .ns_btn-view:hover {
     background-color: rgba(40, 41, 45, 0.8); }
+
+.ns_checkbox-slide {
+  display: inline-block;
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 700; }
+  .ns_checkbox-slide input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    margin: 10px 0 0 20px; }
+    .ns_checkbox-slide input:checked + .ns_checkbox-slide__text:before {
+      background: #3E3EBA; }
+    .ns_checkbox-slide input:checked + .ns_checkbox-slide__text:after {
+      right: 2px; }
+  .ns_checkbox-slide .ns_checkbox-slide__text {
+    position: relative;
+    padding: 0 60px 0 0px;
+    cursor: pointer; }
+    .ns_checkbox-slide .ns_checkbox-slide__text:before {
+      content: '';
+      position: absolute;
+      top: -7px;
+      right: 0;
+      width: 51px;
+      height: 30px;
+      border-radius: 100px;
+      background: #AEAFB7;
+      transition: .2s; }
+    .ns_checkbox-slide .ns_checkbox-slide__text:after {
+      content: '';
+      position: absolute;
+      top: -5px;
+      right: 23px;
+      width: 26px;
+      height: 26px;
+      border-radius: 100px;
+      background: #fff;
+      transition: .2s; }
+
+.ns_calendar {
+  position: relative; }
+
+.ns_calendar__title {
+  font-size: 15px;
+  line-height: 18px;
+  padding-bottom: 20px;
+  text-align: center; }
+
+.ns_calendar-dayweek {
+  font-size: 12px;
+  line-height: 15px;
+  padding-bottom: 5px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px #e0e0e0 solid; }
+
+.ns_calendar-days {
+  margin-bottom: 15px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; }
+  .ns_calendar-days:last-of-type {
+    margin-bottom: 0; }
+
+.ns_calendar-days__item {
+  width: 14%;
+  padding: 8px 0;
+  margin: 2px 0;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s;
+  position: relative;
+  z-index: 2; }
+  .ns_calendar-days__item::after {
+    position: absolute;
+    display: block;
+    content: " ";
+    left: -2px;
+    right: -2px;
+    height: 100%;
+    top: 0;
+    background-color: #d4d4d5;
+    opacity: 0;
+    z-index: -1;
+    transition: all 0.3s; }
+  .ns_calendar-days__item:hover {
+    background: #F2F2F2; }
+  .ns_calendar-days__item.ns_inactive {
+    color: #D3D3D6;
+    cursor: inherit;
+    background-color: transparent; }
+  .ns_calendar-days__item.ns_active {
+    background-color: #28292D;
+    color: #fff; }
+  .ns_calendar-days__item.ns_active-range::after {
+    opacity: 1; }
+
+.ns_bottom-popup-form {
+  margin-top: 30px;
+  text-align: center; }
+  .ns_bottom-popup-form .ns_btn-main.ns_btn-main_page {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 14px; }
+
+.ns_clear-filter {
+  cursor: pointer;
+  display: inline-block;
+  border: none;
+  background-color: transparent;
+  color: #28292D;
+  opacity: 0.4;
+  font-size: 15px;
+  line-height: 18px;
+  transition: all 0.3s;
+  padding-right: 13px;
+  position: relative; }
+  .ns_clear-filter::after {
+    position: absolute;
+    display: block;
+    content: " ";
+    width: 8px;
+    height: 8px;
+    right: 0;
+    top: 2px;
+    bottom: 0;
+    margin: auto;
+    background-image: url(../img/clear_filter.svg);
+    background-repeat: no-repeat;
+    background-position: center; }
+  .ns_clear-filter:hover {
+    opacity: 1; }
+
+.ns_calendar__arrow {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fff;
+  left: 0px;
+  top: 25px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  cursor: pointer; }
+  .ns_calendar__arrow img {
+    transition: all 0.3s; }
+  .ns_calendar__arrow.ns_inactive img {
+    opacity: 0.4; }
+  .ns_calendar__arrow.ns_calendar__arrow_down {
+    right: 0px;
+    left: auto; }
+
+.ns_item-dropdown__close {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-image: url(../img/ic_close_dropdown.svg);
+  transition: all 0.3s;
+  opacity: 0.4;
+  cursor: pointer; }
+  .ns_item-dropdown__close:hover {
+    opacity: 1; }
+
+.ns_range-controls__item {
+  width: 50%;
+  position: relative; }
+  .ns_range-controls__item input {
+    height: 50px;
+    text-align: center;
+    border: none;
+    width: 100%;
+    background-color: transparent;
+    font-size: 15px;
+    line-height: 18px;
+    color: #28292D; }
+  .ns_range-controls__item:first-child::after {
+    position: absolute;
+    display: block;
+    content: " ";
+    width: 1px;
+    height: 14px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: #28292D; }
+
+.ns_range {
+  margin-bottom: 10px;
+  border: 1px solid #AEAFB7; }
+
+.ns_range-controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.irs--flat {
+  height: 3px; }
+  .irs--flat .irs-line {
+    height: 3px;
+    top: 2px;
+    background-color: transparent; }
+  .irs--flat .irs-bar {
+    top: 2px;
+    height: 3px;
+    background-color: #28292D; }
+  .irs--flat .irs-handle {
+    width: 21px;
+    height: 21px;
+    top: -7px;
+    background: #fff;
+    cursor: pointer;
+    border: 1px solid #AEAFB7;
+    box-shadow: 0px 0px 10px rgba(40, 41, 45, 0.2);
+    border-radius: 50%; }
+    .irs--flat .irs-handle i {
+      display: none !important; }
+
+.irs > .irs > *:not(.irs-line) {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  color: transparent !important; }
+
+.ns_range-title {
+  font-size: 15px;
+  line-height: 18px;
+  padding-bottom: 1px;
+  padding-top: 20px;
+  font-weight: 700; }
+
+.ns_list-radio .ns_radio {
+  margin-bottom: 9px; }
+
+.ns_range + .ns_list-radio {
+  margin-top: 30px; }
+
+.ns_item-dropdown__name {
+  font-size: 15px;
+  padding-bottom: 15px;
+  line-height: 18px;
+  font-weight: 700; }
+
+.ns_list-radio + .ns_item-dropdown__name {
+  margin-top: 30px; }
+
+.ns_line-radio {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; }
+  .ns_line-radio .ns_radio {
+    margin-right: 30px; }
+    .ns_line-radio .ns_radio:last-child {
+      margin-right: 0; }
 
 .ns_settings-widget {
   padding: 10px 15px;
@@ -797,7 +1072,7 @@ button {
   width: 60px;
   height: 60px;
   right: 45px;
-  bottom: 140px;
+  bottom: 45px;
   border-radius: 50%;
   background-color: #3E3EBA;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.298039);
@@ -805,6 +1080,7 @@ button {
   background-repeat: no-repeat;
   background-position: center;
   position: fixed;
+  transition: all 0.3s;
   z-index: 800; }
   .ns_btn-callback::before {
     position: absolute;
@@ -816,6 +1092,9 @@ button {
     left: 0;
     border-radius: 50%;
     animation: radial-pulse 1s infinite; }
+  .ns_btn-callback.ns_btn-callback_page {
+    bottom: 20px;
+    right: 20px; }
 
 @keyframes radial-pulse {
   0% {
@@ -1262,9 +1541,13 @@ button {
     color: #fff;
     background-color: #3E3EBA; }
 
+.ns_layout-numbers__wrap.ns_active .ns_layout-numbers__item {
+  background-color: #28292D;
+  color: #fff; }
+
 .ns_layout-size {
   position: absolute;
-  bottom: 0;
+  bottom: -6px;
   left: 40px;
   display: -webkit-flex;
   display: -moz-flex;
@@ -1281,6 +1564,8 @@ button {
   .ns_layout-size__item:hover {
     background-color: #fff;
     color: #28292D; }
+  .ns_layout-size__item:last-child {
+    margin-bottom: 0; }
 
 .ns_layout-block__pane {
   display: none; }
@@ -1378,6 +1663,248 @@ button {
   .ns_link-opacity:hover {
     opacity: 1; }
 
+.ns_btn-round {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  background-position: center;
+  transition: all 0.3s; }
+  .ns_btn-round img {
+    opacity: 0.4;
+    transition: all 0.3s; }
+  .ns_btn-round:hover img {
+    opacity: 1; }
+
+.ns_link-more {
+  font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.3s;
+  opacity: 0.4;
+  color: #28292D; }
+  .ns_link-more:hover {
+    opacity: 1; }
+  .ns_link-more img {
+    margin-left: 5px; }
+
+.ns_map {
+  height: calc(100vh - 80px);
+  position: relative;
+  background-image: url(../img/bg_map.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+  .ns_map .ns_map_container {
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute; }
+  .ns_map .ns_layout-size {
+    bottom: 20px;
+    left: 20px; }
+    .ns_map .ns_layout-size .ns_layout-size__item:last-child {
+      margin-bottom: 0; }
+
+.ns_head-map {
+  padding: 15px 0;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); }
+  .ns_head-map .ns_checkbox-slide {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 0 15px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px; }
+
+.ns_head-map__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.wrapper-dropdowns-map {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px; }
+  .wrapper-dropdowns-map .ns_item-dropdown {
+    flex: 1; }
+    .wrapper-dropdowns-map .ns_item-dropdown .ns_item-dropdown__input {
+      border-top: none;
+      border-bottom: none;
+      border-left: none; }
+    .wrapper-dropdowns-map .ns_item-dropdown:last-child .ns_item-dropdown__input {
+      border: none; }
+    .wrapper-dropdowns-map .ns_item-dropdown:last-child .ns_item-dropdown__content {
+      right: 0;
+      left: auto;
+      transform: none; }
+    .wrapper-dropdowns-map .ns_item-dropdown:first-child .ns_item-dropdown__content {
+      width: 335px; }
+    .wrapper-dropdowns-map .ns_item-dropdown .ns_item-dropdown__content {
+      width: 420px;
+      left: 50%;
+      padding: 30px;
+      transform: translateX(-50%); }
+    .wrapper-dropdowns-map .ns_item-dropdown .ns_item-dropdown__filter {
+      padding: 0; }
+
+.ns_map__wrap-card__content {
+  width: 367px;
+  overflow: auto;
+  position: relative; }
+  .ns_map__wrap-card__content::-webkit-scrollbar {
+    width: 0;
+    background: #EAEAEA;
+    border-radius: 0px 0px 5px 0px; }
+  .ns_map__wrap-card__content::-webkit-scrollbar-thumb {
+    background-color: #28292D;
+    border-radius: 5px; }
+  .ns_map__wrap-card__content:hover::-webkit-scrollbar {
+    width: 7px; }
+
+.ns_map__wrap-card {
+  top: 30px;
+  right: 15px;
+  bottom: 95px;
+  position: absolute;
+  display: flex; }
+  .ns_map__wrap-card .ns_item-card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    padding-bottom: 80px;
+    box-shadow: none !important; }
+  .ns_map__wrap-card .ns_btn-main {
+    position: absolute;
+    width: 320px;
+    left: 20px;
+    bottom: 20px;
+    background-color: #fff; }
+
+.ns_line-office {
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px #e0e0e0 solid;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .ns_line-office .ns_text-regular_underline {
+    text-decoration: line-through;
+    opacity: 0.4; }
+  .ns_line-office:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border: none; }
+
+.ns_line-office__right {
+  text-align: right; }
+
+.ns_arrows-map {
+  position: absolute;
+  right: 100%;
+  top: 0;
+  margin-right: 15px; }
+  .ns_arrows-map .ns_btn-round {
+    margin-bottom: 15px; }
+
+.ns_btn-type-map {
+  top: 30px;
+  left: 15px;
+  position: absolute;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 100px;
+  background-color: #fff;
+  transition: all 0.3s;
+  padding-left: 15px;
+  padding-right: 20px;
+  display: inline-flex;
+  align-items: center;
+  color: #28292D;
+  height: 46px; }
+  .ns_btn-type-map * {
+    opacity: 0.4;
+    transition: all 0.3s; }
+  .ns_btn-type-map img {
+    margin-left: 12px; }
+  .ns_btn-type-map:hover * {
+    opacity: 1; }
+
+.ns_btn-clear {
+  background: #fff;
+  padding: 4px 15px;
+  padding-bottom: 6px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 100px;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer; }
+  .ns_btn-clear * {
+    opacity: 0.4;
+    transition: all 0.3s; }
+  .ns_btn-clear img {
+    margin-top: 4px;
+    margin-left: 5px; }
+  .ns_btn-clear:hover * {
+    opacity: 1; }
+
+.wrap-map-clear {
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  position: absolute; }
+
+.ns_item-map {
+  top: 179px;
+  left: 47%;
+  padding: 10px;
+  background: #3E3EBA;
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  z-index: 10;
+  position: absolute; }
+  .ns_item-map:after {
+    position: absolute;
+    display: block;
+    content: " ";
+    width: 6px;
+    height: 6px;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border: 6px solid transparent;
+    border-top: 6px solid #3E3EBA; }
+
+.ns_item-map__name {
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 700;
+  margin-bottom: -6px;
+  text-align: center; }
+
+.ns_item-map__link {
+  font-size: 9px;
+  line-height: 8px;
+  color: #fff;
+  display: inline-block;
+  border-bottom: 1px #fff solid;
+  transition: all 0.3s; }
+  .ns_item-map__link:hover {
+    opacity: 0.4; }
+
 body {
   font-family: 'GT Walsheim Pro';
   font-weight: 400;
@@ -1417,5 +1944,16 @@ img {
 p {
   padding: 0;
   margin: 0; }
+
+.container-fluid {
+  max-width: 1440px; }
+
+.ns_text-regular,
+.ns_text-bold {
+  font-size: 15px;
+  line-height: 18px; }
+
+.ns_text-bold {
+  font-weight: 700; }
 
 /*# sourceMappingURL=main.css.map */

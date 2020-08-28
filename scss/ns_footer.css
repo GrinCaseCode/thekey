@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$ns_white".
-        on line 5 of B:\repository\TheKey-Location2\TheKey\scss\ns_footer.scss
+        on line 5 of B:\repository\TheKey\scss\ns_footer.scss
 
 1: .ns_footer {
 2: 	padding: 60px 0;
@@ -14,7 +14,7 @@ Error: Undefined variable: "$ns_white".
 10: 	}
 
 Backtrace:
-B:\repository\TheKey-Location2\TheKey\scss\ns_footer.scss:5
+B:\repository\TheKey\scss\ns_footer.scss:5
 B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -61,4 +61,4 @@ B:/program/koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$ns_white\".\A         on line 5 of B:\repository\TheKey-Location2\TheKey\scss\ns_footer.scss\A \A 1: .ns_footer {\A 2: 	padding: 60px 0;\A 3: 	font-size: 17px;\A 4: 	line-height: 20px;\A 5: 	color: $ns_white;\A 6: 	background-color: $ns_main_color;\A 7: 	position: relative;\A 8: 	.ns_logo-footer {\A 9: 		margin-bottom: 30px;\A 10: 	}"; }
+  content: "Error: Undefined variable: \"$ns_white\".\A         on line 5 of B:\repository\TheKey\scss\ns_footer.scss\A \A 1: .ns_footer {\A 2: 	padding: 60px 0;\A 3: 	font-size: 17px;\A 4: 	line-height: 20px;\A 5: 	color: $ns_white;\A 6: 	background-color: $ns_main_color;\A 7: 	position: relative;\A 8: 	.ns_logo-footer {\A 9: 		margin-bottom: 30px;\A 10: 	}"; }

@@ -68,3 +68,40 @@
 	}
 }
 
+.ns_btn-round {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 45px;
+	height: 45px;
+	border-radius: 50%;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+	background-color: $ns_white;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	background-position: center;
+	transition: all 0.3s;
+	img {
+		opacity: 0.4;
+		transition: all 0.3s;
+	}
+	&:hover {
+		img {
+			opacity: 1;
+		}
+	}
+}
+.ns_link-more {
+	font-size: 14px;
+	display: inline-flex;
+	align-items: center;
+	transition: all 0.3s;
+	opacity: 0.4;
+	color: $ns_main_color;
+	&:hover {
+		opacity: 1;
+	}
+	img {
+		margin-left: 5px;
+	}
+}

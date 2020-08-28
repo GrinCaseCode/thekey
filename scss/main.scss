@@ -20,6 +20,8 @@ $ns_blue: #3E3EBA;
 @import "ns_location.scss";
 @import "ns_products.scss";
 @import "ns_elements.scss";
+@import "ns_map.scss";
+
 
 
 
@@ -73,4 +75,14 @@ p {
 	padding: 0;
 	margin: 0;
 }
-
+.container-fluid {
+	max-width: 1440px;
+}
+.ns_text-regular,
+.ns_text-bold {
+	font-size: 15px;
+	line-height: 18px;
+}
+.ns_text-bold {
+	font-weight: 700;
+}

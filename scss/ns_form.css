@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$ns_main_color".
-        on line 2 of B:\repository\TheKey-Location2\TheKey\scss\ns_form.scss
+        on line 2 of B:\repository\TheKey\scss\ns_form.scss
 
 1: *::-webkit-input-placeholder {
 2: 	color: $ns_main_color;
@@ -11,7 +11,7 @@ Error: Undefined variable: "$ns_main_color".
 7: 	opacity: 1;
 
 Backtrace:
-B:\repository\TheKey-Location2\TheKey\scss\ns_form.scss:2
+B:\repository\TheKey\scss\ns_form.scss:2
 B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -58,4 +58,4 @@ B:/program/koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$ns_main_color\".\A         on line 2 of B:\repository\TheKey-Location2\TheKey\scss\ns_form.scss\A \A 1: *::-webkit-input-placeholder {\A 2: 	color: $ns_main_color;\A 3: 	opacity: 1;\A 4: }\A 5: *:-moz-placeholder {\A 6: 	color: $ns_main_color;\A 7: 	opacity: 1;"; }
+  content: "Error: Undefined variable: \"$ns_main_color\".\A         on line 2 of B:\repository\TheKey\scss\ns_form.scss\A \A 1: *::-webkit-input-placeholder {\A 2: 	color: $ns_main_color;\A 3: 	opacity: 1;\A 4: }\A 5: *:-moz-placeholder {\A 6: 	color: $ns_main_color;\A 7: 	opacity: 1;"; }
