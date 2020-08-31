@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$ns_white".
-        on line 3 of B:\repository\TheKey-Location2\TheKey\scss\ns_card.scss
+        on line 3 of B:\repository\TheKey\scss\ns_card.scss
 
 1: .ns_item-card {
 2: 	max-width: 360px;
@@ -12,7 +12,7 @@ Error: Undefined variable: "$ns_white".
 8: 	position: relative;
 
 Backtrace:
-B:\repository\TheKey-Location2\TheKey\scss\ns_card.scss:3
+B:\repository\TheKey\scss\ns_card.scss:3
 B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -59,4 +59,4 @@ B:/program/koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$ns_white\".\A         on line 3 of B:\repository\TheKey-Location2\TheKey\scss\ns_card.scss\A \A 1: .ns_item-card {\A 2: 	max-width: 360px;\A 3: 	background: $ns_white;\A 4: 	min-height: 100%;\A 5: 	margin: 0 auto;\A 6: 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);\A 7: 	border-radius: 5px;\A 8: 	position: relative;"; }
+  content: "Error: Undefined variable: \"$ns_white\".\A         on line 3 of B:\repository\TheKey\scss\ns_card.scss\A \A 1: .ns_item-card {\A 2: 	max-width: 360px;\A 3: 	background: $ns_white;\A 4: 	min-height: 100%;\A 5: 	margin: 0 auto;\A 6: 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);\A 7: 	border-radius: 5px;\A 8: 	position: relative;"; }

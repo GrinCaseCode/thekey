@@ -666,7 +666,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between; }
-  .ns_item-card__bottom .item-card__price, .ns_item-card__bottom .item-card__size {
+  .ns_item-card__bottom .ns_item-card__price, .ns_item-card__bottom .ns_item-card__size {
     padding-top: 10px; }
   .ns_item-card__bottom > div:nth-child(2) {
     text-align: right; }
