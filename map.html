@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="ns_lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="ns_lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="ns_lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Заголовок</title>
+	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="favicon.png" />
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.css" />
+	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
+	<link rel="stylesheet" href="libs/slick-1.8.0/slick/slick.css" />
+	<link rel="stylesheet" href="libs/slick-1.8.0/slick/slick-theme.css" />
+	<link rel="stylesheet" href="libs/ion.rangeSlider-master/css/ion.rangeSlider.min.css" />
+	<link rel="stylesheet" href="css/fonts.css" />
+	<link rel="stylesheet" href="scss/main.css?ver=1.32" />
+	<link rel="stylesheet" href="scss/media.css?ver=1.32" />
+</head>
+<body>
+ 
+	<div class="ns_wrapper">
+
+		<div class="ns_head-map">
+			<div class="container-fluid">
+				<div class="ns_head-map__wrapper">
+					<label class="ns_checkbox-slide">
+						<input type="checkbox">
+						<div class="ns_checkbox-slide__text">Акции</div>
+					</label>
+					<div class="wrapper-dropdowns-map">
+						<div class="ns_item-dropdown">
+							<div class="ns_item-dropdown__input">Локация</div>
+							<div class="ns_item-dropdown__content">
+								<div class="ns_item-dropdown__close"></div>
+								<div class="ns_item-dropdown__filter">
+									<ul>
+										<li>
+											<div class="ns_checkbox">
+												<label>
+													<input type="checkbox" checked="checked" />
+													<span>Арма | м. Курская </span>
+												</label>
+											</div>
+										</li>
+										<li>
+											<div class="ns_checkbox">
+												<label>
+													<input type="checkbox" />
+													<span>Даниловская | м. Тульская</span>
+												</label>
+											</div>
+										</li>
+										<li>
+											<div class="ns_checkbox">
+												<label>
+													<input type="checkbox" checked="checked" />
+													<span>Гостиный двор | м. Охотный ряд</span>
+												</label>
+											</div>
+										</li>
+										<li>
+											<div class="ns_checkbox">
+												<label>
+													<input type="checkbox" />
+													<span>Кузнецкий Мост | м. Кузнецкий мост</span>
+												</label>
+											</div>
+										</li>
+										<li>
+											<div class="ns_checkbox">
+												<label>
+													<input type="checkbox" />
+													<span>Отстоженка | м. Парк Культуры</span>
+												</label>
+											</div>
+										</li>
+										<li>
+											<div class="ns_checkbox">
+												<label>
+													<input type="checkbox" />
+													<span>Сириус Парк | м. Нагатинская</span>
+												</label>
+											</div>
+										</li>
+										<li>
+											<div class="ns_checkbox">
+												<label>
+													<input type="checkbox" />
+													<span>Шёлк | м. Киевская</span>
+												</label>
+											</div>
+										</li>
+										<li>
+											<div class="ns_checkbox">
+												<label>
+													<input type="checkbox" checked="checked" />
+													<span>Таганка | м. Таганская</span>
+												</label>
+											</div>
+										</li>
+										<li>
+											<div class="ns_checkbox">
+												<label>
+													<input type="checkbox" />
+													<span>Сретенка | м. Сретенский бульвар</span>
+												</label>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<div class="ns_bottom-popup-form">
+									<button class="ns_btn-main ns_btn-main_page">применить</button>
+									<div class="ns_clear-filter">Сбросить фильтр</div>
+								</div>
+							</div>
+						</div>
+						<div class="ns_item-dropdown">
+							<div class="ns_item-dropdown__input">Рабочие места</div>
+							<div class="ns_item-dropdown__content">
+								<div class="ns_item-dropdown__close"></div>
+								<div class="ns_item-form">
+									<div class="ns_item-form__title">Количество рабочих мест</div>
+									<input type="text" placeholder="Введите предпологаемое количество ">
+								</div>
+								<div class="ns_bottom-popup-form">
+									<button class="ns_btn-main ns_btn-main_page">применить</button>
+									<div class="ns_clear-filter">Сбросить фильтр</div>
+								</div>
+							</div>
+						</div>
+						<div class="ns_item-dropdown">
+							<div class="ns_item-dropdown__input">Дата заезда</div>
+							<div class="ns_item-dropdown__content">
+								<div class="ns_item-dropdown__close"></div>
+								<div class="ns_calendar">
+									<div class="ns_calendar__arrow ns_calendar__arrow_top ns_inactive">
+										<img src="img/ic_calendar_top.svg" alt="alt">
+									</div>
+									<div class="ns_calendar__arrow ns_calendar__arrow_down">
+										<img src="img/ic_calendar_bottom.svg" alt="alt">
+									</div>
+									<div class="ns_calendar__title">Декабрь, 2019</div>
+									<div class="ns_calendar-dayweek">
+										<div class="ns_calendar-dayweek__item">Пн</div>
+										<div class="ns_calendar-dayweek__item">Вт</div>
+										<div class="ns_calendar-dayweek__item">Ср</div>
+										<div class="ns_calendar-dayweek__item">Чт</div>
+										<div class="ns_calendar-dayweek__item">Пт</div>
+										<div class="ns_calendar-dayweek__item">Сб</div>
+										<div class="ns_calendar-dayweek__item">Вс</div>
+									</div>
+									<div class="ns_calendar-days">
+										<div class="ns_calendar-days__item ns_inactive">1</div>
+										<div class="ns_calendar-days__item ns_inactive">2</div>
+										<div class="ns_calendar-days__item ns_inactive">3</div>
+										<div class="ns_calendar-days__item ns_inactive">4</div>
+										<div class="ns_calendar-days__item ns_inactive">5</div>
+										<div class="ns_calendar-days__item ns_inactive">6</div>
+										<div class="ns_calendar-days__item ns_inactive">7</div>
+										<div class="ns_calendar-days__item ns_inactive">8</div>
+										<div class="ns_calendar-days__item ns_inactive">9</div>
+										<div class="ns_calendar-days__item ns_inactive">10</div>
+										<div class="ns_calendar-days__item">11</div>
+										<div class="ns_calendar-days__item ns_active">12</div>
+										<div class="ns_calendar-days__item ns_active-range">13</div>
+										<div class="ns_calendar-days__item ns_active-range">14</div>
+										<div class="ns_calendar-days__item ns_active-range">15</div>
+										<div class="ns_calendar-days__item ns_active-range">16</div>
+										<div class="ns_calendar-days__item ns_active-range">17</div>
+										<div class="ns_calendar-days__item ns_active-range">18</div>
+										<div class="ns_calendar-days__item ns_active-range">19</div>
+										<div class="ns_calendar-days__item ns_active-range">20</div>
+										<div class="ns_calendar-days__item ns_active">21</div>
+										<div class="ns_calendar-days__item">22</div>
+										<div class="ns_calendar-days__item">23</div>
+										<div class="ns_calendar-days__item">24</div>
+										<div class="ns_calendar-days__item">25</div>
+										<div class="ns_calendar-days__item">26</div>
+										<div class="ns_calendar-days__item">27</div>
+										<div class="ns_calendar-days__item">28</div>
+										<div class="ns_calendar-days__item">29</div>
+										<div class="ns_calendar-days__item">30</div>
+										<div class="ns_calendar-days__item">31</div>
+									</div>
+									<div class="ns_calendar__title">Январь, 2020</div>
+									<div class="ns_calendar-days">
+										<div class="ns_calendar-days__item ns_inactive"></div>
+										<div class="ns_calendar-days__item ns_inactive"></div>
+										<div class="ns_calendar-days__item ns_inactive"></div>
+										<div class="ns_calendar-days__item">1</div>
+										<div class="ns_calendar-days__item">2</div>
+										<div class="ns_calendar-days__item">3</div>
+										<div class="ns_calendar-days__item">4</div>
+										<div class="ns_calendar-days__item">5</div>
+										<div class="ns_calendar-days__item">6</div>
+										<div class="ns_calendar-days__item">7</div>
+										<div class="ns_calendar-days__item">8</div>
+										<div class="ns_calendar-days__item">9</div>
+										<div class="ns_calendar-days__item">10</div>
+										<div class="ns_calendar-days__item">11</div>
+									</div>
+								</div>
+								<div class="ns_bottom-popup-form">
+									<button class="ns_btn-main ns_btn-main_page">применить</button>
+									<div class="ns_clear-filter">Сбросить фильтр</div>
+								</div>
+							</div>
+						</div>
+						<div class="ns_item-dropdown">
+							<div class="ns_item-dropdown__input">Другие фильтры</div>
+							<div class="ns_item-dropdown__content">
+								<div class="ns_item-dropdown__close"></div>
+								<div class="ns_range-title">Цена, руб.</div>
+								<div class="ns_range ns_range_price">
+									<div class="ns_range-controls">
+										<div class="ns_range-controls__item">
+											<input type="text" maxlength="4" value="70 000" class="ns_control-input ns_control-input__from" />
+										</div>
+										<div class="ns_range-controls__item">
+											<input type="text" maxlength="4" value="3 000 000" class="ns_control-input ns_control-input__to" />
+										</div>
+									</div>
+									<input type="text" class="ns_range__input" name="my_range" value="" />
+								</div>
+								<div class="ns_range-title">Площадь, м².</div>
+								<div class="ns_range ns_range_area">
+									<div class="ns_range-controls">
+										<div class="ns_range-controls__item">
+											<input type="text" maxlength="4" value="0" class="ns_control-input ns_control-input__from" />
+										</div>
+										<div class="ns_range-controls__item">
+											<input type="text" maxlength="4" value="190" class="ns_control-input ns_control-input__to" />
+										</div>
+									</div>
+									<input type="text" class="ns_range__input" name="my_range" value="" />
+								</div>
+								<div class="ns_list-radio">
+									<div class="ns_radio">
+										<label>
+											<input type="radio" checked="checked" name="radio_type1" />
+											<span>Лучшие предложения </span>
+										</label>
+									</div>
+									<div class="ns_radio">
+										<label>
+											<input type="radio" name="radio_type1" />
+											<span>Цена: Низкая — Высокая</span>
+										</label>
+									</div>
+									<div class="ns_radio">
+										<label>
+											<input type="radio" name="radio_type1" />
+											<span>Цена: Высокая — Низкая</span>
+										</label>
+									</div>
+								</div>
+								<div class="ns_item-dropdown__name">Прочие услуги</div>
+								<div class="ns_line-radio">
+									<div class="ns_radio">
+										<label>
+											<input type="radio" name="radio_type2" />
+											<span>Юридический адрес </span>
+										</label>
+									</div>
+									<div class="ns_radio">
+										<label>
+											<input type="radio" name="radio_type2" />
+											<span>Парковка</span>
+										</label>
+									</div>
+								</div>
+								<div class="ns_bottom-popup-form">
+									<button class="ns_btn-main ns_btn-main_page">применить</button>
+									<div class="ns_clear-filter">Сбросить фильтр</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="ns_map">
+			<div class="ns_item-map">
+				<div class="ns_item-map__name">Гостиный двор</div>
+				<a href="#" class="ns_item-map__link">Подробнее о локации</a>
+			</div>
+			<div class="container-fluid ns_map_container">
+				<a href="#" class="ns_btn-type-map"><span>Показать списком</span> <img src="img/ic_type_map1.svg" alt="alt"></a>
+				<a class="ns_btn-menu-filter ns_btn-menu-filter_active"><img src="img/filter_menu.svg" alt="alt"></a>
+				<div class="ns_map__wrap-card">
+					<div class="ns_arrows-map">
+						<div class="ns_btn-round">
+							<img src="img/ic_arrow_left.svg" alt="alt">
+						</div>
+						<div class="ns_btn-round">
+							<img src="img/ic_arrow_right.svg" alt="alt">
+						</div>
+					</div>
+					<div class="ns_map__wrap-card__content">
+						<div class="ns_item-card">
+							<div class="ns_tag-card">скоро открытие</div>
+							<div class="ns_item-card__image">
+								<img src="img/card_map1.jpg" alt="alt">
+								<a href="#modal-gallery1" class="ns_btn-view fancybox"></a>
+							</div>
+							<div class="ns_item-card__content">
+								<div class="ns_name-card">Ключ Гостиный двор</div>
+								<div class="ns_descr-card">
+									<p>м. Театральная</p>
+									<p>ул. Ильинка, 4</p>
+								</div>
+								<div class="ns_line-office">
+									<div class="ns_line-office__left">
+										<div class="ns_text-bold">Офис #06</div>
+										<div class="ns_text-regular">12 чел. | 24 м²</div>
+									</div>
+									<div class="ns_line-office__right">
+										<div class="ns_text-regular ns_text-regular_underline">150 000  руб.</div>
+										<div class="ns_text-bold">120 000 руб.</div>
+									</div>
+								</div>
+								<div class="ns_line-office">
+									<div class="ns_line-office__left">
+										<div class="ns_text-bold">Офис #07</div>
+										<div class="ns_text-regular">12 чел. | 24 м²</div>
+									</div>
+									<div class="ns_line-office__right">
+										<div class="ns_text-regular ns_text-regular_underline">150 000  руб.</div>
+										<div class="ns_text-bold">120 000 руб.</div>
+									</div>
+								</div>
+								<div class="ns_line-office">
+									<div class="ns_line-office__left">
+										<div class="ns_text-bold">Офис #08</div>
+										<div class="ns_text-regular">12 чел. | 24 м²</div>
+									</div>
+									<div class="ns_line-office__right">
+										<div class="ns_text-regular ns_text-regular_underline">150 000  руб.</div>
+										<div class="ns_text-bold">120 000 руб.</div>
+									</div>
+								</div>
+								<div class="ns_line-office">
+									<div class="ns_line-office__left">
+										<div class="ns_text-bold">Офис #08</div>
+										<div class="ns_text-regular">12 чел. | 24 м²</div>
+									</div>
+									<div class="ns_line-office__right">
+										<div class="ns_text-regular ns_text-regular_underline">150 000  руб.</div>
+										<div class="ns_text-bold">120 000 руб.</div>
+									</div>
+								</div>
+								<div class="ns_line-office">
+									<div class="ns_line-office__left">
+										<div class="ns_text-bold">Офис #08</div>
+										<div class="ns_text-regular">12 чел. | 24 м²</div>
+									</div>
+									<div class="ns_line-office__right">
+										<div class="ns_text-regular ns_text-regular_underline">150 000  руб.</div>
+										<div class="ns_text-bold">120 000 руб.</div>
+									</div>
+								</div>
+								<div class="ns_line-office">
+									<div class="ns_line-office__left">
+										<div class="ns_text-bold">Офис #08</div>
+										<div class="ns_text-regular">12 чел. | 24 м²</div>
+									</div>
+									<div class="ns_line-office__right">
+										<div class="ns_text-regular ns_text-regular_underline">150 000  руб.</div>
+										<div class="ns_text-bold">120 000 руб.</div>
+									</div>
+								</div>
+								<div class="ns_line-office">
+									<div class="ns_line-office__left">
+										<div class="ns_text-bold">Офис #08</div>
+										<div class="ns_text-regular">12 чел. | 24 м²</div>
+									</div>
+									<div class="ns_line-office__right">
+										<div class="ns_text-regular ns_text-regular_underline">150 000  руб.</div>
+										<div class="ns_text-bold">120 000 руб.</div>
+									</div>
+								</div>
+								<div class="ns_line-office">
+									<div class="ns_line-office__left">
+										<div class="ns_text-bold">Офис #08</div>
+										<div class="ns_text-regular">12 чел. | 24 м²</div>
+									</div>
+									<div class="ns_line-office__right">
+										<div class="ns_text-regular ns_text-regular_underline">150 000  руб.</div>
+										<div class="ns_text-bold">120 000 руб.</div>
+									</div>
+								</div>
+								<div class="ns_line-office">
+									<div class="ns_line-office__left">
+										<div class="ns_text-bold">Офис #08</div>
+										<div class="ns_text-regular">12 чел. | 24 м²</div>
+									</div>
+									<div class="ns_line-office__right">
+										<div class="ns_text-regular ns_text-regular_underline">150 000  руб.</div>
+										<div class="ns_text-bold">120 000 руб.</div>
+									</div>
+								</div>
+								<div class="ns_line-office">
+									<div class="ns_line-office__left">
+										<div class="ns_text-bold">Офис #08</div>
+										<div class="ns_text-regular">12 чел. | 24 м²</div>
+									</div>
+									<div class="ns_line-office__right">
+										<div class="ns_text-regular ns_text-regular_underline">150 000  руб.</div>
+										<div class="ns_text-bold">120 000 руб.</div>
+									</div>
+								</div>
+								<div class="ns_line-office">
+									<div class="ns_line-office__left">
+										<div class="ns_text-bold">Офис #08</div>
+										<div class="ns_text-regular">12 чел. | 24 м²</div>
+									</div>
+									<div class="ns_line-office__right">
+										<div class="ns_text-regular ns_text-regular_underline">150 000  руб.</div>
+										<div class="ns_text-bold">120 000 руб.</div>
+									</div>
+								</div>
+								<div class="ns_line-office">
+									<div class="ns_line-office__left">
+										<div class="ns_text-bold">Офис #08</div>
+										<div class="ns_text-regular">12 чел. | 24 м²</div>
+									</div>
+									<div class="ns_line-office__right">
+										<div class="ns_text-regular ns_text-regular_underline">150 000  руб.</div>
+										<div class="ns_text-bold">120 000 руб.</div>
+									</div>
+								</div>
+								<div class="ns_line-office">
+									<div class="ns_line-office__left">
+										<div class="ns_text-bold">Офис #08</div>
+										<div class="ns_text-regular">12 чел. | 24 м²</div>
+									</div>
+									<div class="ns_line-office__right">
+										<div class="ns_text-regular ns_text-regular_underline">150 000  руб.</div>
+										<div class="ns_text-bold">120 000 руб.</div>
+									</div>
+								</div>
+								<div class="ns_line-office">
+									<div class="ns_line-office__left">
+										<div class="ns_text-bold">Офис #08</div>
+										<div class="ns_text-regular">12 чел. | 24 м²</div>
+									</div>
+									<div class="ns_line-office__right">
+										<div class="ns_text-regular ns_text-regular_underline">150 000  руб.</div>
+										<div class="ns_text-bold">120 000 руб.</div>
+									</div>
+								</div>
+								<div class="ns_line-office">
+									<div class="ns_line-office__left">
+										<div class="ns_text-bold">Офис #08</div>
+										<div class="ns_text-regular">12 чел. | 24 м²</div>
+									</div>
+									<div class="ns_line-office__right">
+										<div class="ns_text-regular ns_text-regular_underline">150 000  руб.</div>
+										<div class="ns_text-bold">120 000 руб.</div>
+									</div>
+								</div>
+								<div class="ns_line-office">
+									<div class="ns_line-office__left">
+										<div class="ns_text-bold">Офис #08</div>
+										<div class="ns_text-regular">12 чел. | 24 м²</div>
+									</div>
+									<div class="ns_line-office__right">
+										<div class="ns_text-regular ns_text-regular_underline">150 000  руб.</div>
+										<div class="ns_text-bold">120 000 руб.</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<button class="ns_btn-main ns_btn-main_page">посмотреть все (35)</button>
+				</div>
+			</div>
+			<div class="ns_layout-size">
+				<div class="ns_layout-size__item">+</div>
+				<div class="ns_layout-size__item">-</div>
+			</div>
+			<div class="wrap-map-clear">
+				<div class="ns_btn-clear"><span>Сбросить фильтр</span><img src="img/clear_filter.svg" alt="alt"></div>
+			</div>
+			<ul class="mobile-slider-map">
+				<li>
+					<div class="ns_item-card ns_item-card_mobile">
+						<div class="ns_tag-card">скоро открытие</div>
+						<div class="ns_item-card__image">
+							<img src="img/card_map1.jpg" alt="alt">
+							<a href="#modal-gallery1" class="ns_btn-view fancybox"></a>
+						</div>
+						<div class="ns_item-card__content">
+							<div class="ns_name-card">Ключ <br>Гостиный двор</div>
+							<div class="ns_descr-card">
+								<p>м. Театральная</p>
+								<p>ул. Ильинка, 4</p>
+							</div>
+							<div class="ns_size-card">1 000 чел. | 15 000 м²</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ns_item-card ns_item-card_mobile">
+						<div class="ns_tag-card">скоро открытие</div>
+						<div class="ns_item-card__image">
+							<img src="img/card_map1.jpg" alt="alt">
+							<a href="#modal-gallery1" class="ns_btn-view fancybox"></a>
+						</div>
+						<div class="ns_item-card__content">
+							<div class="ns_name-card">Ключ <br>Гостиный двор</div>
+							<div class="ns_descr-card">
+								<p>м. Театральная</p>
+								<p>ул. Ильинка, 4</p>
+							</div>
+							<div class="ns_size-card">1 000 чел. | 15 000 м²</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ns_item-card ns_item-card_mobile">
+						<div class="ns_tag-card">скоро открытие</div>
+						<div class="ns_item-card__image">
+							<img src="img/card_map1.jpg" alt="alt">
+							<a href="#modal-gallery1" class="ns_btn-view fancybox"></a>
+						</div>
+						<div class="ns_item-card__content">
+							<div class="ns_name-card">Ключ <br>Гостиный двор</div>
+							<div class="ns_descr-card">
+								<p>м. Театральная</p>
+								<p>ул. Ильинка, 4</p>
+							</div>
+							<div class="ns_size-card">1 000 чел. | 15 000 м²</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ns_item-card ns_item-card_mobile">
+						<div class="ns_tag-card">скоро открытие</div>
+						<div class="ns_item-card__image">
+							<img src="img/card_map1.jpg" alt="alt">
+							<a href="#modal-gallery1" class="ns_btn-view fancybox"></a>
+						</div>
+						<div class="ns_item-card__content">
+							<div class="ns_name-card">Ключ <br>Гостиный двор</div>
+							<div class="ns_descr-card">
+								<p>м. Театральная</p>
+								<p>ул. Ильинка, 4</p>
+							</div>
+							<div class="ns_size-card">1 000 чел. | 15 000 м²</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+		<a href="#" class="ns_btn-callback ns_btn-callback_page"></a>
+		
+	</div>
+
+	<div class="ns_mobile-mapmenu">
+		<div class="ns_mobile-mapmenu__head">
+			<label class="ns_checkbox-slide">
+				<input type="checkbox">
+				<div class="ns_checkbox-slide__text">Акции</div>
+			</label>
+			<div class="ns_btn-round ns_btn-round_closemobile ns_active">
+				<img src="img/ic_close_dropdown.svg" alt="alt">
+			</div>
+		</div>
+		<div class="ns_text-bold">Локация</div>
+		<ul class="list-mobile-checkbox">
+			<li>
+				<div class="ns_checkbox">
+					<label>
+						<input type="checkbox" checked="checked" />
+						<span>Арма | м. Курская </span>
+					</label>
+				</div>
+			</li>
+			<li>
+				<div class="ns_checkbox">
+					<label>
+						<input type="checkbox" />
+						<span>Даниловская | м. Тульская</span>
+					</label>
+				</div>
+			</li>
+			<li>
+				<div class="ns_checkbox">
+					<label>
+						<input type="checkbox" checked="checked" />
+						<span>Гостиный двор | м. Охотный ряд</span>
+					</label>
+				</div>
+			</li>
+			<li>
+				<div class="ns_checkbox">
+					<label>
+						<input type="checkbox" />
+						<span>Кузнецкий Мост | м. Кузнецкий мост</span>
+					</label>
+				</div>
+			</li>
+			<li>
+				<div class="ns_checkbox">
+					<label>
+						<input type="checkbox" />
+						<span>Отстоженка | м. Парк Культуры</span>
+					</label>
+				</div>
+			</li>
+			<li>
+				<div class="ns_checkbox">
+					<label>
+						<input type="checkbox" />
+						<span>Сириус Парк | м. Нагатинская</span>
+					</label>
+				</div>
+			</li>
+			<li>
+				<div class="ns_checkbox">
+					<label>
+						<input type="checkbox" />
+						<span>Шёлк | м. Киевская</span>
+					</label>
+				</div>
+			</li>
+			<li>
+				<div class="ns_checkbox">
+					<label>
+						<input type="checkbox" checked="checked" />
+						<span>Таганка | м. Таганская</span>
+					</label>
+				</div>
+			</li>
+			<li>
+				<div class="ns_checkbox">
+					<label>
+						<input type="checkbox" />
+						<span>Сретенка | м. Сретенский бульвар</span>
+					</label>
+				</div>
+			</li>
+		</ul>
+		<a href="#" class="ns_link-more" id="link-more-locations"><span>Посмотреть всё</span> <img src="img/arrow_more.svg" alt="alt"></a>
+		<div class="ns_text-bold">Рабочие места</div>
+		<div class="ns_item-form">
+			<div class="ns_item-form__title">Количество рабочих мест</div>
+			<input type="text" placeholder="Введите предпологаемое количество ">
+		</div>
+		<div class="ns_text-bold">Дата заезда</div>
+		<div class="ns_calendar">
+			<div class="ns_calendar__arrow ns_calendar__arrow_top ns_inactive">
+				<img src="img/ic_calendar_top.svg" alt="alt">
+			</div>
+			<div class="ns_calendar__arrow ns_calendar__arrow_down">
+				<img src="img/ic_calendar_bottom.svg" alt="alt">
+			</div>
+			<div class="ns_calendar__title">Декабрь, 2019</div>
+			<div class="ns_calendar-dayweek">
+				<div class="ns_calendar-dayweek__item">Пн</div>
+				<div class="ns_calendar-dayweek__item">Вт</div>
+				<div class="ns_calendar-dayweek__item">Ср</div>
+				<div class="ns_calendar-dayweek__item">Чт</div>
+				<div class="ns_calendar-dayweek__item">Пт</div>
+				<div class="ns_calendar-dayweek__item">Сб</div>
+				<div class="ns_calendar-dayweek__item">Вс</div>
+			</div>
+			<div class="ns_calendar-days">
+				<div class="ns_calendar-days__item ns_inactive">1</div>
+				<div class="ns_calendar-days__item ns_inactive">2</div>
+				<div class="ns_calendar-days__item ns_inactive">3</div>
+				<div class="ns_calendar-days__item ns_inactive">4</div>
+				<div class="ns_calendar-days__item ns_inactive">5</div>
+				<div class="ns_calendar-days__item ns_inactive">6</div>
+				<div class="ns_calendar-days__item ns_inactive">7</div>
+				<div class="ns_calendar-days__item ns_inactive">8</div>
+				<div class="ns_calendar-days__item ns_inactive">9</div>
+				<div class="ns_calendar-days__item ns_inactive">10</div>
+				<div class="ns_calendar-days__item">11</div>
+				<div class="ns_calendar-days__item ns_active">12</div>
+				<div class="ns_calendar-days__item ns_active-range">13</div>
+				<div class="ns_calendar-days__item ns_active-range">14</div>
+				<div class="ns_calendar-days__item ns_active-range">15</div>
+				<div class="ns_calendar-days__item ns_active-range">16</div>
+				<div class="ns_calendar-days__item ns_active-range">17</div>
+				<div class="ns_calendar-days__item ns_active-range">18</div>
+				<div class="ns_calendar-days__item ns_active-range">19</div>
+				<div class="ns_calendar-days__item ns_active-range">20</div>
+				<div class="ns_calendar-days__item ns_active">21</div>
+				<div class="ns_calendar-days__item">22</div>
+				<div class="ns_calendar-days__item">23</div>
+				<div class="ns_calendar-days__item">24</div>
+				<div class="ns_calendar-days__item">25</div>
+				<div class="ns_calendar-days__item">26</div>
+				<div class="ns_calendar-days__item">27</div>
+				<div class="ns_calendar-days__item">28</div>
+				<div class="ns_calendar-days__item">29</div>
+				<div class="ns_calendar-days__item">30</div>
+				<div class="ns_calendar-days__item">31</div>
+			</div>
+			<div class="ns_calendar__title">Январь, 2020</div>
+			<div class="ns_calendar-days">
+				<div class="ns_calendar-days__item ns_inactive"></div>
+				<div class="ns_calendar-days__item ns_inactive"></div>
+				<div class="ns_calendar-days__item ns_inactive"></div>
+				<div class="ns_calendar-days__item">1</div>
+				<div class="ns_calendar-days__item">2</div>
+				<div class="ns_calendar-days__item">3</div>
+				<div class="ns_calendar-days__item">4</div>
+				<div class="ns_calendar-days__item">5</div>
+				<div class="ns_calendar-days__item">6</div>
+				<div class="ns_calendar-days__item">7</div>
+				<div class="ns_calendar-days__item">8</div>
+				<div class="ns_calendar-days__item">9</div>
+				<div class="ns_calendar-days__item">10</div>
+				<div class="ns_calendar-days__item">11</div>
+			</div>
+		</div>
+		<div class="ns_text-bold">Другие фильтры</div>
+		<div class="ns_range-title">Цена, руб.</div>
+		<div class="ns_range ns_range_price">
+			<div class="ns_range-controls">
+				<div class="ns_range-controls__item">
+					<input type="text" maxlength="4" value="70 000" class="ns_control-input ns_control-input__from" />
+				</div>
+				<div class="ns_range-controls__item">
+					<input type="text" maxlength="4" value="3 000 000" class="ns_control-input ns_control-input__to" />
+				</div>
+			</div>
+			<input type="text" class="ns_range__input" name="my_range" value="" />
+		</div>
+		<div class="ns_range-title">Площадь, м².</div>
+		<div class="ns_range ns_range_area">
+			<div class="ns_range-controls">
+				<div class="ns_range-controls__item">
+					<input type="text" maxlength="4" value="0" class="ns_control-input ns_control-input__from" />
+				</div>
+				<div class="ns_range-controls__item">
+					<input type="text" maxlength="4" value="190" class="ns_control-input ns_control-input__to" />
+				</div>
+			</div>
+			<input type="text" class="ns_range__input" name="my_range" value="" />
+		</div>
+		<div class="ns_list-radio">
+			<div class="ns_radio">
+				<label>
+					<input type="radio" checked="checked" name="radio_type1" />
+					<span>Лучшие предложения </span>
+				</label>
+			</div>
+			<div class="ns_radio">
+				<label>
+					<input type="radio" name="radio_type1" />
+					<span>Цена: Низкая — Высокая</span>
+				</label>
+			</div>
+			<div class="ns_radio">
+				<label>
+					<input type="radio" name="radio_type1" />
+					<span>Цена: Высокая — Низкая</span>
+				</label>
+			</div>
+		</div>
+		<div class="ns_item-dropdown__name">Прочие услуги</div>
+		<div class="ns_line-radio">
+			<div class="ns_radio">
+				<label>
+					<input type="radio" name="radio_type2" />
+					<span>Юридический адрес </span>
+				</label>
+			</div>
+			<div class="ns_radio">
+				<label>
+					<input type="radio" name="radio_type2" />
+					<span>Парковка</span>
+				</label>
+			</div>
+		</div>
+		<div class="ns_bottom-popup-form">
+			<button class="ns_btn-main ns_btn-main_page ns_btn-main_black">применить</button>
+			<div class="ns_clear-filter">Сбросить фильтр</div>
+		</div>
+	</div>
+
+	<div id="modal-gallery1" class="ns_modal-block">
+		<div class="ns_fancy-preloader">
+			<div class="ns_circle-preloader"></div>
+		</div>
+		<div class="ns_modal-wrap">
+			<div class="ns_container">
+				<ul class="ns_slider-modal">
+					<li>
+						<div class="ns_slider-modal__item"><img src="img/billbord2_1.jpg" alt="alt"></div>
+					</li>
+					<li>
+						<div class="ns_slider-modal__item"><img src="img/billbord2_1.jpg" alt="alt"></div>
+					</li>
+					<li>
+						<div class="ns_slider-modal__item"><img src="img/billbord2_1.jpg" alt="alt"></div>
+					</li>
+					<li>
+						<div class="ns_slider-modal__item"><img src="img/billbord2_1.jpg" alt="alt"></div>
+					</li>
+					<li>
+						<div class="ns_slider-modal__item"><img src="img/billbord2_1.jpg" alt="alt"></div>
+					</li>
+					<li>
+						<div class="ns_slider-modal__item"><img src="img/billbord2_1.jpg" alt="alt"></div>
+					</li>
+					<li>
+						<div class="ns_slider-modal__item"><img src="img/billbord2_1.jpg" alt="alt"></div>
+					</li>
+					<li>
+						<div class="ns_slider-modal__item"><img src="img/billbord2_1.jpg" alt="alt"></div>
+					</li>
+				</ul>
+				<div class="ns_slider-counter">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+<![endif]-->
+<script src="libs/jquery/jquery-1.11.1.min.js"></script>
+<script src="libs/fancybox/jquery.fancybox.pack.js"></script>
+<script src="libs/ion.rangeSlider-master/js/ion.rangeSlider.min.js"></script>
+<script src="libs/slick-1.8.0/slick/slick.min.js"></script>
+<script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
+<script src="js/common.js?ver=1.32"></script>
+<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>
