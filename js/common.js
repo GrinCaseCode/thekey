@@ -526,6 +526,44 @@ $(document).ready(function() {
   $(".ns_layout-numbers__item").click(function(event) {
   	event.preventDefault();
   });
+/*
+  var dis = $(".ns_tabs li").eq(0);
+
+// align the wave
+align(dis);
+
+// align the wave on click
+$(".ns_tabs li").click(function () {
+  dis = $(this);
+
+  align(dis);
+});
+
+function align(dis) {
+  // get index of item
+  var index = dis.index() + 1;
+
+  // add active class to the new item
+  $(".list-wrap li").removeClass("active");
+  dis.delay(100).queue(function () {
+    dis.addClass("active").dequeue();
+  });
+
+  // move the wave
+  var left = index * 201 - 200;
+
+  $(".ns_tab-active").css("left", left);
+
+  // ▼ this is not necessary for the navigation ▼
+
+  // set the background color
+  var color = dis.data("color");
+  $("body").css("background", color);
+
+  // set the text
+  $(".page").text(dis.attr("title"));
+}
+*/
 
     /*location*/
 
