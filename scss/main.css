@@ -1451,6 +1451,7 @@ button {
       line-height: 24px;
       color: #AEAFB7;
       display: block;
+      position: relative;
       -webkit-transition: all 0.3s;
       -o-transition: all 0.3s;
       transition: all 0.3s; }
@@ -1476,6 +1477,21 @@ button {
   display: none; }
   .ns_tab-pane:first-child {
     display: block; }
+
+.ns_tabs-wrap {
+  max-width: 810px;
+  margin: 0 auto;
+  position: relative; }
+
+.ns_tab-active {
+  background-color: #fff;
+  position: absolute;
+  top: 3px;
+  width: 201px;
+  height: 44px;
+  transition: all 0.5s;
+  border-radius: 5px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2); }
 
 .ns_layout {
   padding-top: 60px;
@@ -1693,6 +1709,217 @@ button {
     opacity: 1; }
   .ns_link-more img {
     margin-left: 5px; }
+
+.ns_map {
+  height: calc(100vh - 80px);
+  position: relative;
+  background-image: url(../img/bg_map.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+  .ns_map .ns_map_container {
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute; }
+  .ns_map .ns_layout-size {
+    bottom: 20px;
+    left: 20px; }
+    .ns_map .ns_layout-size .ns_layout-size__item:last-child {
+      margin-bottom: 0; }
+
+.ns_head-map {
+  padding: 15px 0;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); }
+  .ns_head-map .ns_checkbox-slide {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 0 15px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px; }
+
+.ns_head-map__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.wrapper-dropdowns-map {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px; }
+  .wrapper-dropdowns-map .ns_item-dropdown {
+    flex: 1; }
+    .wrapper-dropdowns-map .ns_item-dropdown .ns_item-dropdown__input {
+      border-top: none;
+      border-bottom: none;
+      border-left: none; }
+    .wrapper-dropdowns-map .ns_item-dropdown:last-child .ns_item-dropdown__input {
+      border: none; }
+    .wrapper-dropdowns-map .ns_item-dropdown:last-child .ns_item-dropdown__content {
+      right: 0;
+      left: auto;
+      transform: none; }
+    .wrapper-dropdowns-map .ns_item-dropdown:first-child .ns_item-dropdown__content {
+      width: 335px; }
+    .wrapper-dropdowns-map .ns_item-dropdown .ns_item-dropdown__content {
+      width: 420px;
+      left: 50%;
+      padding: 30px;
+      transform: translateX(-50%); }
+    .wrapper-dropdowns-map .ns_item-dropdown .ns_item-dropdown__filter {
+      padding: 0; }
+
+.ns_map__wrap-card__content {
+  width: 367px;
+  overflow: auto;
+  position: relative; }
+  .ns_map__wrap-card__content::-webkit-scrollbar {
+    width: 0;
+    background: #EAEAEA;
+    border-radius: 0px 0px 5px 0px; }
+  .ns_map__wrap-card__content::-webkit-scrollbar-thumb {
+    background-color: #28292D;
+    border-radius: 5px; }
+  .ns_map__wrap-card__content:hover::-webkit-scrollbar {
+    width: 7px; }
+
+.ns_map__wrap-card {
+  top: 30px;
+  right: 15px;
+  bottom: 95px;
+  position: absolute;
+  display: flex; }
+  .ns_map__wrap-card .ns_item-card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100%;
+    padding-bottom: 80px;
+    box-shadow: none !important; }
+  .ns_map__wrap-card .ns_btn-main {
+    position: absolute;
+    width: 320px;
+    left: 20px;
+    bottom: 20px;
+    background-color: #fff; }
+
+.ns_line-office {
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px #e0e0e0 solid;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .ns_line-office .ns_text-regular_underline {
+    text-decoration: line-through;
+    opacity: 0.4; }
+  .ns_line-office:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border: none; }
+
+.ns_line-office__right {
+  text-align: right; }
+
+.ns_arrows-map {
+  position: absolute;
+  right: 100%;
+  top: 0;
+  margin-right: 15px; }
+  .ns_arrows-map .ns_btn-round {
+    margin-bottom: 15px; }
+
+.ns_btn-type-map {
+  top: 30px;
+  left: 15px;
+  position: absolute;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 100px;
+  background-color: #fff;
+  transition: all 0.3s;
+  padding-left: 15px;
+  padding-right: 20px;
+  display: inline-flex;
+  align-items: center;
+  color: #28292D;
+  height: 46px; }
+  .ns_btn-type-map * {
+    opacity: 0.4;
+    transition: all 0.3s; }
+  .ns_btn-type-map img {
+    margin-left: 12px; }
+  .ns_btn-type-map:hover * {
+    opacity: 1; }
+
+.ns_btn-clear {
+  background: #fff;
+  padding: 4px 15px;
+  padding-bottom: 6px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 100px;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer; }
+  .ns_btn-clear * {
+    opacity: 0.4;
+    transition: all 0.3s; }
+  .ns_btn-clear img {
+    margin-top: 4px;
+    margin-left: 5px; }
+  .ns_btn-clear:hover * {
+    opacity: 1; }
+
+.wrap-map-clear {
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  position: absolute; }
+
+.ns_item-map {
+  top: 179px;
+  left: 47%;
+  padding: 10px;
+  background: #3E3EBA;
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  z-index: 10;
+  position: absolute; }
+  .ns_item-map:after {
+    position: absolute;
+    display: block;
+    content: " ";
+    width: 6px;
+    height: 6px;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    border: 6px solid transparent;
+    border-top: 6px solid #3E3EBA; }
+
+.ns_item-map__name {
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 700;
+  margin-bottom: -6px;
+  text-align: center; }
+
+.ns_item-map__link {
+  font-size: 9px;
+  line-height: 8px;
+  color: #fff;
+  display: inline-block;
+  border-bottom: 1px #fff solid;
+  transition: all 0.3s; }
+  .ns_item-map__link:hover {
+    opacity: 0.4; }
 
 body {
   font-family: 'GT Walsheim Pro';

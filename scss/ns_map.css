@@ -1,46 +1,24 @@
 /*
-Error: Undefined variable: "$ns_main_color".
-        on line 26 of B:\repository\TheKey\scss\ns_tabs.scss
+Error: Undefined variable: "$ns_white".
+        on line 31 of B:\repository\TheKey\scss\ns_map.scss
 
-21: 			position: relative;
-22: 			-webkit-transition: all 0.3s;
-23: 			-o-transition: all 0.3s;
-24: 			transition: all 0.3s;
-25: 			&:hover {
-26: 				color: $ns_main_color;
-27: 				background: $ns_white;
-28: 				box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
-29: 			}
-30: 		}
-31: 		&.ns_active {
+26: 	padding: 15px 0;
+27: 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+28: 	.ns_checkbox-slide {
+29: 		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+30: 		border-radius: 5px;
+31: 		background-color: $ns_white;
+32: 		padding: 0 15px;
+33: 		height: 50px;
+34: 		display: flex;
+35: 		align-items: center;
+36: 		margin-right: 10px;
 
 Backtrace:
-B:\repository\TheKey\scss\ns_tabs.scss:26
+B:\repository\TheKey\scss\ns_map.scss:31
 B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
-B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
-B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
-B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
-B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
-B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
-B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
-B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
-B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
-B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
-B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
-B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
-B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
-B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
-B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
-B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
 B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
 B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
 B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
@@ -95,4 +73,4 @@ B:/program/koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$ns_main_color\".\A         on line 26 of B:\repository\TheKey\scss\ns_tabs.scss\A \A 21: 			position: relative;\A 22: 			-webkit-transition: all 0.3s;\A 23: 			-o-transition: all 0.3s;\A 24: 			transition: all 0.3s;\A 25: 			&:hover {\A 26: 				color: $ns_main_color;\A 27: 				background: $ns_white;\A 28: 				box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);\A 29: 			}\A 30: 		}\A 31: 		&.ns_active {"; }
+  content: "Error: Undefined variable: \"$ns_white\".\A         on line 31 of B:\repository\TheKey\scss\ns_map.scss\A \A 26: 	padding: 15px 0;\A 27: 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);\A 28: 	.ns_checkbox-slide {\A 29: 		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);\A 30: 		border-radius: 5px;\A 31: 		background-color: $ns_white;\A 32: 		padding: 0 15px;\A 33: 		height: 50px;\A 34: 		display: flex;\A 35: 		align-items: center;\A 36: 		margin-right: 10px;"; }
