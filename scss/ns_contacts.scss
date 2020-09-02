@@ -1,0 +1,63 @@
+.ns_contacts {
+	padding-top: 60px; 
+	padding-bottom: 120px;
+	.ns_item-form {
+		margin-bottom: 15px;
+		textarea { 
+			height: 86px;
+		} 
+	}
+	.ns_btn-main_page {
+		margin-top: 15px;
+		width: 100%;
+	}
+	.ns_text-big {
+		margin-top: 20px;
+		margin-bottom: 15px;
+	}
+	.ns_form-contacts {
+		margin-top: 110px;
+	}
+}
+.ns_contacts__image {
+	height: 326px;
+	img {
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+		font-family: 'object-fit: cover;';
+	}
+}
+.ns_departaments {
+	padding-bottom: 120px;
+	.ns_text-big {
+		a {
+			color: $ns_gray;
+			transition: all 0.3s;
+			border-bottom: 1px transparent solid;
+			&:hover {
+				border-color: $ns_gray;
+			}
+		}
+		p {
+			margin-bottom: 15px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+	.ns_title-block {
+		margin-top: 90px;
+		&:first-of-type {
+			margin-top: 0;
+		}
+	}
+}
+.ns_item-contact {
+	margin-top: 30px;
+}
+.ns_big-phone {
+	padding-top: 120px;
+	font-size: 60px;
+	line-height: 60px;
+}

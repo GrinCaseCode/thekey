@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$ns_white".
-        on line 68 of B:\repository\TheKey-Location2\TheKey\scss\ns_popup.scss
+        on line 68 of B:\repository\TheKey\scss\ns_popup.scss
 
 63: 	-o-transition: all 0.3s;
 64: 	transition: all 0.3s;
@@ -15,7 +15,7 @@ Error: Undefined variable: "$ns_white".
 73: .fancybox-thumbs__list a.fancybox-thumbs-active,
 
 Backtrace:
-B:\repository\TheKey-Location2\TheKey\scss\ns_popup.scss:68
+B:\repository\TheKey\scss\ns_popup.scss:68
 B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/list_literal.rb:75:in `block in _perform'
@@ -66,4 +66,4 @@ B:/program/koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$ns_white\".\A         on line 68 of B:\repository\TheKey-Location2\TheKey\scss\ns_popup.scss\A \A 63: 	-o-transition: all 0.3s;\A 64: 	transition: all 0.3s;\A 65: }\A 66: .fancybox-thumbs__list a {\A 67: 	margin: 15px 5px;\A 68: 	background-color: $ns_white !important;\A 69: }\A 70: .fancybox-button--thumbs {\A 71: 	display: none;\A 72: }\A 73: .fancybox-thumbs__list a.fancybox-thumbs-active,"; }
+  content: "Error: Undefined variable: \"$ns_white\".\A         on line 68 of B:\repository\TheKey\scss\ns_popup.scss\A \A 63: 	-o-transition: all 0.3s;\A 64: 	transition: all 0.3s;\A 65: }\A 66: .fancybox-thumbs__list a {\A 67: 	margin: 15px 5px;\A 68: 	background-color: $ns_white !important;\A 69: }\A 70: .fancybox-button--thumbs {\A 71: 	display: none;\A 72: }\A 73: .fancybox-thumbs__list a.fancybox-thumbs-active,"; }

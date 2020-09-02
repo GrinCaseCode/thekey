@@ -1,4 +1,4 @@
-$ns_gray: #AEAFB7;
+$ns_gray: #AEAFB7; 
 $ns_black: #000;
 $ns_white: #fff;
 $ns_smooth: all 0.3s;
@@ -21,6 +21,9 @@ $ns_blue: #3E3EBA;
 @import "ns_products.scss";
 @import "ns_elements.scss";
 @import "ns_map.scss";
+@import "ns_main-map.scss";
+@import "ns_cooperation.scss";
+@import "ns_contacts.scss";
 
 
 
@@ -85,4 +88,11 @@ p {
 }
 .ns_text-bold {
 	font-weight: 700;
+}
+.ns_text-big {
+	font-size: 18px;
+	line-height: 24px;
+	&.ns_text-big_bold {
+		font-weight: 700;
+	}
 }

@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,eAAgB;EACf,OAAO,EAAE,MAAM;EACf,6CAA8B;IAC7B,YAAY,EAAE,IAAI;IAClB,aAAa,EAAE,IAAI;IACnB,aAAa,EAAE,IAAI;IACnB,wDAAa;MACZ,aAAa,EAAE,CAAC",
+"sources": ["ns_cooperation.scss"],
+"names": [],
+"file": "ns_cooperation.css"
+}

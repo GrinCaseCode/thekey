@@ -48,7 +48,7 @@
 	font-size: 24px;
 	line-height: 35px;
 }
-.ns_tab-pane {
+.ns_tabs-pane-bottom, .ns_tab-pane {
 	display: none;
 	&:first-child {
 		display: block;
@@ -68,4 +68,37 @@
 	transition: all 0.5s;
 	border-radius: 5px;
 	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+}
+.ns_tabs-bottom {
+	margin-bottom: 10px;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	li {
+		margin-right: 10px;
+		a {
+			font-size: 12px;
+			line-height: 15px;
+			color: $ns_white;
+			font-weight: 700;
+			padding: 9px 10px;
+			padding-bottom: 6px;
+			transition: all 0.3s;
+			background: $ns_main_color;
+			border-radius: 15px;
+			display: inline-block;
+			text-transform: uppercase;
+		}
+		&.ns_active {
+			a {
+				background-color: $ns_blue;
+			}
+		}
+	}
+}
+.ns_tabs_contacts {
+	margin-top: 60px;
+	margin-bottom: -51px;
+	position: relative;
+	z-index: 2;
 }

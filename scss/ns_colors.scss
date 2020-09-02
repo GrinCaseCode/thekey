@@ -18,6 +18,7 @@
 	& * {
 		color: $ns_white;
 	}
+
 	.ns_item-dropdown__input, 
 	.ns_item-form input,
 	.ns_item-form textarea {
@@ -80,5 +81,14 @@
 		&:hover {
 			box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
 		}
+	}
+	.ns_item-form {
+		.ns_item-form__placeholder {
+			color: $ns_white;
+			opacity: 0.4;
+		}
+	}
+	.ns_tabs {
+		background-color: rgba(255, 255, 255, 0.2);
 	}
 }

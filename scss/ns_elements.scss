@@ -105,3 +105,39 @@
 		margin-left: 5px;
 	}
 }
+
+.ns_title-section {
+	font-size: 39px;
+	line-height: 45px;
+	font-weight: 700;
+	& + .ns_descr-section {
+		padding-top: 15px;
+	}
+}
+.ns_descr-section {
+	font-size: 18px;
+	line-height: 24px;
+}
+.ns_btn-main_page.ns_btn-main_background {
+	background-color: $ns_white;
+	color: $ns_main_color !important;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+	&:hover {
+		box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+	}
+}
+.ns_btn-main_page.ns_btn-main_border {
+	border: 2px solid $ns_white;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2) !important;
+	&:hover {
+		opacity: 0.8;
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2) !important;
+	}
+}
+.ns_btn-main_page.ns_btn-main_blue {
+	background-color: $ns_blue;
+	box-shadow: none !important;
+	&:hover {
+		background-color: #2c2c78;
+	}
+}

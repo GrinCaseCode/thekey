@@ -1,0 +1,28 @@
+.ns_main-map {
+  min-height: 620px;
+  background-image: url(../img/main_map.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative; }
+  .ns_main-map .ns_layout-size {
+    bottom: 40px; }
+  .ns_main-map .container-fluid {
+    position: relative; }
+  .ns_main-map .ns_map__wrap-card {
+    top: 140px;
+    width: 360px; }
+    .ns_main-map .ns_map__wrap-card .ns_item-card {
+      padding-bottom: 0;
+      left: auto;
+      right: 0; }
+    .ns_main-map .ns_map__wrap-card .ns_arrows-map {
+      right: 0;
+      bottom: 100%;
+      top: auto;
+      display: flex;
+      margin: 0; }
+      .ns_main-map .ns_map__wrap-card .ns_arrows-map .ns_btn-round {
+        margin-left: 15px; }
+
+/*# sourceMappingURL=ns_main-map.css.map */

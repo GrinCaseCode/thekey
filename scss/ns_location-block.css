@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$ns_white".
-        on line 10 of B:\repository\TheKey-Location2\TheKey\scss\ns_location-block.scss
+        on line 10 of B:\repository\TheKey\scss\ns_location-block.scss
 
 5: 	padding: 7px 10px;
 6: 	padding-bottom: 5px;
@@ -15,7 +15,7 @@ Error: Undefined variable: "$ns_white".
 15: .ns_location-descr {
 
 Backtrace:
-B:\repository\TheKey-Location2\TheKey\scss\ns_location-block.scss:10
+B:\repository\TheKey\scss\ns_location-block.scss:10
 B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -62,4 +62,4 @@ B:/program/koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$ns_white\".\A         on line 10 of B:\repository\TheKey-Location2\TheKey\scss\ns_location-block.scss\A \A 5: 	padding: 7px 10px;\A 6: 	padding-bottom: 5px;\A 7: 	text-transform: uppercase;\A 8: 	font-weight: 700;\A 9: 	display: inline-block;\A 10: 	color: $ns_white;\A 11: 	background-color: $ns_main_color;\A 12: 	border-radius: 3px;\A 13: }\A 14: \A 15: .ns_location-descr {"; }
+  content: "Error: Undefined variable: \"$ns_white\".\A         on line 10 of B:\repository\TheKey\scss\ns_location-block.scss\A \A 5: 	padding: 7px 10px;\A 6: 	padding-bottom: 5px;\A 7: 	text-transform: uppercase;\A 8: 	font-weight: 700;\A 9: 	display: inline-block;\A 10: 	color: $ns_white;\A 11: 	background-color: $ns_main_color;\A 12: 	border-radius: 3px;\A 13: }\A 14: \A 15: .ns_location-descr {"; }

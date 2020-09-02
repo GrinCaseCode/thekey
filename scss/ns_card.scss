@@ -6,6 +6,8 @@
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 	border-radius: 5px;
 	position: relative;
+	display: flex;
+	flex-direction: column;
 	-webkit-transition: all 0.3s;
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
@@ -19,6 +21,7 @@
 		padding-bottom: 15px;
 	}
 	.ns_size-card {
+		margin-top: auto;
 		padding-top: 15px;
 	}
 }
@@ -35,6 +38,9 @@
 .ns_item-card__content {
 	padding: 20px;
 	padding-top: 16px;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
 }
 .ns_name-card {
 	font-size: 18px;
@@ -115,4 +121,24 @@
 	font-size: 15px;
 	line-height: 18px;
 	font-weight: 700;
+}
+.ns_item-card__newdate {
+	font-size: 15px;
+	line-height: 18px;
+	color: $ns_gray !important;
+}
+.ns_item-card_blog {
+	.ns_item-card__content {
+		min-height: 219px;
+		padding-bottom: 45px;
+		position: relative;
+		.ns_item-card__newdate {
+			position: absolute;
+			left: 20px;
+			bottom: 20px;
+		}
+		.ns_name-card {
+			padding-bottom: 10px;
+		}
+	}
 }

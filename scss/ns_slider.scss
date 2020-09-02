@@ -111,3 +111,14 @@
 .p-small-1 button {
 	transform: scale(0.8);
 }
+.ns_slider-cards {
+	.slick-slide {
+		height: auto !important;
+	}
+}
+.container .ns_slider-cards .ns_item-card {
+	min-height: auto !important;
+}
+.container .slick-slide {
+  height: auto !important;
+}

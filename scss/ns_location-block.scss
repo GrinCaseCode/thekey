@@ -80,7 +80,24 @@
 	}
 	&.ns_fixed {
 		transform: translateY(0);
-	} 
+	}
+	.ns_item-dropdown__content {
+		top: auto;
+		bottom: 100%;
+		.ns_item-dropdown__filter {
+			padding-top: 20px;
+			padding-bottom: 0px;
+		}
+	}
+	.ns_item-form {
+		margin: 0;
+		input, textarea, .ns_item-dropdown__input {
+			border: none;
+		}
+	}
+	&.ns_location-bottom_main {
+		padding: 20px 0;
+	}
 }
 
 .ns_location-block__mobile-address {
@@ -98,4 +115,31 @@
 .ns_desc-block {
 	font-size: 18px;
 	line-height: 24px;
+}
+.line-office__wrap {
+	display: flex;
+	align-items: center;
+	flex: 1;
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+	.line-office__item {
+		flex: 1;
+		border-right: 1px solid #AEAFB7;
+		&:last-child {
+			border: none;
+		}
+	}
+	.line-office__wrap {
+		box-shadow: none;
+	}
+}
+.line-office {
+	display: flex;
+	align-items: center;
+	.ns_btn-main.ns_btn-main_page {
+		margin-left: 10px;
+		width: 165px;
+		padding-left: 0;
+		padding-right: 0;
+	}
 }

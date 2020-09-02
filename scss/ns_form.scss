@@ -43,7 +43,16 @@ button {
 	&:hover {
 		opacity: 1;
 	}
+	&:focus + .ns_item-form__placeholder {
+		font-size: 12px;
+		line-height: 15px;
+		top: 5px;
+	}
+	&.ns_rfield {
+		padding-top: 2px;
+	}
 }
+
 .ns_item-form textarea {
 	height: 134px;
 	padding-top: 16px;
@@ -89,8 +98,33 @@ button {
 }
 .ns_item-form {
 	margin-bottom: 13px;
+	position: relative;
 	.item-form__title {
 		padding-bottom: 1px;
+	}
+	.ns_item-form__placeholder {
+		font-size: 15px;
+		line-height: 18px;
+		color: #28292D;
+		opacity: 0.4;
+		top: 15px;
+		left: 15px;
+		transition: all 0.3s;
+		pointer-events: none;
+		position: absolute;
+	}
+	&.ns_active {
+		.ns_item-form__placeholder {
+			font-size: 12px;
+			line-height: 15px;
+			top: 5px;
+		}
+		input, textarea {
+			opacity: 1;
+		}
+	}
+	textarea.ns_rfield {
+		padding-top: 22px;
 	}
 }
 .ns_item-dropdown {
@@ -554,4 +588,15 @@ button {
 			margin-right: 0;
 		}
 	}
+}
+.ns_item-form_shadow {
+	input, textarea {
+		border: none;
+		opacity: 1;
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+	}
+}
+.ns_text-regular_form {
+	padding-top: 15px;
+	color: #AEAFB7 !important;
 }

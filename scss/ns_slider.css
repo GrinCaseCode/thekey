@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$ns_white".
-        on line 29 of B:\repository\TheKey-Location2\TheKey\scss\ns_slider.scss
+        on line 29 of B:\repository\TheKey\scss\ns_slider.scss
 
 24: .slick-arrow {
 25: 	top: 50%;
@@ -15,7 +15,7 @@ Error: Undefined variable: "$ns_white".
 34: 		content: " ";
 
 Backtrace:
-B:\repository\TheKey-Location2\TheKey\scss\ns_slider.scss:29
+B:\repository\TheKey\scss\ns_slider.scss:29
 B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -62,4 +62,4 @@ B:/program/koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$ns_white\".\A         on line 29 of B:\repository\TheKey-Location2\TheKey\scss\ns_slider.scss\A \A 24: .slick-arrow {\A 25: 	top: 50%;\A 26: 	width: 45px;\A 27: 	height: 45px;\A 28: 	border-radius: 50%;\A 29: 	background-color: $ns_white;\A 30: 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);\A 31: 	&::before {\A 32: 		position: absolute;\A 33: 		display: block;\A 34: 		content: \" \";"; }
+  content: "Error: Undefined variable: \"$ns_white\".\A         on line 29 of B:\repository\TheKey\scss\ns_slider.scss\A \A 24: .slick-arrow {\A 25: 	top: 50%;\A 26: 	width: 45px;\A 27: 	height: 45px;\A 28: 	border-radius: 50%;\A 29: 	background-color: $ns_white;\A 30: 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);\A 31: 	&::before {\A 32: 		position: absolute;\A 33: 		display: block;\A 34: 		content: \" \";"; }

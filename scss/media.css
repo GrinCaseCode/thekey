@@ -39,7 +39,10 @@
     margin-right: 5px; }
 
   .ns_col_pl {
-    padding-left: 0; } }
+    padding-left: 0; }
+
+  .ns_tabs_contacts li a {
+    font-size: 15px; } }
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
   .ns_slider-cards .slick-slide {
@@ -225,7 +228,12 @@
   .list-mobile-checkbox li {
     margin-bottom: 15px; }
     .list-mobile-checkbox li:nth-child(n+4) {
-      display: none; } }
+      display: none; }
+
+  .ns_cooperation .ns_btn-main.ns_btn-main_page {
+    width: 262px;
+    margin-top: 15px;
+    margin-bottom: 0; } }
 /* Small Devices, Tablets */
 @media only screen and (max-width: 767px) {
   .ns_item-card__content {
@@ -472,7 +480,97 @@
       margin-left: 0; }
 
   .ns_location-descr__icon {
-    width: 29px; } }
+    width: 29px; }
+
+  .ns_location-bottom.ns_location-bottom_main {
+    display: block !important;
+    position: relative;
+    transform: none !important; }
+
+  .line-office__wrap,
+  .line-office {
+    display: block;
+    box-shadow: none; }
+    .line-office__wrap .line-office__item,
+    .line-office .line-office__item {
+      border: none; }
+
+  .line-office .ns_btn-main.ns_btn-main_page {
+    width: 100%;
+    margin: 0;
+    margin-top: 10px; }
+  .line-office .ns_item-form {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); }
+
+  .ns_tabs-bottom {
+    margin-bottom: 20px; }
+
+  .ns_main-map {
+    min-height: 458px;
+    margin-bottom: 72px; }
+    .ns_main-map .ns_slick-dots-container {
+      position: relative;
+      top: 25px;
+      margin-bottom: -10px; }
+
+  .ns_title-section {
+    font-size: 24px;
+    line-height: 28px; }
+
+  .ns_cooperation {
+    padding: 40px 0; }
+    .ns_cooperation .ns_btn-main.ns_btn-main_page {
+      width: 100%; }
+    .ns_cooperation .ns_descr-section {
+      padding-bottom: 15px; }
+
+  .ns_products_main {
+    padding-bottom: 20px; }
+
+  .ns_contacts {
+    padding-top: 30px;
+    padding-bottom: 40px; }
+    .ns_contacts .ns_form-contacts {
+      margin-top: 72px; }
+
+  .ns_item-contact {
+    margin-top: 20px; }
+
+  .ns_departaments .ns_title-block {
+    margin-top: 40px; }
+
+  .ns_big-phone {
+    font-size: 30px;
+    line-height: 36px;
+    padding-top: 40px; }
+
+  .ns_departaments {
+    padding-bottom: 40px; }
+
+  .slider-tabs-contacts__name {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 10px 25px;
+    color: #28292D;
+    margin-top: 20px;
+    display: inline-block;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 5px; }
+
+  .slider-tabs-contacts {
+    margin-top: 30px; }
+    .slider-tabs-contacts .slick-dots {
+      bottom: 480px; }
+    .slider-tabs-contacts .ns_btn-main.ns_btn-main_page {
+      width: 100%; }
+    .slider-tabs-contacts .ns_text-regular_form {
+      min-height: 67px; }
+
+  .ns_contacts__image {
+    height: 180px; } }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
   .ns_admin-area {
@@ -494,13 +592,14 @@
 /* Custom, iPhone Retina */
 /* Extra Small Devices, Phones */
 @media only screen and (min-width: 767px) {
-  .ns_location-bottom.ns_fixed + .ns_footer .ns_btn-callback {
+  .ns_location-bottom.ns_fixed ~ .ns_footer .ns_btn-callback {
     bottom: 140px; }
 
   .ns_layout-numbers__wrap {
     display: block !important; } }
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
+  .slider-tabs-contacts,
   .ns_slider-tabs,
   .ns_show_mob,
   .ns_btn-main_footer,
