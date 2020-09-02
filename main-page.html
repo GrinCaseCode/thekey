@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="ns_lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="ns_lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="ns_lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="ru">
+<!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<title>Заголовок</title>
+	<meta name="description" content="" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="favicon.png" />
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid.css" />
+	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
+	<link rel="stylesheet" href="libs/slick-1.8.0/slick/slick.css" />
+	<link rel="stylesheet" href="libs/slick-1.8.0/slick/slick-theme.css" />
+	<link rel="stylesheet" href="libs/ion.rangeSlider-master/css/ion.rangeSlider.min.css" />
+	<link rel="stylesheet" href="css/fonts.css" />
+	<link rel="stylesheet" href="scss/main.css?ver=1.42" />
+	<link rel="stylesheet" href="scss/media.css?ver=1.42" />
+</head>
+<body>
+
+	<div class="ns_wrapper ns_wrapper_location">
+
+		<div class="ns_location-bottom ns_location-bottom_main default">
+			<div class="container">
+				<ul class="ns_tabs-bottom">
+					<li class="ns_active"><a href="#tab_bottom1">Готовый офис</a></li>
+					<li><a href="#tab_bottom2">связаться с нами</a></li>
+				</ul>
+				<div class="ns_tabs-container-bottom">
+					<div class="ns_tabs-pane-bottom" id="tab_bottom1">
+						<div class="line-office">
+							<div class="line-office__wrap">
+								<div class="line-office__item">
+									<div class="ns_item-form">
+										<div class="ns_item-dropdown">
+											<div class="ns_item-dropdown__input">Выбрать локацию или метро</div>
+											<div class="ns_item-dropdown__content">
+												<div class="ns_item-dropdown__filter">
+													<ul>
+														<li>
+															<div class="ns_checkbox">
+																<label>
+																	<input type="checkbox" />
+																	<span>Арма | м. Курская </span>
+																</label>
+															</div>
+														</li>
+														<li>
+															<div class="ns_checkbox">
+																<label>
+																	<input type="checkbox" />
+																	<span>Даниловская | м. Тульская</span>
+																</label>
+															</div>
+														</li>
+														<li>
+															<div class="ns_checkbox">
+																<label>
+																	<input type="checkbox" />
+																	<span>Гостиный двор | м. Охотный ряд</span>
+																</label>
+															</div>
+														</li>
+														<li>
+															<div class="ns_checkbox">
+																<label>
+																	<input type="checkbox" />
+																	<span>Кузнецкий Мост | м. Кузнецкий мост</span>
+																</label>
+															</div>
+														</li>
+														<li>
+															<div class="ns_checkbox">
+																<label>
+																	<input type="checkbox" />
+																	<span>Отстоженка | м. Парк Культуры</span>
+																</label>
+															</div>
+														</li>
+														<li>
+															<div class="ns_checkbox">
+																<label>
+																	<input type="checkbox" />
+																	<span>Сириус Парк | м. Нагатинская</span>
+																</label>
+															</div>
+														</li>
+														<li>
+															<div class="ns_checkbox">
+																<label>
+																	<input type="checkbox" />
+																	<span>Шёлк | м. Киевская</span>
+																</label>
+															</div>
+														</li>
+														<li>
+															<div class="ns_checkbox">
+																<label>
+																	<input type="checkbox" />
+																	<span>Таганка | м. Таганская</span>
+																</label>
+															</div>
+														</li>
+														<li>
+															<div class="ns_checkbox">
+																<label>
+																	<input type="checkbox" />
+																	<span>Сретенка | м. Сретенский бульвар</span>
+																</label>
+															</div>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="line-office__item">
+									<div class="ns_item-form">
+										<input type="text" class="ns_rfield">
+										<div class="ns_item-form__placeholder">Количество рабочих мест</div>
+									</div>
+								</div>
+							</div>
+							<button class="ns_btn-main ns_btn-main_page ns_btn-main_black">подобрать офис</button>
+						</div>
+					</div>
+					<div class="ns_tabs-pane-bottom" id="tab_bottom2">
+						<div class="line-office">
+							<div class="line-office__wrap">
+								<div class="line-office__item">
+									<div class="line-office__wrap">
+										<div class="line-office__item">
+											<div class="ns_item-form">
+												<input type="text" class="ns_rfield">
+												<div class="ns_item-form__placeholder">Имя</div>
+											</div>
+										</div>
+										<div class="line-office__item">
+											<div class="ns_item-form">
+												<input type="text" class="ns_rfield" required="required">
+												<div class="ns_item-form__placeholder">E-mail*</div>
+											</div>
+										</div>
+										<div class="line-office__item">
+											<div class="ns_item-form">
+												<input type="text" class="ns_rfield" required="required">
+												<div class="ns_item-form__placeholder">Телефон*</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="line-office__item">
+									<div class="ns_item-form">
+										<input type="text" class="ns_rfield">
+										<div class="ns_item-form__placeholder">Дополнительная информация</div>
+									</div>
+								</div>
+							</div>
+							<button class="ns_btn-main ns_btn-main_page ns_btn-main_black">отправить</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="ns_main-map">
+			<div class="container-fluid">
+				<div class="ns_map__wrap-card">
+					<div class="ns_arrows-map">
+						<div class="ns_btn-round">
+							<img src="img/ic_arrow_right.svg" alt="alt">
+						</div>
+						<div class="ns_btn-round">
+							<img src="img/ic_arrow_left.svg" alt="alt">
+						</div>
+					</div>
+					<div class="ns_item-card">
+						<div class="ns_tag-card">скоро открытие</div>
+						<div class="ns_item-card__image">
+							<img src="img/card1.jpg" alt="alt">
+							<a href="#modal-gallery1" class="ns_btn-view fancybox"></a>
+						</div>
+						<div class="ns_item-card__content">
+							<div class="ns_name-card">Ключ Гостиный двор</div>
+							<div class="ns_descr-card">
+								<p>м. Театральная</p>
+								<p>ул. Ильинка, 4</p>
+							</div>
+							<div class="ns_text-card">Самый крупный проект Ключа. Объект культурного наследия впервые переделан под офисы.</div>
+							<div class="ns_size-card">1 000 чел. | 15 000 м²</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="ns_layout-size">
+				<div class="ns_layout-size__item">+</div>
+				<div class="ns_layout-size__item">-</div>
+			</div>
+			<ul class="mobile-slider-map">
+				<li>
+					<div class="ns_item-card ns_item-card_mobile">
+						<div class="ns_tag-card">скоро открытие</div>
+						<div class="ns_item-card__image">
+							<img src="img/card_map1.jpg" alt="alt">
+							<a href="#modal-gallery1" class="ns_btn-view fancybox"></a>
+						</div>
+						<div class="ns_item-card__content">
+							<div class="ns_name-card">Ключ <br>Гостиный двор</div>
+							<div class="ns_descr-card">
+								<p>м. Театральная</p>
+								<p>ул. Ильинка, 4</p>
+							</div>
+							<div class="ns_size-card">1 000 чел. | 15 000 м²</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ns_item-card ns_item-card_mobile">
+						<div class="ns_tag-card">скоро открытие</div>
+						<div class="ns_item-card__image">
+							<img src="img/card_map1.jpg" alt="alt">
+							<a href="#modal-gallery1" class="ns_btn-view fancybox"></a>
+						</div>
+						<div class="ns_item-card__content">
+							<div class="ns_name-card">Ключ <br>Гостиный двор</div>
+							<div class="ns_descr-card">
+								<p>м. Театральная</p>
+								<p>ул. Ильинка, 4</p>
+							</div>
+							<div class="ns_size-card">1 000 чел. | 15 000 м²</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ns_item-card ns_item-card_mobile">
+						<div class="ns_tag-card">скоро открытие</div>
+						<div class="ns_item-card__image">
+							<img src="img/card_map1.jpg" alt="alt">
+							<a href="#modal-gallery1" class="ns_btn-view fancybox"></a>
+						</div>
+						<div class="ns_item-card__content">
+							<div class="ns_name-card">Ключ <br>Гостиный двор</div>
+							<div class="ns_descr-card">
+								<p>м. Театральная</p>
+								<p>ул. Ильинка, 4</p>
+							</div>
+							<div class="ns_size-card">1 000 чел. | 15 000 м²</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ns_item-card ns_item-card_mobile">
+						<div class="ns_tag-card">скоро открытие</div>
+						<div class="ns_item-card__image">
+							<img src="img/card_map1.jpg" alt="alt">
+							<a href="#modal-gallery1" class="ns_btn-view fancybox"></a>
+						</div>
+						<div class="ns_item-card__content">
+							<div class="ns_name-card">Ключ <br>Гостиный двор</div>
+							<div class="ns_descr-card">
+								<p>м. Театральная</p>
+								<p>ул. Ильинка, 4</p>
+							</div>
+							<div class="ns_size-card">1 000 чел. | 15 000 м²</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ns_item-card ns_item-card_mobile">
+						<div class="ns_tag-card">скоро открытие</div>
+						<div class="ns_item-card__image">
+							<img src="img/card_map1.jpg" alt="alt">
+							<a href="#modal-gallery1" class="ns_btn-view fancybox"></a>
+						</div>
+						<div class="ns_item-card__content">
+							<div class="ns_name-card">Ключ <br>Гостиный двор</div>
+							<div class="ns_descr-card">
+								<p>м. Театральная</p>
+								<p>ул. Ильинка, 4</p>
+							</div>
+							<div class="ns_size-card">1 000 чел. | 15 000 м²</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ns_item-card ns_item-card_mobile">
+						<div class="ns_tag-card">скоро открытие</div>
+						<div class="ns_item-card__image">
+							<img src="img/card_map1.jpg" alt="alt">
+							<a href="#modal-gallery1" class="ns_btn-view fancybox"></a>
+						</div>
+						<div class="ns_item-card__content">
+							<div class="ns_name-card">Ключ <br>Гостиный двор</div>
+							<div class="ns_descr-card">
+								<p>м. Театральная</p>
+								<p>ул. Ильинка, 4</p>
+							</div>
+							<div class="ns_size-card">1 000 чел. | 15 000 м²</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ns_item-card ns_item-card_mobile">
+						<div class="ns_tag-card">скоро открытие</div>
+						<div class="ns_item-card__image">
+							<img src="img/card_map1.jpg" alt="alt">
+							<a href="#modal-gallery1" class="ns_btn-view fancybox"></a>
+						</div>
+						<div class="ns_item-card__content">
+							<div class="ns_name-card">Ключ <br>Гостиный двор</div>
+							<div class="ns_descr-card">
+								<p>м. Театральная</p>
+								<p>ул. Ильинка, 4</p>
+							</div>
+							<div class="ns_size-card">1 000 чел. | 15 000 м²</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="ns_item-card ns_item-card_mobile">
+						<div class="ns_tag-card">скоро открытие</div>
+						<div class="ns_item-card__image">
+							<img src="img/card_map1.jpg" alt="alt">
+							<a href="#modal-gallery1" class="ns_btn-view fancybox"></a>
+						</div>
+						<div class="ns_item-card__content">
+							<div class="ns_name-card">Ключ <br>Гостиный двор</div>
+							<div class="ns_descr-card">
+								<p>м. Театральная</p>
+								<p>ул. Ильинка, 4</p>
+							</div>
+							<div class="ns_size-card">1 000 чел. | 15 000 м²</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+		<div class="ns_cooperation ns_color-widget-blue">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-7 offset-xl-1 col-lg-7">
+						<h2 class="ns_title-section">Мы открыты к сотрудничеств <br>и новым предложениям</h2>
+						<div class="ns_descr-section">От партнёров, лендлордов, брокеров и инвесторов</div>
+					</div>
+					<div class="col-xl-4 col-lg-5">
+						<a href="#" class="ns_btn-main ns_btn-main_page ns_btn-main_background">Начать сотрудничество</a>
+						<br>
+						<a href="tel:+79997777777" class="ns_btn-main ns_btn-main_page ns_btn-main_border">позвонить +7(999) 777-77-77</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="ns_products ns_products_main ns_color-widget-black"> 
+			<div class="container">
+				<div class="ns_head-block">
+					<div>
+						<h2 class="ns_title-block">Блог</h2>
+						<div class="ns_desc-block">Тут собираем самое интересное, что происходит в Ключе.</div>
+					</div>
+					<a href="#" class="ns_btn-main ns_btn-main_page">читать всё</a>
+				</div>
+				<div class="ns_slider-wrapper">
+					<ul class="ns_slider-cards">
+						<li>
+							<div class="ns_item-card ns_item-card_blog">
+								<div class="ns_item-card__image">
+									<img src="img/card10.jpg" alt="alt">
+									<a href="#modal-gallery1" class="ns_btn-view fancybox"></a>
+								</div>
+								<div class="ns_item-card__content">
+									<div class="ns_name-card">Московский Шёлк. Гид.</div>
+									<div class="ns_text-card">Новый гид Ключа по атмосферному кварталу в Хамовниках. Куда идти за круассанами и где заниматься спортом — все ответы по ссылке.</div>
+									<div class="ns_item-card__newdate">12.02.2020</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="ns_item-card ns_item-card_blog">
+								<div class="ns_item-card__image">
+									<img src="img/card11.jpg" alt="alt">
+									<a href="#modal-gallery1" class="ns_btn-view fancybox"></a>
+								</div>
+								<div class="ns_item-card__content">
+									<div class="ns_name-card">Сретенска и Чистые. Гид</div>
+									<div class="ns_text-card">Рядом с Ключом на Сретенском бульваре есть примерно всё. Делимся проверенными местами, куда сами готовы приходить хоть каждый день.</div>
+									<div class="ns_item-card__newdate">12.02.2020</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="ns_item-card ns_item-card_blog">
+								<div class="ns_item-card__image">
+									<img src="img/card12.jpg" alt="alt">
+									<a href="#modal-gallery1" class="ns_btn-view fancybox"></a>
+								</div>
+								<div class="ns_item-card__content">
+									<div class="ns_name-card">Даниловская мануфактура. Гид.</div>
+									<div class="ns_text-card">В новом гиде рассказываем, куда идти за кофе и на обед, где починить айфон или экстренно купить букет в подарок.</div>
+									<div class="ns_item-card__newdate">12.02.2020</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="ns_item-card ns_item-card_blog">
+								<div class="ns_item-card__image">
+									<img src="img/card10.jpg" alt="alt">
+									<a href="#modal-gallery1" class="ns_btn-view fancybox"></a>
+								</div>
+								<div class="ns_item-card__content">
+									<div class="ns_name-card">Московский Шёлк. Гид.</div>
+									<div class="ns_text-card">Новый гид Ключа по атмосферному кварталу в Хамовниках. Куда идти за круассанами и где заниматься спортом — все ответы по ссылке.</div>
+									<div class="ns_item-card__newdate">12.02.2020</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="ns_item-card ns_item-card_blog">
+								<div class="ns_item-card__image">
+									<img src="img/card11.jpg" alt="alt">
+									<a href="#modal-gallery1" class="ns_btn-view fancybox"></a>
+								</div>
+								<div class="ns_item-card__content">
+									<div class="ns_name-card">Сретенска и Чистые. Гид</div>
+									<div class="ns_text-card">Рядом с Ключом на Сретенском бульваре есть примерно всё. Делимся проверенными местами, куда сами готовы приходить хоть каждый день.</div>
+									<div class="ns_item-card__newdate">12.02.2020</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="ns_item-card ns_item-card_blog">
+								<div class="ns_item-card__image">
+									<img src="img/card12.jpg" alt="alt">
+									<a href="#modal-gallery1" class="ns_btn-view fancybox"></a>
+								</div>
+								<div class="ns_item-card__content">
+									<div class="ns_name-card">Даниловская мануфактура. Гид.</div>
+									<div class="ns_text-card">В новом гиде рассказываем, куда идти за кофе и на обед, где починить айфон или экстренно купить букет в подарок.</div>
+									<div class="ns_item-card__newdate">12.02.2020</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="ns_item-card ns_item-card_blog">
+								<div class="ns_item-card__image">
+									<img src="img/card10.jpg" alt="alt">
+									<a href="#modal-gallery1" class="ns_btn-view fancybox"></a>
+								</div>
+								<div class="ns_item-card__content">
+									<div class="ns_name-card">Московский Шёлк. Гид.</div>
+									<div class="ns_text-card">Новый гид Ключа по атмосферному кварталу в Хамовниках. Куда идти за круассанами и где заниматься спортом — все ответы по ссылке.</div>
+									<div class="ns_item-card__newdate">12.02.2020</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="ns_item-card ns_item-card_blog">
+								<div class="ns_item-card__image">
+									<img src="img/card11.jpg" alt="alt">
+									<a href="#modal-gallery1" class="ns_btn-view fancybox"></a>
+								</div>
+								<div class="ns_item-card__content">
+									<div class="ns_name-card">Сретенска и Чистые. Гид</div>
+									<div class="ns_text-card">Рядом с Ключом на Сретенском бульваре есть примерно всё. Делимся проверенными местами, куда сами готовы приходить хоть каждый день.</div>
+									<div class="ns_item-card__newdate">12.02.2020</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="ns_item-card ns_item-card_blog">
+								<div class="ns_item-card__image">
+									<img src="img/card12.jpg" alt="alt">
+									<a href="#modal-gallery1" class="ns_btn-view fancybox"></a>
+								</div>
+								<div class="ns_item-card__content">
+									<div class="ns_name-card">Даниловская мануфактура. Гид.</div>
+									<div class="ns_text-card">В новом гиде рассказываем, куда идти за кофе и на обед, где починить айфон или экстренно купить букет в подарок.</div>
+									<div class="ns_item-card__newdate">12.02.2020</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		
+
+		<div class="ns_footer">
+			<a href="#" class="ns_btn-top"><img src="img/arrow_top.svg" alt="alt"></a>
+			<a href="#" class="ns_btn-callback"></a>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-9">
+						<a href="#" class="ns_logo-footer">
+							<img src="img/logo.svg" alt="alt">
+						</a>
+						<div class="ns_show_mob">
+							<a href="tel:+74999555940" class="ns_phone-footer">+7 (499) 955-59-40 </a>
+						</div>
+						<div class="ns_hidden_mob">
+							<p>+7 (499) 955-59-40</p>
+							<p>master@thekey.space </p>
+							<p>Москва, Большой Саввинский пер., 12, стр. 8 </p>
+						</div>
+						<div class="ns_footer__title">Площадки</div>
+						<ul class="ns_list-footer">
+							<li><a href="#">Сретенка</a></li>
+							<li><a href="#">Кузнецкий Мост</a></li>
+							<li><a href="#">Шёлк</a></li>
+							<li><a href="#">Арма</a></li>
+							<li><a href="#">Таганка</a></li>
+							<li><a href="#">Сириус Парк</a></li>
+						</ul>
+						<ul class="ns_list-footer">
+							<li><a href="#">Балчуг Софийская <span>скоро</span></a></li>
+							<li><a href="#">Остоженка <span>скоро</span></a></li>
+							<li><a href="#">Гостиный Двор <span>скоро</span></a></li>
+						</ul>
+						<div class="ns_footer__title">Продукты</div>
+						<ul class="ns_list-footer">
+							<li><a href="#">Готовые офисы</a></li>
+							<li><a href="#">Коворкинг</a></li>
+							<li><a href="#">Переговорные</a></li>
+							<li><a href="#">Мероприятия</a></li>
+							<li><a href="#">Площадка для съемок</a></li>
+						</ul>
+					</div>
+					<div class="col-md-3 ns_col_pl">
+						<ul class="ns_nav-footer">
+							<li><a href="#">Бизнесу</a></li>
+							<li><a href="#">Для СМИ</a></li>
+							<li><a href="#">Партнёрские программы</a></li>
+							<li><a href="#">FAQ</a></li>
+							<li><a href="#">Резидентам</a></li>
+							<li><a href="#">Блог</a></li>
+							<li><a href="#">Личный кабинет</a></li>
+						</ul>
+						<ul class="ns_nav-footer ns_nav-footer_bottom">
+							<li><a href="#">О компании</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="row ns_row_bottom-footer">
+					<div class="col-md-9">
+						<div class="ns_contact-footer-mob ns_show_mob">
+							<div>master@thekey.space</div>
+							<div>Москва, Большой Саввинский пер., 12, стр. 8 </div>
+						</div>
+						<div class="ns_footer__title ns_footer__title_copy"><span>© 2020, Ключ  |</span>  <a href="#">Публичная оферта</a></div>
+					</div>
+					<div class="col-md-3 col_pl">
+						<ul class="ns_social-list">
+							<li><a href="#"><img src="img/fb.svg" alt="alt"></a></li>
+							<li><a href="#"><img src="img/inst.svg" alt="alt"></a></li>
+							<li><a href="#"><img src="img/vk.svg" alt="alt"></a></li>
+							<li><a href="#"><img src="img/tg.svg" alt="alt"></a></li>
+							<li><a href="#"><img src="img/yt.svg" alt="alt"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<a href="#" class="ns_btn-main ns_btn-main_footer">связаться с нами</a>
+		</div>
+		
+	</div>
+
+	<div id="modal-gallery1" class="ns_modal-block">
+		<div class="ns_fancy-preloader">
+			<div class="ns_circle-preloader"></div>
+		</div>
+		<div class="ns_modal-wrap">
+			<div class="ns_container">
+				<ul class="ns_slider-modal">
+					<li>
+						<div class="ns_slider-modal__item"><img src="img/billbord2_1.jpg" alt="alt"></div>
+					</li>
+					<li>
+						<div class="ns_slider-modal__item"><img src="img/billbord2_1.jpg" alt="alt"></div>
+					</li>
+					<li>
+						<div class="ns_slider-modal__item"><img src="img/billbord2_1.jpg" alt="alt"></div>
+					</li>
+					<li>
+						<div class="ns_slider-modal__item"><img src="img/billbord2_1.jpg" alt="alt"></div>
+					</li>
+					<li>
+						<div class="ns_slider-modal__item"><img src="img/billbord2_1.jpg" alt="alt"></div>
+					</li>
+					<li>
+						<div class="ns_slider-modal__item"><img src="img/billbord2_1.jpg" alt="alt"></div>
+					</li>
+					<li>
+						<div class="ns_slider-modal__item"><img src="img/billbord2_1.jpg" alt="alt"></div>
+					</li>
+					<li>
+						<div class="ns_slider-modal__item"><img src="img/billbord2_1.jpg" alt="alt"></div>
+					</li>
+				</ul>
+				<div class="ns_slider-counter">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--[if lt IE 9]>
+	<script src="libs/html5shiv/es5-shim.min.js"></script>
+	<script src="libs/html5shiv/html5shiv.min.js"></script>
+	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
+	<script src="libs/respond/respond.min.js"></script>
+<![endif]-->
+<script src="libs/jquery/jquery-1.11.1.min.js"></script>
+<script src="libs/fancybox/jquery.fancybox.pack.js"></script>
+<script src="libs/ion.rangeSlider-master/js/ion.rangeSlider.min.js"></script>
+<script src="libs/slick-1.8.0/slick/slick.min.js"></script>
+<script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
+<script src="js/ns_js-main-page.js?ver=1.42"></script>
+<!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
+<!-- Google Analytics counter --><!-- /Google Analytics counter -->
+</body>
+</html>
