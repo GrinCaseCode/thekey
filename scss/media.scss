@@ -684,6 +684,12 @@
 	.ns_contacts__image {
 		height: 180px;
 	}
+	.ns_location-bottom {
+		.ns_item-dropdown__content {
+			top: 100%;
+			bottom: auto;
+		}
+	}
 }
 
 /* Extra Small Devices, Phones */
