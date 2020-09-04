@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$ns_main_color".
-        on line 11 of B:\repository\TheKey\scss\ns_elements.scss
+        on line 14 of B:\repository\TheKey\scss\ns_elements.scss
 
-6: .ns_btn-main {
-7: 	font-size: 15px;
-8: 	line-height: 18px;
-9: 	padding: 0 24px;
-10: 	height: 50px;
-11: 	background-color: $ns_main_color;
-12: 	border: 1px $ns_main_color solid;
-13: 	display: -webkit-inline-flex;
-14: 	display: -moz-inline-flex;
-15: 	display: -ms-inline-flex;
-16: 	display: -o-inline-flex;
+9: .ns_btn-main {
+10: 	font-size: 15px;
+11: 	line-height: 18px;
+12: 	padding: 0 24px;
+13: 	height: 50px;
+14: 	background-color: $ns_main_color;
+15: 	border: 1px $ns_main_color solid;
+16: 	display: -webkit-inline-flex;
+17: 	display: -moz-inline-flex;
+18: 	display: -ms-inline-flex;
+19: 	display: -o-inline-flex;
 
 Backtrace:
-B:\repository\TheKey\scss\ns_elements.scss:11
+B:\repository\TheKey\scss\ns_elements.scss:14
 B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -62,4 +62,4 @@ B:/program/koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$ns_main_color\".\A         on line 11 of B:\repository\TheKey\scss\ns_elements.scss\A \A 6: .ns_btn-main {\A 7: 	font-size: 15px;\A 8: 	line-height: 18px;\A 9: 	padding: 0 24px;\A 10: 	height: 50px;\A 11: 	background-color: $ns_main_color;\A 12: 	border: 1px $ns_main_color solid;\A 13: 	display: -webkit-inline-flex;\A 14: 	display: -moz-inline-flex;\A 15: 	display: -ms-inline-flex;\A 16: 	display: -o-inline-flex;"; }
+  content: "Error: Undefined variable: \"$ns_main_color\".\A         on line 14 of B:\repository\TheKey\scss\ns_elements.scss\A \A 9: .ns_btn-main {\A 10: 	font-size: 15px;\A 11: 	line-height: 18px;\A 12: 	padding: 0 24px;\A 13: 	height: 50px;\A 14: 	background-color: $ns_main_color;\A 15: 	border: 1px $ns_main_color solid;\A 16: 	display: -webkit-inline-flex;\A 17: 	display: -moz-inline-flex;\A 18: 	display: -ms-inline-flex;\A 19: 	display: -o-inline-flex;"; }

@@ -1884,6 +1884,9 @@ button {
   font-family: 'GT Walsheim Pro';
   -webkit-appearance: none; }
 
+input {
+  border-radius: 0 !important; }
+
 .ns_btn-main {
   font-size: 15px;
   line-height: 18px;
