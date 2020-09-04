@@ -10,8 +10,8 @@ Error: Undefined variable: "$ns_white".
 6: 	background-color: $ns_main_color;
 7: 	position: relative;
 8: 	.ns_logo-footer {
-9: 		margin-bottom: 30px;
-10: 	}
+9: 		margin-top: 10px;
+10: 		margin-bottom: 0px;
 
 Backtrace:
 B:\repository\TheKey\scss\ns_footer.scss:5
@@ -61,4 +61,4 @@ B:/program/koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$ns_white\".\A         on line 5 of B:\repository\TheKey\scss\ns_footer.scss\A \A 1: .ns_footer {\A 2: 	padding: 60px 0;\A 3: 	font-size: 17px;\A 4: 	line-height: 20px;\A 5: 	color: $ns_white;\A 6: 	background-color: $ns_main_color;\A 7: 	position: relative;\A 8: 	.ns_logo-footer {\A 9: 		margin-bottom: 30px;\A 10: 	}"; }
+  content: "Error: Undefined variable: \"$ns_white\".\A         on line 5 of B:\repository\TheKey\scss\ns_footer.scss\A \A 1: .ns_footer {\A 2: 	padding: 60px 0;\A 3: 	font-size: 17px;\A 4: 	line-height: 20px;\A 5: 	color: $ns_white;\A 6: 	background-color: $ns_main_color;\A 7: 	position: relative;\A 8: 	.ns_logo-footer {\A 9: 		margin-top: 10px;\A 10: 		margin-bottom: 0px;"; }

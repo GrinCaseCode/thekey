@@ -23,6 +23,7 @@
 	}
 	.container {
 		max-width: 768px;
+		overflow: hidden;
 	}
 	.ns_admin-area {
 		padding: 55px 30px;
@@ -60,6 +61,11 @@
 			}
 		}
 	}
+	.ns_location-bottom {
+		.container {
+			overflow: visible;
+		}
+	}
 }
 
 /* Medium Devices, Desktops */ 
@@ -91,7 +97,7 @@
 		display: none;
 	}
 	.ns_map {
-		height: 100vh;
+		height: 93vh;
 	}
 	.ns_map__wrap-card {
 		display: none;
@@ -155,7 +161,7 @@
 	.mobile-slider-map {
 		position: absolute;
 		bottom: 0;
-		left: 0;
+		left: 10px;
 		width: 100%;
 	}
 	.ns_item-card_mobile {
@@ -201,6 +207,7 @@
 
 	.ns_mobile-mapmenu {
 		padding: 0 15px;
+		padding-bottom: 130px;
 		position: fixed;
 		background-color: #fff;
 		height: 100%;
@@ -242,10 +249,19 @@
 			margin: 0 -15px;
 			padding: 10px 15px;
 			margin-top: 30px;
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background-color: #fff;
 			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+			z-index: 2;
 		}
 		.ns_calendar__arrow {
 			top: -2px;
+		}
+		.ns_link-more {
+			margin-top: 12px;
 		}
 	}
 	.ns_btn-round_closemobile {
@@ -277,7 +293,7 @@
 		align-items: center;
 		justify-content: space-between;
 	}
-	.list-mobile-checkbox {
+	.ns_list-mobile-checkbox {
 		li {
 			margin-bottom: 15px;
 			&:nth-child(n+4) {
@@ -290,6 +306,17 @@
 			width: 262px;
 			margin-top: 15px;
 			margin-bottom: 0;
+		}
+	}
+	.ns_line-radio {
+		display: block;
+		.ns_checkbox {
+			display: block;
+			margin: 0;
+			margin-bottom: 18px;
+			&:last-child {
+				margin-bottom: 0;
+			}
 		}
 	}
 }
@@ -310,7 +337,6 @@
 		.ns_btn-main {
 			margin-top: 15px;
 			width: 100%;
-			max-width: 350px;
 		}
 		.ns_title-block {
 			margin-bottom: 0px;
@@ -460,6 +486,7 @@
 			}
 		}
 		.ns_logo-footer {
+			margin-top: 0;
 			margin-bottom: 15px;
 		}
 	}
@@ -491,13 +518,7 @@
 		}
 	}
 	.ns_row_bottom-footer {
-		.col-md-3 {
-			-webkit-order: -1;
-			-moz-order: -1;
-			-ms-order: -1;
-			-o-order: -1;
-			order: -1;
-		}
+
 	}
 	.ns_btn-callback {
 		bottom: 55px;
@@ -554,6 +575,7 @@
 		font-size: 15px;
 		line-height: 18px;
 		padding-top: 10px;
+		margin-left: 0;
 		div {
 			margin-top: 15px;
 		}
@@ -690,6 +712,105 @@
 			bottom: auto;
 		}
 	}
+	.ns_contact-footer-mob {
+		span {
+			display: none;
+		}
+		a {
+			opacity: 1;
+		}
+	}
+	.ns_line-bottom-footer {
+		margin-top: 0;
+	}
+	.slick-slide .ns_item-card {
+		max-width: 100%
+	}
+	.slider-tabs-contacts {
+		margin: 0 -15px;
+		margin-top: 30px;
+		.slider-tabs-contacts__item {
+			padding: 0 15px;
+		}
+	}
+	.ns_radio,
+	.ns_checkbox {
+		label {
+			span {
+				padding-left: 30px;
+				&::after, &::before {
+					width: 20px;
+					height: 20px;
+					top: -2px;
+				}
+			}
+		}
+	}
+	.ns_list-mobile-checkbox {
+		li {
+			margin-bottom: 18px;
+		}
+	}
+	.ns_radio {
+		label {
+			span {
+				padding-left: 30px;
+				&::after {
+					background-color: transparent;
+					background-image: url(../img/radio_active2.svg);
+				}
+				&::before {
+					background-image: url(../img/ic_radio.svg);
+				}
+				&::after, &::before {
+					width: 23px;
+					height: 23px;
+					border: none !important;
+					background-color: transparent;
+				}
+			}
+			input:checked + span::before {
+				opacity: 0;
+			}
+		}
+	}
+	.ns_list-radio {
+		.ns_radio {
+			margin-bottom: 17px;
+		}
+	}
+	.ns_contacts__image {
+		height: auto;
+		img {
+			width: auto;
+			height: auto;
+			max-width: 100%;
+			font-family: inherit;
+		}
+	}
+	.ns_item-form {
+		.ns_item-form__errortext {
+			right: 0;
+			transform: none;
+			&::after {
+				margin: 0;
+				left: auto;
+				right: 20px;
+			}
+		}
+	}
+	.ns_location-bottom {
+		.ns_item-dropdown__content {
+			.ns_item-dropdown__filter {
+				padding-top: 5px;
+			}
+		}
+	}
+	.ns_item-dropdown__filter {
+		ul {
+			padding-top: 3px;
+		}
+	}
 }
 
 /* Extra Small Devices, Phones */
@@ -709,7 +830,7 @@
 	}
 	.ns_item-dropdown__filter {
 		ul {
-			max-height: 145px;
+			max-height: 140px;
 		}
 	}
 

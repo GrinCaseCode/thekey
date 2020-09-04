@@ -37,6 +37,7 @@ button {
 	font-family: 'GT Walsheim Pro';
 	background-color: transparent;
 	opacity: 0.4;
+	-webkit-appearance: none;
 	-webkit-transition: all 0.3s;
 	-o-transition: all 0.3s;
 	transition: all 0.3s;
@@ -49,7 +50,7 @@ button {
 		top: 5px;
 	}
 	&.ns_rfield {
-		padding-top: 2px;
+		padding-top: 7px;
 	}
 }
 
@@ -96,22 +97,46 @@ button {
 		display: block;
 	}
 }
+.ns_item-form__placeholder {
+	font-size: 15px;
+	line-height: 18px;
+	color: #28292D;
+	opacity: 0.4;
+	top: 15px;
+	left: 15px;
+	transition: all 0.3s;
+	pointer-events: none;
+	position: absolute;
+}
+.ns_item-form_filled {
+	.ns_item-dropdown__input {
+		opacity: 1;
+	}
+	.ns_item-form__placeholder {
+		font-size: 12px;
+		line-height: 15px;
+		top: 5px;
+		opacity: 0.4 !important;
+	}
+}
+.ns_item-dropdown__value {
+	font-size: 15px;
+	line-height: 18px;
+	padding-right: 40px;
+	color: $ns_main_color;
+	width: 100%;
+	 white-space: nowrap; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    position: absolute; 
+    left: 15px;
+    top: 21px;
+}
 .ns_item-form {
 	margin-bottom: 13px;
 	position: relative;
 	.item-form__title {
 		padding-bottom: 1px;
-	}
-	.ns_item-form__placeholder {
-		font-size: 15px;
-		line-height: 18px;
-		color: #28292D;
-		opacity: 0.4;
-		top: 15px;
-		left: 15px;
-		transition: all 0.3s;
-		pointer-events: none;
-		position: absolute;
 	}
 	&.ns_active {
 		.ns_item-form__placeholder {
@@ -126,9 +151,81 @@ button {
 	textarea.ns_rfield {
 		padding-top: 22px;
 	}
+	&.ns_item-form_error {
+		&::after {
+			position: absolute;
+			display: block;
+			content: " ";
+			border: 2px solid #D93439;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			pointer-events: none;
+		}
+		&::before {
+			position: absolute;
+			display: block;
+			content: " ";
+			width: 15px;
+			height: 15px;
+			right: 15px;
+			top: 0;
+			bottom: 0;
+			margin: auto;
+			background-image: url(../img/error_icon.svg);
+			background-repeat: no-repeat;
+			background-position: center;
+			pointer-events: none;
+		}
+		input, textarea {
+			padding-right: 35px;
+		}
+	}
+	.ns_item-form__errortext {
+		font-size: 12px;
+		line-height: 15px;
+		padding: 3px 5px;
+		color: $ns_white;
+		background: $ns_main_color;
+		border-radius: 3px;
+		right: 15px;
+		top: -8px;
+		transform: translateX(41%);
+		position: absolute;
+		white-space: nowrap;
+		display: inline-block;
+		z-index: 2;
+		&::after {
+			position: absolute;
+			display: block;
+			content: " ";
+			width: 6px;
+			height: 6px;
+			top: 100%;
+			left: 0;
+			right: 0;
+			margin: auto;
+			border: 3px transparent solid;
+			border-top: 3px $ns_main_color solid;
+		}
+	}
+}
+.ns_item-form__errortext {
+	display: none;
 }
 .ns_item-dropdown {
 	position: relative;
+	.ns_item-form__placeholder {
+		opacity: 1;
+	}
+	.ns_active {
+		.ns_item-form__placeholder {
+			font-size: 12px;
+			line-height: 15px;
+			top: 5px;
+		}
+	}
 }
 .ns_item-dropdown__content {
 	position: absolute;
@@ -451,7 +548,7 @@ button {
 	border-radius: 50%;
 	background: $ns_white;
 	left: 0px;
-	top: 25px;
+	top: 0px;
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 	display: flex;
 	align-items: center;
@@ -582,7 +679,7 @@ button {
 	display: flex;
 	align-items: center;
 	flex-wrap: wrap;
-	.ns_radio {
+	.ns_checkbox {
 		margin-right: 30px;
 		&:last-child {
 			margin-right: 0;

@@ -6,10 +6,11 @@
 	background-color: $ns_main_color;
 	position: relative;
 	.ns_logo-footer {
-		margin-bottom: 30px;
+		margin-top: 10px;
+		margin-bottom: 0px;
 	}
 	.ns_social-list {
-		margin-top: 45px;
+		margin-top: 0px;
 	}
 }
 .ns_btn-top {
@@ -66,8 +67,12 @@
 	font-size: 15px;
 	line-height: 18px;
 	margin-top: 60px;
-	color: $ns_gray;
+	margin-bottom: 5px;
+	color: $ns_gray !important;
 	a {
+		color: $ns_gray;
+	}
+	span {
 		color: $ns_gray;
 	}
 }
@@ -107,7 +112,7 @@
 	}
 }
 .ns_nav-footer_bottom {
-	margin-top: 90px;
+	margin-top: 50px;
 }
 .ns_social-list {
 	display: -webkit-flex;
@@ -188,4 +193,36 @@
 
 .ns_contact-footer-mob {
 	color: $ns_gray;
+	* {
+		color: $ns_gray !important;
+	}
+}
+.ns_line-bottom-footer {
+	margin-top: 52px;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.ns_contact-footer-mob {
+	margin-left: 30px;
+	font-size: 15px;
+	line-height: 18px;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	a {
+		color: #AEAFB7;
+		transition: all 0.3s;
+		&:hover {
+			opacity: 0.4;
+		}
+	}
+	span {
+		margin: 0 5px;
+	}
+}
+.ns_phone-footer {
+	font-size: 24px;
+	line-height: 35px;
+	color: $ns_white;
 }

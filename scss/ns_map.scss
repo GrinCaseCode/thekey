@@ -1,6 +1,7 @@
 .ns_map {
 	height: calc(100vh - 80px);
 	position: relative;
+	z-index: 0;
 	background-image: url(../img/bg_map.png);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -15,9 +16,26 @@
 	.ns_layout-size {
 		bottom: 20px;
 		left: 20px;
+		z-index: 3;
 		.ns_layout-size__item {
 			&:last-child {
 				margin-bottom: 0;
+			}
+		}
+	}
+	.ns_btn-round {
+		margin-left: 15px;
+		img {
+			position: relative;
+		}
+		&:first-child {
+			img {
+				left: 2px;
+			}
+		}
+		&:last-child {
+			img {
+				right: 2px;
 			}
 		}
 	}
@@ -25,6 +43,8 @@
 .ns_head-map {
 	padding: 15px 0;
 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+	position: relative;
+	z-index: 2;
 	.ns_checkbox-slide {
 		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 		border-radius: 5px;
@@ -84,6 +104,9 @@
 	width: 367px;
 	overflow: auto;
 	position: relative;
+	border-bottom-right-radius: 17px;
+	border-bottom-left-radius: 5px;
+	z-index: 1;
 	&::-webkit-scrollbar {
 		width: 0;
 		background: #EAEAEA;
@@ -105,6 +128,7 @@
 	bottom: 95px;
 	position: absolute;
 	display: flex;
+	z-index: 1;
 	.ns_item-card {
 		position: absolute;
 		top: 0;
@@ -119,6 +143,22 @@
 		left: 20px;
 		bottom: 20px;
 		background-color: $ns_white;
+		z-index: 2;
+	}
+	&::before {
+		position: absolute;
+		display: block;
+		content: " ";
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		max-width: 360px;
+		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+		border-bottom-right-radius: 5px;
+		border-bottom-left-radius: 5px;
+		pointer-events: none;
+		z-index: -1;
 	}
 }
 .ns_line-office {
@@ -128,6 +168,8 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	color: $ns_main-color;
+	transition: all 0.3s;
 	.ns_text-regular_underline {
 		text-decoration: line-through;
 		opacity: 0.4;
@@ -136,6 +178,12 @@
 		margin-bottom: 0;
 		padding-bottom: 0;
 		border: none;
+	}
+	* {
+		display: block;
+	}
+	&:hover {
+		opacity: 0.8;
 	}
 }
 .ns_line-office__right {

@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$ns_white".
-        on line 31 of B:\repository\TheKey\scss\ns_map.scss
+        on line 51 of B:\repository\TheKey\scss\ns_map.scss
 
-26: 	padding: 15px 0;
-27: 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-28: 	.ns_checkbox-slide {
-29: 		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-30: 		border-radius: 5px;
-31: 		background-color: $ns_white;
-32: 		padding: 0 15px;
-33: 		height: 50px;
-34: 		display: flex;
-35: 		align-items: center;
-36: 		margin-right: 10px;
+46: 	position: relative;
+47: 	z-index: 2;
+48: 	.ns_checkbox-slide {
+49: 		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+50: 		border-radius: 5px;
+51: 		background-color: $ns_white;
+52: 		padding: 0 15px;
+53: 		height: 50px;
+54: 		display: flex;
+55: 		align-items: center;
+56: 		margin-right: 10px;
 
 Backtrace:
-B:\repository\TheKey\scss\ns_map.scss:31
+B:\repository\TheKey\scss\ns_map.scss:51
 B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/variable.rb:49:in `_perform'
 B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/script/tree/node.rb:50:in `perform'
 B:/program/koala/rubygems/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:402:in `visit_prop'
@@ -73,4 +73,4 @@ B:/program/koala/bin/sass:22:in `<main>'
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$ns_white\".\A         on line 31 of B:\repository\TheKey\scss\ns_map.scss\A \A 26: 	padding: 15px 0;\A 27: 	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);\A 28: 	.ns_checkbox-slide {\A 29: 		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);\A 30: 		border-radius: 5px;\A 31: 		background-color: $ns_white;\A 32: 		padding: 0 15px;\A 33: 		height: 50px;\A 34: 		display: flex;\A 35: 		align-items: center;\A 36: 		margin-right: 10px;"; }
+  content: "Error: Undefined variable: \"$ns_white\".\A         on line 51 of B:\repository\TheKey\scss\ns_map.scss\A \A 46: 	position: relative;\A 47: 	z-index: 2;\A 48: 	.ns_checkbox-slide {\A 49: 		box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);\A 50: 		border-radius: 5px;\A 51: 		background-color: $ns_white;\A 52: 		padding: 0 15px;\A 53: 		height: 50px;\A 54: 		display: flex;\A 55: 		align-items: center;\A 56: 		margin-right: 10px;"; }

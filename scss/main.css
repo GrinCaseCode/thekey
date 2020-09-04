@@ -36,6 +36,7 @@ button {
   font-family: 'GT Walsheim Pro';
   background-color: transparent;
   opacity: 0.4;
+  -webkit-appearance: none;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s; }
@@ -52,7 +53,7 @@ button {
   .ns_item-dropdown__input.ns_rfield,
   .ns_item-form input.ns_rfield,
   .ns_item-form textarea.ns_rfield {
-    padding-top: 2px; }
+    padding-top: 7px; }
 
 .ns_item-form textarea {
   height: 134px;
@@ -93,21 +94,43 @@ button {
   .ns_item-dropdown__input.ns_active + .ns_item-dropdown__content {
     display: block; }
 
+.ns_item-form__placeholder {
+  font-size: 15px;
+  line-height: 18px;
+  color: #28292D;
+  opacity: 0.4;
+  top: 15px;
+  left: 15px;
+  transition: all 0.3s;
+  pointer-events: none;
+  position: absolute; }
+
+.ns_item-form_filled .ns_item-dropdown__input {
+  opacity: 1; }
+.ns_item-form_filled .ns_item-form__placeholder {
+  font-size: 12px;
+  line-height: 15px;
+  top: 5px;
+  opacity: 0.4 !important; }
+
+.ns_item-dropdown__value {
+  font-size: 15px;
+  line-height: 18px;
+  padding-right: 40px;
+  color: #28292D;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  position: absolute;
+  left: 15px;
+  top: 21px; }
+
 .ns_item-form {
   margin-bottom: 13px;
   position: relative; }
   .ns_item-form .item-form__title {
     padding-bottom: 1px; }
-  .ns_item-form .ns_item-form__placeholder {
-    font-size: 15px;
-    line-height: 18px;
-    color: #28292D;
-    opacity: 0.4;
-    top: 15px;
-    left: 15px;
-    transition: all 0.3s;
-    pointer-events: none;
-    position: absolute; }
   .ns_item-form.ns_active .ns_item-form__placeholder {
     font-size: 12px;
     line-height: 15px;
@@ -116,9 +139,70 @@ button {
     opacity: 1; }
   .ns_item-form textarea.ns_rfield {
     padding-top: 22px; }
+  .ns_item-form.ns_item-form_error::after {
+    position: absolute;
+    display: block;
+    content: " ";
+    border: 2px solid #D93439;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none; }
+  .ns_item-form.ns_item-form_error::before {
+    position: absolute;
+    display: block;
+    content: " ";
+    width: 15px;
+    height: 15px;
+    right: 15px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background-image: url(../img/error_icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    pointer-events: none; }
+  .ns_item-form.ns_item-form_error input, .ns_item-form.ns_item-form_error textarea {
+    padding-right: 35px; }
+  .ns_item-form .ns_item-form__errortext {
+    font-size: 12px;
+    line-height: 15px;
+    padding: 3px 5px;
+    color: #fff;
+    background: #28292D;
+    border-radius: 3px;
+    right: 15px;
+    top: -8px;
+    transform: translateX(41%);
+    position: absolute;
+    white-space: nowrap;
+    display: inline-block;
+    z-index: 2; }
+    .ns_item-form .ns_item-form__errortext::after {
+      position: absolute;
+      display: block;
+      content: " ";
+      width: 6px;
+      height: 6px;
+      top: 100%;
+      left: 0;
+      right: 0;
+      margin: auto;
+      border: 3px transparent solid;
+      border-top: 3px #28292D solid; }
+
+.ns_item-form__errortext {
+  display: none; }
 
 .ns_item-dropdown {
   position: relative; }
+  .ns_item-dropdown .ns_item-form__placeholder {
+    opacity: 1; }
+  .ns_item-dropdown .ns_active .ns_item-form__placeholder {
+    font-size: 12px;
+    line-height: 15px;
+    top: 5px; }
 
 .ns_item-dropdown__content {
   position: absolute;
@@ -403,7 +487,7 @@ button {
   border-radius: 50%;
   background: #fff;
   left: 0px;
-  top: 25px;
+  top: 0px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   display: flex;
   align-items: center;
@@ -518,9 +602,9 @@ button {
   display: flex;
   align-items: center;
   flex-wrap: wrap; }
-  .ns_line-radio .ns_radio {
+  .ns_line-radio .ns_checkbox {
     margin-right: 30px; }
-    .ns_line-radio .ns_radio:last-child {
+    .ns_line-radio .ns_checkbox:last-child {
       margin-right: 0; }
 
 .ns_item-form_shadow input, .ns_item-form_shadow textarea {
@@ -1008,9 +1092,10 @@ button {
   background-color: #28292D;
   position: relative; }
   .ns_footer .ns_logo-footer {
-    margin-bottom: 30px; }
+    margin-top: 10px;
+    margin-bottom: 0px; }
   .ns_footer .ns_social-list {
-    margin-top: 45px; }
+    margin-top: 0px; }
 
 .ns_btn-top {
   top: 60px;
@@ -1059,8 +1144,11 @@ button {
   font-size: 15px;
   line-height: 18px;
   margin-top: 60px;
-  color: #AEAFB7; }
+  margin-bottom: 5px;
+  color: #AEAFB7 !important; }
   .ns_footer__title a {
+    color: #AEAFB7; }
+  .ns_footer__title span {
     color: #AEAFB7; }
 
 .ns_list-footer {
@@ -1094,7 +1182,7 @@ button {
         text-transform: uppercase; }
 
 .ns_nav-footer_bottom {
-  margin-top: 90px; }
+  margin-top: 50px; }
 
 .ns_social-list {
   display: -webkit-flex;
@@ -1163,6 +1251,34 @@ button {
     box-shadow: 0 0 0 20px rgba(62, 62, 186, 0); } }
 .ns_contact-footer-mob {
   color: #AEAFB7; }
+  .ns_contact-footer-mob * {
+    color: #AEAFB7 !important; }
+
+.ns_line-bottom-footer {
+  margin-top: 52px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; }
+
+.ns_contact-footer-mob {
+  margin-left: 30px;
+  font-size: 15px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; }
+  .ns_contact-footer-mob a {
+    color: #AEAFB7;
+    transition: all 0.3s; }
+    .ns_contact-footer-mob a:hover {
+      opacity: 0.4; }
+  .ns_contact-footer-mob span {
+    margin: 0 5px; }
+
+.ns_phone-footer {
+  font-size: 24px;
+  line-height: 35px;
+  color: #fff; }
 
 [data-size="0px"] .ns_admin-area {
   margin-bottom: 0px; }
@@ -1476,6 +1592,9 @@ button {
     border-right: 1px solid #AEAFB7; }
     .line-office__wrap .line-office__item:last-child {
       border: none; }
+    .line-office__wrap .line-office__item:first-child .ns_item-form_error::after {
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px; }
   .line-office__wrap .line-office__wrap {
     box-shadow: none; }
 
@@ -1759,6 +1878,11 @@ button {
   position: relative;
   z-index: 2; }
 
+input,
+button {
+  font-family: 'GT Walsheim Pro';
+  -webkit-appearance: none; }
+
 .ns_btn-main {
   font-size: 15px;
   line-height: 18px;
@@ -1847,7 +1971,10 @@ button {
   .ns_link-more:hover {
     opacity: 1; }
   .ns_link-more img {
-    margin-left: 5px; }
+    margin-left: 5px;
+    transition: all 0.3s; }
+  .ns_link-more.ns_active img {
+    transform: rotate(-180deg); }
 
 .ns_title-section {
   font-size: 39px;
@@ -1880,9 +2007,15 @@ button {
   .ns_btn-main_page.ns_btn-main_blue:hover {
     background-color: #2c2c78; }
 
+.ns_row_min {
+  margin: 0 -7px; }
+  .ns_row_min > div {
+    padding: 0 7px; }
+
 .ns_map {
   height: calc(100vh - 80px);
   position: relative;
+  z-index: 0;
   background-image: url(../img/bg_map.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -1895,13 +2028,24 @@ button {
     position: absolute; }
   .ns_map .ns_layout-size {
     bottom: 20px;
-    left: 20px; }
+    left: 20px;
+    z-index: 3; }
     .ns_map .ns_layout-size .ns_layout-size__item:last-child {
       margin-bottom: 0; }
+  .ns_map .ns_btn-round {
+    margin-left: 15px; }
+    .ns_map .ns_btn-round img {
+      position: relative; }
+    .ns_map .ns_btn-round:first-child img {
+      left: 2px; }
+    .ns_map .ns_btn-round:last-child img {
+      right: 2px; }
 
 .ns_head-map {
   padding: 15px 0;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); }
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 2; }
   .ns_head-map .ns_checkbox-slide {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
@@ -1948,7 +2092,10 @@ button {
 .ns_map__wrap-card__content {
   width: 367px;
   overflow: auto;
-  position: relative; }
+  position: relative;
+  border-bottom-right-radius: 17px;
+  border-bottom-left-radius: 5px;
+  z-index: 1; }
   .ns_map__wrap-card__content::-webkit-scrollbar {
     width: 0;
     background: #EAEAEA;
@@ -1964,7 +2111,8 @@ button {
   right: 15px;
   bottom: 95px;
   position: absolute;
-  display: flex; }
+  display: flex;
+  z-index: 1; }
   .ns_map__wrap-card .ns_item-card {
     position: absolute;
     top: 0;
@@ -1977,7 +2125,22 @@ button {
     width: 320px;
     left: 20px;
     bottom: 20px;
-    background-color: #fff; }
+    background-color: #fff;
+    z-index: 2; }
+  .ns_map__wrap-card::before {
+    position: absolute;
+    display: block;
+    content: " ";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    max-width: 360px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    pointer-events: none;
+    z-index: -1; }
 
 .ns_line-office {
   padding-bottom: 15px;
@@ -1985,7 +2148,9 @@ button {
   border-bottom: 1px #e0e0e0 solid;
   display: flex;
   align-items: center;
-  justify-content: space-between; }
+  justify-content: space-between;
+  color: #28292D;
+  transition: all 0.3s; }
   .ns_line-office .ns_text-regular_underline {
     text-decoration: line-through;
     opacity: 0.4; }
@@ -1993,6 +2158,10 @@ button {
     margin-bottom: 0;
     padding-bottom: 0;
     border: none; }
+  .ns_line-office * {
+    display: block; }
+  .ns_line-office:hover {
+    opacity: 0.8; }
 
 .ns_line-office__right {
   text-align: right; }
@@ -2108,7 +2277,8 @@ button {
     .ns_main-map .ns_map__wrap-card .ns_item-card {
       padding-bottom: 0;
       left: auto;
-      right: 0; }
+      right: 0;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2) !important; }
     .ns_main-map .ns_map__wrap-card .ns_arrows-map {
       right: 0;
       bottom: 100%;
@@ -2117,6 +2287,12 @@ button {
       margin: 0; }
       .ns_main-map .ns_map__wrap-card .ns_arrows-map .ns_btn-round {
         margin-left: 15px; }
+        .ns_main-map .ns_map__wrap-card .ns_arrows-map .ns_btn-round img {
+          position: relative; }
+        .ns_main-map .ns_map__wrap-card .ns_arrows-map .ns_btn-round:first-child img {
+          left: -2px; }
+        .ns_main-map .ns_map__wrap-card .ns_arrows-map .ns_btn-round:last-child img {
+          right: -2px; }
 
 .ns_cooperation {
   padding: 90px 0; }
@@ -2215,6 +2391,9 @@ img {
 p {
   padding: 0;
   margin: 0; }
+
+.container {
+  position: relative; }
 
 .container-fluid {
   max-width: 1440px; }

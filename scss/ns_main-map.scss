@@ -18,6 +18,7 @@
 			padding-bottom: 0;
 			left: auto;
 			right: 0;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2) !important;
 		}
 		.ns_arrows-map {
 			right: 0;
@@ -27,6 +28,19 @@
 			margin: 0;
 			.ns_btn-round {
 				margin-left: 15px;
+				img {
+					position: relative;
+				}
+				&:first-child {
+					img {
+						left: -2px;
+					}
+				}
+				&:last-child {
+					img {
+						right: -2px;
+					}
+				}
 			}
 		}
 	}

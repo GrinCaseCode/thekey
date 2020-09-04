@@ -1,6 +1,16 @@
 $(document).ready(function() {
 
 
+/*input*/
+
+  $('.ns_rfield').keyup(function(){
+    if($(this).val() != ''){
+      $(this).parent().addClass('ns_active');
+    } else {
+      $(this).parent().removeClass('ns_active');
+    }
+  });
+
   $('.slider-tabs-contacts').slick({
   	arrows: false,
   	dots: true,
