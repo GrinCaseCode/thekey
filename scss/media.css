@@ -291,6 +291,7 @@
       overflow: auto;
       padding-right: 10px; }
       .ns_item-dropdown__filter ul li {
+        white-space: normal;
         margin-bottom: 7px; }
 
   .ns_item-dropdown__bottom .ns_btn-main {
