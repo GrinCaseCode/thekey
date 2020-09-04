@@ -18,11 +18,11 @@
 	<link rel="stylesheet" href="libs/slick-1.8.0/slick/slick-theme.css" />
 	<link rel="stylesheet" href="libs/ion.rangeSlider-master/css/ion.rangeSlider.min.css" />
 	<link rel="stylesheet" href="css/fonts.css" />
-	<link rel="stylesheet" href="scss/main.css?ver=1.32" />
-	<link rel="stylesheet" href="scss/media.css?ver=1.32" />
+	<link rel="stylesheet" href="scss/main.css?ver=1.45" />
+	<link rel="stylesheet" href="scss/media.css?ver=1.45" />
 </head>
 <body>
- 
+
 	<div class="ns_wrapper">
 
 		<div class="ns_head-map">
@@ -34,7 +34,7 @@
 					</label>
 					<div class="wrapper-dropdowns-map">
 						<div class="ns_item-dropdown">
-							<div class="ns_item-dropdown__input">Локация</div>
+							<div class="ns_item-dropdown__input"><div class="ns_item-form__placeholder">Локация</div></div>
 							<div class="ns_item-dropdown__content">
 								<div class="ns_item-dropdown__close"></div>
 								<div class="ns_item-dropdown__filter">
@@ -43,7 +43,7 @@
 											<div class="ns_checkbox">
 												<label>
 													<input type="checkbox" checked="checked" />
-													<span>Арма | м. Курская </span>
+													<span>Арма | м.&nbsp;Курская </span>
 												</label>
 											</div>
 										</li>
@@ -51,7 +51,7 @@
 											<div class="ns_checkbox">
 												<label>
 													<input type="checkbox" />
-													<span>Даниловская | м. Тульская</span>
+													<span>Даниловская | м.&nbsp;Тульская</span>
 												</label>
 											</div>
 										</li>
@@ -59,7 +59,7 @@
 											<div class="ns_checkbox">
 												<label>
 													<input type="checkbox" checked="checked" />
-													<span>Гостиный двор | м. Охотный ряд</span>
+													<span>Гостиный двор | м.&nbsp;Охотный&nbsp;ряд</span>
 												</label>
 											</div>
 										</li>
@@ -67,7 +67,7 @@
 											<div class="ns_checkbox">
 												<label>
 													<input type="checkbox" />
-													<span>Кузнецкий Мост | м. Кузнецкий мост</span>
+													<span>Кузнецкий Мост | м.&nbsp;Кузнецкий&nbsp;мост</span>
 												</label>
 											</div>
 										</li>
@@ -75,7 +75,7 @@
 											<div class="ns_checkbox">
 												<label>
 													<input type="checkbox" />
-													<span>Отстоженка | м. Парк Культуры</span>
+													<span>Отстоженка | м. Парк&nbsp;Культуры</span>
 												</label>
 											</div>
 										</li>
@@ -83,7 +83,7 @@
 											<div class="ns_checkbox">
 												<label>
 													<input type="checkbox" />
-													<span>Сириус Парк | м. Нагатинская</span>
+													<span>Сириус Парк | м.&nbsp;Нагатинская</span>
 												</label>
 											</div>
 										</li>
@@ -91,7 +91,7 @@
 											<div class="ns_checkbox">
 												<label>
 													<input type="checkbox" />
-													<span>Шёлк | м. Киевская</span>
+													<span>Шёлк | м.&nbsp;Киевская</span>
 												</label>
 											</div>
 										</li>
@@ -99,7 +99,7 @@
 											<div class="ns_checkbox">
 												<label>
 													<input type="checkbox" checked="checked" />
-													<span>Таганка | м. Таганская</span>
+													<span>Таганка | м.&nbsp;Таганская</span>
 												</label>
 											</div>
 										</li>
@@ -107,7 +107,7 @@
 											<div class="ns_checkbox">
 												<label>
 													<input type="checkbox" />
-													<span>Сретенка | м. Сретенский бульвар</span>
+													<span>Сретенка | м.&nbsp;Сретенский&nbsp;бульвар</span>
 												</label>
 											</div>
 										</li>
@@ -120,7 +120,7 @@
 							</div>
 						</div>
 						<div class="ns_item-dropdown">
-							<div class="ns_item-dropdown__input">Рабочие места</div>
+							<div class="ns_item-dropdown__input"><div class="ns_item-form__placeholder">Рабочие места</div></div>
 							<div class="ns_item-dropdown__content">
 								<div class="ns_item-dropdown__close"></div>
 								<div class="ns_item-form">
@@ -134,7 +134,7 @@
 							</div>
 						</div>
 						<div class="ns_item-dropdown">
-							<div class="ns_item-dropdown__input">Дата заезда</div>
+							<div class="ns_item-dropdown__input"><div class="ns_item-form__placeholder">Дата заезда</div></div>
 							<div class="ns_item-dropdown__content">
 								<div class="ns_item-dropdown__close"></div>
 								<div class="ns_calendar">
@@ -212,7 +212,7 @@
 							</div>
 						</div>
 						<div class="ns_item-dropdown">
-							<div class="ns_item-dropdown__input">Другие фильтры</div>
+							<div class="ns_item-dropdown__input"><div class="ns_item-form__placeholder">Другие фильтры</div></div>
 							<div class="ns_item-dropdown__content">
 								<div class="ns_item-dropdown__close"></div>
 								<div class="ns_range-title">Цена, руб.</div>
@@ -261,15 +261,15 @@
 								</div>
 								<div class="ns_item-dropdown__name">Прочие услуги</div>
 								<div class="ns_line-radio">
-									<div class="ns_radio">
+									<div class="ns_checkbox">
 										<label>
-											<input type="radio" name="radio_type2" />
+											<input type="checkbox" />
 											<span>Юридический адрес </span>
 										</label>
 									</div>
-									<div class="ns_radio">
+									<div class="ns_checkbox">
 										<label>
-											<input type="radio" name="radio_type2" />
+											<input type="checkbox" />
 											<span>Парковка</span>
 										</label>
 									</div>
@@ -315,166 +315,166 @@
 									<p>м. Театральная</p>
 									<p>ул. Ильинка, 4</p>
 								</div>
-								<div class="ns_line-office">
-									<div class="ns_line-office__left">
-										<div class="ns_text-bold">Офис #06</div>
-										<div class="ns_text-regular">12 чел. | 24 м²</div>
-									</div>
-									<div class="ns_line-office__right">
-										<div class="ns_text-regular ns_text-regular_underline">150 000  руб.</div>
-										<div class="ns_text-bold">120 000 руб.</div>
-									</div>
-								</div>
-								<div class="ns_line-office">
-									<div class="ns_line-office__left">
-										<div class="ns_text-bold">Офис #07</div>
-										<div class="ns_text-regular">12 чел. | 24 м²</div>
-									</div>
-									<div class="ns_line-office__right">
-										<div class="ns_text-regular ns_text-regular_underline">150 000  руб.</div>
-										<div class="ns_text-bold">120 000 руб.</div>
-									</div>
-								</div>
-								<div class="ns_line-office">
-									<div class="ns_line-office__left">
-										<div class="ns_text-bold">Офис #08</div>
-										<div class="ns_text-regular">12 чел. | 24 м²</div>
-									</div>
-									<div class="ns_line-office__right">
-										<div class="ns_text-regular ns_text-regular_underline">150 000  руб.</div>
-										<div class="ns_text-bold">120 000 руб.</div>
-									</div>
-								</div>
-								<div class="ns_line-office">
-									<div class="ns_line-office__left">
-										<div class="ns_text-bold">Офис #08</div>
-										<div class="ns_text-regular">12 чел. | 24 м²</div>
-									</div>
-									<div class="ns_line-office__right">
-										<div class="ns_text-regular ns_text-regular_underline">150 000  руб.</div>
-										<div class="ns_text-bold">120 000 руб.</div>
-									</div>
-								</div>
-								<div class="ns_line-office">
-									<div class="ns_line-office__left">
-										<div class="ns_text-bold">Офис #08</div>
-										<div class="ns_text-regular">12 чел. | 24 м²</div>
-									</div>
-									<div class="ns_line-office__right">
-										<div class="ns_text-regular ns_text-regular_underline">150 000  руб.</div>
-										<div class="ns_text-bold">120 000 руб.</div>
-									</div>
-								</div>
-								<div class="ns_line-office">
-									<div class="ns_line-office__left">
-										<div class="ns_text-bold">Офис #08</div>
-										<div class="ns_text-regular">12 чел. | 24 м²</div>
-									</div>
-									<div class="ns_line-office__right">
-										<div class="ns_text-regular ns_text-regular_underline">150 000  руб.</div>
-										<div class="ns_text-bold">120 000 руб.</div>
-									</div>
-								</div>
-								<div class="ns_line-office">
-									<div class="ns_line-office__left">
-										<div class="ns_text-bold">Офис #08</div>
-										<div class="ns_text-regular">12 чел. | 24 м²</div>
-									</div>
-									<div class="ns_line-office__right">
-										<div class="ns_text-regular ns_text-regular_underline">150 000  руб.</div>
-										<div class="ns_text-bold">120 000 руб.</div>
-									</div>
-								</div>
-								<div class="ns_line-office">
-									<div class="ns_line-office__left">
-										<div class="ns_text-bold">Офис #08</div>
-										<div class="ns_text-regular">12 чел. | 24 м²</div>
-									</div>
-									<div class="ns_line-office__right">
-										<div class="ns_text-regular ns_text-regular_underline">150 000  руб.</div>
-										<div class="ns_text-bold">120 000 руб.</div>
-									</div>
-								</div>
-								<div class="ns_line-office">
-									<div class="ns_line-office__left">
-										<div class="ns_text-bold">Офис #08</div>
-										<div class="ns_text-regular">12 чел. | 24 м²</div>
-									</div>
-									<div class="ns_line-office__right">
-										<div class="ns_text-regular ns_text-regular_underline">150 000  руб.</div>
-										<div class="ns_text-bold">120 000 руб.</div>
-									</div>
-								</div>
-								<div class="ns_line-office">
-									<div class="ns_line-office__left">
-										<div class="ns_text-bold">Офис #08</div>
-										<div class="ns_text-regular">12 чел. | 24 м²</div>
-									</div>
-									<div class="ns_line-office__right">
-										<div class="ns_text-regular ns_text-regular_underline">150 000  руб.</div>
-										<div class="ns_text-bold">120 000 руб.</div>
-									</div>
-								</div>
-								<div class="ns_line-office">
-									<div class="ns_line-office__left">
-										<div class="ns_text-bold">Офис #08</div>
-										<div class="ns_text-regular">12 чел. | 24 м²</div>
-									</div>
-									<div class="ns_line-office__right">
-										<div class="ns_text-regular ns_text-regular_underline">150 000  руб.</div>
-										<div class="ns_text-bold">120 000 руб.</div>
-									</div>
-								</div>
-								<div class="ns_line-office">
-									<div class="ns_line-office__left">
-										<div class="ns_text-bold">Офис #08</div>
-										<div class="ns_text-regular">12 чел. | 24 м²</div>
-									</div>
-									<div class="ns_line-office__right">
-										<div class="ns_text-regular ns_text-regular_underline">150 000  руб.</div>
-										<div class="ns_text-bold">120 000 руб.</div>
-									</div>
-								</div>
-								<div class="ns_line-office">
-									<div class="ns_line-office__left">
-										<div class="ns_text-bold">Офис #08</div>
-										<div class="ns_text-regular">12 чел. | 24 м²</div>
-									</div>
-									<div class="ns_line-office__right">
-										<div class="ns_text-regular ns_text-regular_underline">150 000  руб.</div>
-										<div class="ns_text-bold">120 000 руб.</div>
-									</div>
-								</div>
-								<div class="ns_line-office">
-									<div class="ns_line-office__left">
-										<div class="ns_text-bold">Офис #08</div>
-										<div class="ns_text-regular">12 чел. | 24 м²</div>
-									</div>
-									<div class="ns_line-office__right">
-										<div class="ns_text-regular ns_text-regular_underline">150 000  руб.</div>
-										<div class="ns_text-bold">120 000 руб.</div>
-									</div>
-								</div>
-								<div class="ns_line-office">
-									<div class="ns_line-office__left">
-										<div class="ns_text-bold">Офис #08</div>
-										<div class="ns_text-regular">12 чел. | 24 м²</div>
-									</div>
-									<div class="ns_line-office__right">
-										<div class="ns_text-regular ns_text-regular_underline">150 000  руб.</div>
-										<div class="ns_text-bold">120 000 руб.</div>
-									</div>
-								</div>
-								<div class="ns_line-office">
-									<div class="ns_line-office__left">
-										<div class="ns_text-bold">Офис #08</div>
-										<div class="ns_text-regular">12 чел. | 24 м²</div>
-									</div>
-									<div class="ns_line-office__right">
-										<div class="ns_text-regular ns_text-regular_underline">150 000  руб.</div>
-										<div class="ns_text-bold">120 000 руб.</div>
-									</div>
-								</div>
+								<a href="#" class="ns_line-office">
+									<span class="ns_line-office__left">
+										<span class="ns_text-bold">Офис #06</span>
+										<span class="ns_text-regular">12 чел. | 24 м²</span>
+									</span>
+									<span class="ns_line-office__right">
+										<span class="ns_text-regular ns_text-regular_underline">150 000  руб.</span>
+										<span class="ns_text-bold">120 000 руб.</span>
+									</span>
+								</a>
+								<a href="#" class="ns_line-office">
+									<span class="ns_line-office__left">
+										<span class="ns_text-bold">Офис #07</span>
+										<span class="ns_text-regular">12 чел. | 24 м²</span>
+									</span>
+									<span class="ns_line-office__right">
+										<span class="ns_text-regular ns_text-regular_underline">150 000  руб.</span>
+										<span class="ns_text-bold">120 000 руб.</span>
+									</span>
+								</a>
+								<a href="#" class="ns_line-office">
+									<span class="ns_line-office__left">
+										<span class="ns_text-bold">Офис #08</span>
+										<span class="ns_text-regular">12 чел. | 24 м²</span>
+									</span>
+									<span class="ns_line-office__right">
+										<span class="ns_text-regular ns_text-regular_underline">150 000  руб.</span>
+										<span class="ns_text-bold">120 000 руб.</span>
+									</span>
+								</a>
+								<a href="#" class="ns_line-office">
+									<span class="ns_line-office__left">
+										<span class="ns_text-bold">Офис #08</span>
+										<span class="ns_text-regular">12 чел. | 24 м²</span>
+									</span>
+									<span class="ns_line-office__right">
+										<span class="ns_text-regular ns_text-regular_underline">150 000  руб.</span>
+										<span class="ns_text-bold">120 000 руб.</span>
+									</span>
+								</a>
+								<a href="#" class="ns_line-office">
+									<span class="ns_line-office__left">
+										<span class="ns_text-bold">Офис #08</span>
+										<span class="ns_text-regular">12 чел. | 24 м²</span>
+									</span>
+									<span class="ns_line-office__right">
+										<span class="ns_text-regular ns_text-regular_underline">150 000  руб.</span>
+										<span class="ns_text-bold">120 000 руб.</span>
+									</span>
+								</a>
+								<a href="#" class="ns_line-office">
+									<span class="ns_line-office__left">
+										<span class="ns_text-bold">Офис #08</span>
+										<span class="ns_text-regular">12 чел. | 24 м²</span>
+									</span>
+									<span class="ns_line-office__right">
+										<span class="ns_text-regular ns_text-regular_underline">150 000  руб.</span>
+										<span class="ns_text-bold">120 000 руб.</span>
+									</span>
+								</a>
+								<a href="#" class="ns_line-office">
+									<span class="ns_line-office__left">
+										<span class="ns_text-bold">Офис #08</span>
+										<span class="ns_text-regular">12 чел. | 24 м²</span>
+									</span>
+									<span class="ns_line-office__right">
+										<span class="ns_text-regular ns_text-regular_underline">150 000  руб.</span>
+										<span class="ns_text-bold">120 000 руб.</span>
+									</span>
+								</a>
+								<a href="#" class="ns_line-office">
+									<span class="ns_line-office__left">
+										<span class="ns_text-bold">Офис #08</span>
+										<span class="ns_text-regular">12 чел. | 24 м²</span>
+									</span>
+									<span class="ns_line-office__right">
+										<span class="ns_text-regular ns_text-regular_underline">150 000  руб.</span>
+										<span class="ns_text-bold">120 000 руб.</span>
+									</span>
+								</a>
+								<a href="#" class="ns_line-office">
+									<span class="ns_line-office__left">
+										<span class="ns_text-bold">Офис #08</span>
+										<span class="ns_text-regular">12 чел. | 24 м²</span>
+									</span>
+									<span class="ns_line-office__right">
+										<span class="ns_text-regular ns_text-regular_underline">150 000  руб.</span>
+										<span class="ns_text-bold">120 000 руб.</span>
+									</span>
+								</a>
+								<a href="#" class="ns_line-office">
+									<span class="ns_line-office__left">
+										<span class="ns_text-bold">Офис #08</span>
+										<span class="ns_text-regular">12 чел. | 24 м²</span>
+									</span>
+									<span class="ns_line-office__right">
+										<span class="ns_text-regular ns_text-regular_underline">150 000  руб.</span>
+										<span class="ns_text-bold">120 000 руб.</span>
+									</span>
+								</a>
+								<a href="#" class="ns_line-office">
+									<span class="ns_line-office__left">
+										<span class="ns_text-bold">Офис #08</span>
+										<span class="ns_text-regular">12 чел. | 24 м²</span>
+									</span>
+									<span class="ns_line-office__right">
+										<span class="ns_text-regular ns_text-regular_underline">150 000  руб.</span>
+										<span class="ns_text-bold">120 000 руб.</span>
+									</span>
+								</a>
+								<a href="#" class="ns_line-office">
+									<span class="ns_line-office__left">
+										<span class="ns_text-bold">Офис #08</span>
+										<span class="ns_text-regular">12 чел. | 24 м²</span>
+									</span>
+									<span class="ns_line-office__right">
+										<span class="ns_text-regular ns_text-regular_underline">150 000  руб.</span>
+										<span class="ns_text-bold">120 000 руб.</span>
+									</span>
+								</a>
+								<a href="#" class="ns_line-office">
+									<span class="ns_line-office__left">
+										<span class="ns_text-bold">Офис #08</span>
+										<span class="ns_text-regular">12 чел. | 24 м²</span>
+									</span>
+									<span class="ns_line-office__right">
+										<span class="ns_text-regular ns_text-regular_underline">150 000  руб.</span>
+										<span class="ns_text-bold">120 000 руб.</span>
+									</span>
+								</a>
+								<a href="#" class="ns_line-office">
+									<span class="ns_line-office__left">
+										<span class="ns_text-bold">Офис #08</span>
+										<span class="ns_text-regular">12 чел. | 24 м²</span>
+									</span>
+									<span class="ns_line-office__right">
+										<span class="ns_text-regular ns_text-regular_underline">150 000  руб.</span>
+										<span class="ns_text-bold">120 000 руб.</span>
+									</span>
+								</a>
+								<a href="#" class="ns_line-office">
+									<span class="ns_line-office__left">
+										<span class="ns_text-bold">Офис #08</span>
+										<span class="ns_text-regular">12 чел. | 24 м²</span>
+									</span>
+									<span class="ns_line-office__right">
+										<span class="ns_text-regular ns_text-regular_underline">150 000  руб.</span>
+										<span class="ns_text-bold">120 000 руб.</span>
+									</span>
+								</a>
+								<a href="#" class="ns_line-office">
+									<span class="ns_line-office__left">
+										<span class="ns_text-bold">Офис #08</span>
+										<span class="ns_text-regular">12 чел. | 24 м²</span>
+									</span>
+									<span class="ns_line-office__right">
+										<span class="ns_text-regular ns_text-regular_underline">150 000  руб.</span>
+										<span class="ns_text-bold">120 000 руб.</span>
+									</span>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -576,12 +576,12 @@
 			</div>
 		</div>
 		<div class="ns_text-bold">Локация</div>
-		<ul class="list-mobile-checkbox">
+		<ul class="ns_list-mobile-checkbox">
 			<li>
 				<div class="ns_checkbox">
 					<label>
 						<input type="checkbox" checked="checked" />
-						<span>Арма | м. Курская </span>
+						<span>Арма | м.&nbsp;Курская </span>
 					</label>
 				</div>
 			</li>
@@ -589,47 +589,7 @@
 				<div class="ns_checkbox">
 					<label>
 						<input type="checkbox" />
-						<span>Даниловская | м. Тульская</span>
-					</label>
-				</div>
-			</li>
-			<li>
-				<div class="ns_checkbox">
-					<label>
-						<input type="checkbox" checked="checked" />
-						<span>Гостиный двор | м. Охотный ряд</span>
-					</label>
-				</div>
-			</li>
-			<li>
-				<div class="ns_checkbox">
-					<label>
-						<input type="checkbox" />
-						<span>Кузнецкий Мост | м. Кузнецкий мост</span>
-					</label>
-				</div>
-			</li>
-			<li>
-				<div class="ns_checkbox">
-					<label>
-						<input type="checkbox" />
-						<span>Отстоженка | м. Парк Культуры</span>
-					</label>
-				</div>
-			</li>
-			<li>
-				<div class="ns_checkbox">
-					<label>
-						<input type="checkbox" />
-						<span>Сириус Парк | м. Нагатинская</span>
-					</label>
-				</div>
-			</li>
-			<li>
-				<div class="ns_checkbox">
-					<label>
-						<input type="checkbox" />
-						<span>Шёлк | м. Киевская</span>
+						<span>Даниловская | м.&nbsp;Тульская</span>
 					</label>
 				</div>
 			</li>
@@ -637,7 +597,7 @@
 				<div class="ns_checkbox">
 					<label>
 						<input type="checkbox" checked="checked" />
-						<span>Таганка | м. Таганская</span>
+						<span>Гостиный двор | м.&nbsp;Охотный&nbsp;ряд</span>
 					</label>
 				</div>
 			</li>
@@ -645,7 +605,47 @@
 				<div class="ns_checkbox">
 					<label>
 						<input type="checkbox" />
-						<span>Сретенка | м. Сретенский бульвар</span>
+						<span>Кузнецкий Мост | м.&nbsp;Кузнецкий&nbsp;мост</span>
+					</label>
+				</div>
+			</li>
+			<li>
+				<div class="ns_checkbox">
+					<label>
+						<input type="checkbox" />
+						<span>Отстоженка | м. Парк&nbsp;Культуры</span>
+					</label>
+				</div>
+			</li>
+			<li>
+				<div class="ns_checkbox">
+					<label>
+						<input type="checkbox" />
+						<span>Сириус Парк | м.&nbsp;Нагатинская</span>
+					</label>
+				</div>
+			</li>
+			<li>
+				<div class="ns_checkbox">
+					<label>
+						<input type="checkbox" />
+						<span>Шёлк | м.&nbsp;Киевская</span>
+					</label>
+				</div>
+			</li>
+			<li>
+				<div class="ns_checkbox">
+					<label>
+						<input type="checkbox" checked="checked" />
+						<span>Таганка | м.&nbsp;Таганская</span>
+					</label>
+				</div>
+			</li>
+			<li>
+				<div class="ns_checkbox">
+					<label>
+						<input type="checkbox" />
+						<span>Сретенка | м.&nbsp;Сретенский&nbsp;бульвар</span>
 					</label>
 				</div>
 			</li>
@@ -772,15 +772,15 @@
 		</div>
 		<div class="ns_item-dropdown__name">Прочие услуги</div>
 		<div class="ns_line-radio">
-			<div class="ns_radio">
+			<div class="ns_checkbox">
 				<label>
-					<input type="radio" name="radio_type2" />
+					<input type="checkbox" />
 					<span>Юридический адрес </span>
 				</label>
 			</div>
-			<div class="ns_radio">
+			<div class="ns_checkbox">
 				<label>
-					<input type="radio" name="radio_type2" />
+					<input type="checkbox" />
 					<span>Парковка</span>
 				</label>
 			</div>
@@ -840,7 +840,7 @@
 <script src="libs/ion.rangeSlider-master/js/ion.rangeSlider.min.js"></script>
 <script src="libs/slick-1.8.0/slick/slick.min.js"></script>
 <script src="libs/jQueryFormStyler-master/jquery.formstyler.min.js"></script>
-<script src="js/ns_js-map.js?ver=1.32"></script>
+<script src="js/ns_js-map.js?ver=1.45"></script>
 <!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 <!-- Google Analytics counter --><!-- /Google Analytics counter -->
 </body>
