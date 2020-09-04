@@ -662,7 +662,7 @@
 		padding-top: 30px;
 		padding-bottom: 40px;
 		.ns_form-contacts {
-			margin-top: 72px;
+			margin-top: 0px;
 		}
 	}
 	.ns_item-contact {
@@ -694,8 +694,9 @@
 	}
 	.slider-tabs-contacts {
 		margin-top: 30px;
+		padding-bottom: 30px;
 		.slick-dots {
-			bottom: 480px;
+			bottom: 10px;
 		}
 		.ns_btn-main.ns_btn-main_page {
 			width: 100%;
@@ -810,6 +811,29 @@
 	.ns_item-dropdown__filter {
 		ul {
 			padding-top: 3px;
+		}
+	}
+	.ns_flex-contacts {
+		display: flex;
+		flex-direction: column;
+	}
+	.slider-tabs-contacts {
+		order: -1;
+	}
+	.ns_form-contacts {
+		.ns_btn-main {
+			width: 100%;
+		}
+	}
+	.ns_row_contacts {
+		margin-top: 40px;
+	}
+	.ns_contacts {
+		.ns_text-big {
+			margin-top: 15px;
+		}
+		.ns_text-big_bold {
+			margin-top: 30px;
 		}
 	}
 }

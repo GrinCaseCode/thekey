@@ -1747,8 +1747,6 @@ button {
       background-color: #3E3EBA; }
 
 .ns_tabs_contacts {
-  margin-top: 60px;
-  margin-bottom: -51px;
   position: relative;
   z-index: 2; }
 
@@ -2321,7 +2319,7 @@ input {
     margin-top: 20px;
     margin-bottom: 15px; }
   .ns_contacts .ns_form-contacts {
-    margin-top: 110px; }
+    margin-top: 60px; }
 
 .ns_contacts__image {
   height: 326px; }
@@ -2355,6 +2353,9 @@ input {
   padding-top: 120px;
   font-size: 60px;
   line-height: 60px; }
+
+.ns_row_contacts {
+  margin-top: 60px; }
 
 body {
   font-family: 'GT Walsheim Pro';

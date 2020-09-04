@@ -551,7 +551,7 @@
     padding-top: 30px;
     padding-bottom: 40px; }
     .ns_contacts .ns_form-contacts {
-      margin-top: 72px; }
+      margin-top: 0px; }
 
   .ns_item-contact {
     margin-top: 20px; }
@@ -579,9 +579,10 @@
     border-radius: 5px; }
 
   .slider-tabs-contacts {
-    margin-top: 30px; }
+    margin-top: 30px;
+    padding-bottom: 30px; }
     .slider-tabs-contacts .slick-dots {
-      bottom: 480px; }
+      bottom: 10px; }
     .slider-tabs-contacts .ns_btn-main.ns_btn-main_page {
       width: 100%; }
     .slider-tabs-contacts .ns_text-regular_form {
@@ -662,7 +663,25 @@
     padding-top: 5px; }
 
   .ns_item-dropdown__filter ul {
-    padding-top: 3px; } }
+    padding-top: 3px; }
+
+  .ns_flex-contacts {
+    display: flex;
+    flex-direction: column; }
+
+  .slider-tabs-contacts {
+    order: -1; }
+
+  .ns_form-contacts .ns_btn-main {
+    width: 100%; }
+
+  .ns_row_contacts {
+    margin-top: 40px; }
+
+  .ns_contacts .ns_text-big {
+    margin-top: 15px; }
+  .ns_contacts .ns_text-big_bold {
+    margin-top: 30px; } }
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
   .ns_admin-area {
