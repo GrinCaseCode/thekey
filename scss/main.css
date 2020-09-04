@@ -310,6 +310,7 @@ button {
   padding: 40px 30px;
   padding-top: 20px; }
   .ns_item-dropdown__filter ul li {
+    white-space: nowrap;
     margin-bottom: 15px; }
 
 .ns_item-dropdown__bottom {

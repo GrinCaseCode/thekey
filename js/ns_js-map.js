@@ -286,11 +286,11 @@ $(document).ready(function() {
 
 
 				$("#link-more-locations").click(function (e) {
-					if ($(".list-mobile-checkbox li").is(":hidden")) {
-						$(".list-mobile-checkbox li").slideDown(200);
+					if ($(".ns_list-mobile-checkbox li").is(":hidden")) {
+						$(".ns_list-mobile-checkbox li").slideDown(200);
 					} else {
 
-						$(".list-mobile-checkbox li:nth-child(n+4)").slideUp(200);
+						$(".ns_list-mobile-checkbox li:nth-child(n+4)").slideUp(200);
 					}
 				});
 
