@@ -142,3 +142,13 @@
 		}
 	}
 }
+.ns_item-card_main {
+	.ns_item-card__content {
+		min-height: 219px;
+	}
+}
+.ns_item-card_min {
+	.ns_item-card__content {
+		min-height: 160px;
+	}
+}
